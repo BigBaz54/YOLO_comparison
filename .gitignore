@@ -1,5 +1,5 @@
 # Results
-runs/*
+runs/detect/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
