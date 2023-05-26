@@ -4,7 +4,7 @@ class ModelWrapper:
     def __init__(self, model, name):
         self.model = model
         self.name = name
-        self.prediction_time = -1
+        self.detection_time = -1
     
     def __repr__(self):
         return f"<Model {self.name}>"
@@ -15,7 +15,7 @@ class ModelWrapper:
     def __call__(self, *args, **kwargs):
         t = time.time()
         result = self.model(*args, **kwargs)
-        self.prediction_time = time.time() - t
+        self.detection_time = time.time() - t
         return result
     
     def eval(self):
