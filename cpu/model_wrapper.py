@@ -1,3 +1,5 @@
+import time
+
 class ModelWrapper:
     def __init__(self, model, name):
         self.model = model
@@ -11,7 +13,10 @@ class ModelWrapper:
         return self.name
     
     def __call__(self, *args, **kwargs):
-        time = time.time()
+        t = time.time()
         result = self.model(*args, **kwargs)
-        self.prediction_time = time.time() - time
+        self.prediction_time = time.time() - t
         return result
+    
+    def eval(self):
+        self.model.eval()
