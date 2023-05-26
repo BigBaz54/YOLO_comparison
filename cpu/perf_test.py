@@ -26,10 +26,12 @@ def detect(model, img):
 def load_models():
     os.chdir(os.path.join('models', 'v5'))
     models = []
+    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5n', pretrained=True), 'yolov5n'))
     models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5s', pretrained=True), 'yolov5s'))
     models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5m', pretrained=True), 'yolov5m'))
     models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5l', pretrained=True), 'yolov5l'))
     models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5x', pretrained=True), 'yolov5x'))
+    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5n6', pretrained=True), 'yolov5n6'))
     models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5s6', pretrained=True), 'yolov5s6'))
     models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5m6', pretrained=True), 'yolov5m6'))
     models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5l6', pretrained=True), 'yolov5l6'))
