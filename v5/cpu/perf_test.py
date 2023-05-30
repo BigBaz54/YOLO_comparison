@@ -1,8 +1,8 @@
+from model_wrapper import ModelWrapper
+
 import torch
 import os
 import cv2
-
-from model_wrapper import ModelWrapper
 
 
 def detect(model, img):
@@ -24,8 +24,9 @@ def detect(model, img):
     return detections
 
 def load_models():
-    os.chdir(os.path.join('models', 'v5'))
     models = []
+    
+    os.chdir(os.path.join('v5', 'models'))
     models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5n', pretrained=True), 'yolov5n'))
     models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5s', pretrained=True), 'yolov5s'))
     models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5m', pretrained=True), 'yolov5m'))
@@ -36,9 +37,10 @@ def load_models():
     models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5m6', pretrained=True), 'yolov5m6'))
     models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5l6', pretrained=True), 'yolov5l6'))
     models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5x6', pretrained=True), 'yolov5x6'))
+    os.chdir(os.path.join('..', '..'))
+
     for model in models:
         model.eval()
-    os.chdir(os.path.join('..', '..'))
     return models
 
 def image_resize(image, width = None, height = None, inter = cv2.INTER_AREA):
@@ -46,7 +48,7 @@ def image_resize(image, width = None, height = None, inter = cv2.INTER_AREA):
     (h, w) = image.shape[:2]
 
     if width is None and height is None:
-        return image
+        return image()
     if width is None:
         r = height / float(h)
         dim = (int(w * r), height)

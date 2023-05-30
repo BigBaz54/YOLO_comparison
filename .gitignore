@@ -1,8 +1,8 @@
 # Results
-runs/detect/
+*/runs/detect/*
 
 # Models
-models/v5/*.pt
+v5/models/*.pt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
