@@ -1,4 +1,4 @@
 from hubconf import custom
+import os
 
-
-model = custom('yolov7\\yolov7.pt')
+model = custom(os.path.join('yolov7', 'yolov7.pt'))
