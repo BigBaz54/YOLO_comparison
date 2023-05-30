@@ -5,24 +5,6 @@ import os
 import cv2
 
 
-def detect(model, img):
-    # convert colors
-    img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-
-    # convert to tensor
-    img = torch.from_numpy(img).permute(2, 0, 1).float().unsqueeze(0) / 255.0
-
-    # # send to gpu
-    # img = img.cuda()
-
-    with torch.no_grad():
-        # detect
-        detections = model(img, augment=False)[0]
-
-    # convert to numpy array
-    detections = detections.cpu().numpy()
-    return detections
-
 def load_models():
     models = []
     
