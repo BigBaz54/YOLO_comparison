@@ -43,14 +43,17 @@ def image_preprocess(image, target_size):
 
 if __name__=="__main__":
     models = load_models()
-    SIZE = 640
+    sizes = [640, 1280]
 
     imgs = [os.path.join('img', img) for img in os.listdir('img') if img.endswith('.jpg') or img.endswith('.png') or img.endswith('.jpeg')]
-    imgs_preprocessed = [image_preprocess(img, SIZE) for img in imgs]
+    imgs_by_size = {}
+    for size in sizes:
+        imgs_preprocessed = [image_preprocess(img, size) for img in imgs]
+        imgs_by_size[size] = imgs_preprocessed
 
     print(f'\n\n>>> Run inference on {len(imgs)} images <<<\n')
     for model in models:
-        imgs_copy = [img.copy() for img in imgs_preprocessed]
-        result = model(imgs_copy, size=SIZE)
-        print(f'{model.name} - {round(model.detection_time, 3)}s - {round(len(imgs)/model.detection_time, 3)} FPS')
+        imgs_copy = [img.copy() for img in imgs_by_size[model.size]]
+        result = model(imgs_copy, size=model.size)
+        print(f'{model.name} ({model.size}x{model.size}) - {round(model.detection_time, 3)}s - {round(len(imgs)/model.detection_time, 3)} FPS')
         # result.save()
