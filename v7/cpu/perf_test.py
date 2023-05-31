@@ -6,6 +6,7 @@ import cv2
 import sys
 sys.path.append(os.path.join('v7', 'yolov7-main'))
 import hubconf
+from models.experimental import attempt_load
 
 
 def load_models():
@@ -17,7 +18,7 @@ def load_models():
     models.append(ModelWrapper(hubconf.custom(os.path.join('v7', 'models', 'yolov7-e6e.pt')), 'yolov7w6', size=640))
     models.append(ModelWrapper(hubconf.custom(os.path.join('v7', 'models', 'yolov7-d6.pt')), 'yolov7w6', size=640))
     models.append(ModelWrapper(hubconf.custom(os.path.join('v7', 'models', 'yolov7-w6.pt')), 'yolov7w6', size=640))
-    # models.append(ModelWrapper(hubconf.custom(os.path.join('v7', 'models', 'yolov7-w6-pose.pt')), 'yolov7w6', size=640))
+    # models.append(ModelWrapper(attempt_load(os.path.join('v7', 'models', 'yolov7-w6-pose.pt'), map_location=torch.device('cpu')), 'yolov7w6', size=640))
 
     for model in models:
         model.eval()
