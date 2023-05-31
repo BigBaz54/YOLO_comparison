@@ -12,6 +12,7 @@ def load_models():
     models = []
 
     models.append(ModelWrapper(hubconf.custom(os.path.join('v7', 'models', 'yolov7.pt')), 'yolov7'))
+    models.append(ModelWrapper(hubconf.custom(os.path.join('v7', 'models', 'yolov7x.pt')), 'yolov7x'))
 
     for model in models:
         model.eval()
