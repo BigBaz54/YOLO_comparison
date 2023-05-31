@@ -1,9 +1,10 @@
 import time
 
 class ModelWrapper:
-    def __init__(self, model, name):
+    def __init__(self, model, name, size=640):
         self.model = model
         self.name = name
+        self.size = size
         self.detection_time = -1
     
     def __repr__(self):
