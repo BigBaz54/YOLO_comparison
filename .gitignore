@@ -1,5 +1,5 @@
 # Results
-*/runs/detect/*
+runs/*
 
 # Models
 v5/models/*.pt
