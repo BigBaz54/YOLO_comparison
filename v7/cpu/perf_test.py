@@ -13,6 +13,11 @@ def load_models():
 
     models.append(ModelWrapper(hubconf.custom(os.path.join('v7', 'models', 'yolov7.pt')), 'yolov7'))
     models.append(ModelWrapper(hubconf.custom(os.path.join('v7', 'models', 'yolov7x.pt')), 'yolov7x'))
+    models.append(ModelWrapper(hubconf.custom(os.path.join('v7', 'models', 'yolov7-e6.pt')), 'yolov7w6', size=640))
+    models.append(ModelWrapper(hubconf.custom(os.path.join('v7', 'models', 'yolov7-e6e.pt')), 'yolov7w6', size=640))
+    models.append(ModelWrapper(hubconf.custom(os.path.join('v7', 'models', 'yolov7-d6.pt')), 'yolov7w6', size=640))
+    models.append(ModelWrapper(hubconf.custom(os.path.join('v7', 'models', 'yolov7-w6.pt')), 'yolov7w6', size=640))
+    # models.append(ModelWrapper(hubconf.custom(os.path.join('v7', 'models', 'yolov7-w6-pose.pt')), 'yolov7w6', size=640))
 
     for model in models:
         model.eval()
