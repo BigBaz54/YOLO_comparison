@@ -31,11 +31,11 @@ def load_models():
 
 def perf_test(models):
     img_nb = len(os.listdir('img'))
-    print(f'\n\n>>> YOLOv6 : Run inference on {img_nb} images <<<\n')
+    print(f'\n\n>>>>> YOLOv6 : Run inference on {img_nb} images <<<<<\n')
     os.chdir(os.path.join('v6', 'yolov6_main'))
     for model in models:
         model()
-        print(f'{model.name} ({model.size}x{model.size}) - {round(model.detection_time, 3)}s - {round(img_nb/model.detection_time, 3)} FPS')
+        print(f'{f"{model.name} " + f"({model.size}x{model.size})":>25} - {round(model.detection_time, 3)}s - {round(img_nb/model.detection_time, 3)} FPS')
         # result.save()
     os.chdir(os.path.join('..', '..'))
 
