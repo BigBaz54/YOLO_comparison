@@ -1,24 +1,25 @@
-from model_wrapper import ModelWrapper
+from model_wrapper_v5 import ModelWrapper
 
 import torch
 import os
 import cv2
-import sys
-sys.path.append(os.path.join('v7', 'yolov7-main'))
-import hubconf
-from models.experimental import attempt_load
 
 
 def load_models():
     models = []
-
-    models.append(ModelWrapper(hubconf.custom(os.path.join('v7', 'models', 'yolov7.pt')), 'yolov7'))
-    models.append(ModelWrapper(hubconf.custom(os.path.join('v7', 'models', 'yolov7x.pt')), 'yolov7x'))
-    models.append(ModelWrapper(hubconf.custom(os.path.join('v7', 'models', 'yolov7-e6.pt')), 'yolov7w6', size=640))
-    models.append(ModelWrapper(hubconf.custom(os.path.join('v7', 'models', 'yolov7-e6e.pt')), 'yolov7w6', size=640))
-    models.append(ModelWrapper(hubconf.custom(os.path.join('v7', 'models', 'yolov7-d6.pt')), 'yolov7w6', size=640))
-    models.append(ModelWrapper(hubconf.custom(os.path.join('v7', 'models', 'yolov7-w6.pt')), 'yolov7w6', size=640))
-    # models.append(ModelWrapper(attempt_load(os.path.join('v7', 'models', 'yolov7-w6-pose.pt'), map_location=torch.device('cpu')), 'yolov7w6', size=640))
+    
+    os.chdir(os.path.join('v5', 'models'))
+    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5n', pretrained=True), 'yolov5n'))
+    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5s', pretrained=True), 'yolov5s'))
+    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5m', pretrained=True), 'yolov5m'))
+    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5l', pretrained=True), 'yolov5l'))
+    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5x', pretrained=True), 'yolov5x'))
+    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5n6', pretrained=True), 'yolov5n6', size=640))
+    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5s6', pretrained=True), 'yolov5s6', size=640))
+    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5m6', pretrained=True), 'yolov5m6', size=640))
+    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5l6', pretrained=True), 'yolov5l6', size=640))
+    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5x6', pretrained=True), 'yolov5x6', size=640))
+    os.chdir(os.path.join('..', '..'))
 
     for model in models:
         model.eval()
@@ -29,7 +30,7 @@ def image_resize(image, width = None, height = None, inter = cv2.INTER_AREA):
     (h, w) = image.shape[:2]
 
     if width is None and height is None:
-        return image
+        return image()
     if width is None:
         r = height / float(h)
         dim = (int(w * r), height)
@@ -56,7 +57,7 @@ def perf_test():
         imgs_preprocessed = [image_preprocess(img, size) for img in imgs]
         imgs_by_size[size] = imgs_preprocessed
 
-    print(f'\n\n>>> YOLOv7 : Run inference on {len(imgs)} images <<<\n')
+    print(f'\n\n>>> YOLOv5 : Run inference on {len(imgs)} images <<<\n')
     for model in models:
         imgs_copy = [img.copy() for img in imgs_by_size[model.size]]
         result = model(imgs_copy, size=model.size)

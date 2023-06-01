@@ -1,4 +1,4 @@
-from model_wrapper import ModelWrapper
+from model_wrapper_v6 import ModelWrapper
 
 import torch
 import os
