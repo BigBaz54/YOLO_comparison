@@ -1,4 +1,7 @@
-from model_wrapper_v5 import ModelWrapper
+import sys
+import os
+sys.path.append(os.path.join('.'))
+from v5.cpu.model_wrapper_v5 import ModelWrapper
 
 import torch
 import os
@@ -47,8 +50,7 @@ def image_preprocess(image, target_size):
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     return img
 
-def perf_test():
-    models = load_models()
+def perf_test(models):
     sizes = [640, 1280]
 
     imgs = [os.path.join('img', img) for img in os.listdir('img') if img.endswith('.jpg') or img.endswith('.png') or img.endswith('.jpeg')]
@@ -65,4 +67,5 @@ def perf_test():
         # result.save()
 
 if __name__=="__main__":
-    perf_test()
+    models = load_models()
+    perf_test(models)
