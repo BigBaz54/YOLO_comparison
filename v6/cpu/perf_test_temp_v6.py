@@ -2,9 +2,9 @@ import torch
 import os
 import sys
 
-sys.path.append(os.path.join('v6', 'yolov6-main'))
+sys.path.append(os.path.join('v6', 'yolov6_main'))
 from yolov6.core.inferer import Inferer
-os.chdir(os.path.join('v6', 'yolov6-main'))
+os.chdir(os.path.join('v6', 'yolov6_main'))
 @torch.no_grad()
 def get_inferer():
     return Inferer(os.path.join('..', '..', 'img'), False, 0, os.path.join('..', 'models', 'yolov6s.pt'), 0, os.path.join('data', 'coco.yaml'), 640, False)

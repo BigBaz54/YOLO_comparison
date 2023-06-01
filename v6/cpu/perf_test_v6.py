@@ -4,11 +4,11 @@ import torch
 import os
 import sys
 
-sys.path.append(os.path.join('v6', 'yolov6-main'))
+sys.path.append(os.path.join('v6', 'yolov6_main'))
 from yolov6.core.inferer import Inferer
 
 
-os.chdir(os.path.join('v6', 'yolov6-main'))
+os.chdir(os.path.join('v6', 'yolov6_main'))
 
 @torch.no_grad()
 def get_inferer(weights, size=640):
@@ -28,8 +28,7 @@ def load_models():
 
     return models
 
-def perf_test():
-    models = load_models()
+def perf_test(models):
     img_nb = len(os.listdir(os.path.join("..", "..", "img")))
     print(f'\n\n>>> YOLOv6 : Run inference on {img_nb} images <<<\n')
     for model in models:
@@ -38,4 +37,5 @@ def perf_test():
         # result.save()
 
 if __name__=="__main__":
-    perf_test()
+    models = load_models()
+    perf_test(models)

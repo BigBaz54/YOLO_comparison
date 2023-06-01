@@ -4,7 +4,7 @@ import torch
 import os
 import cv2
 import sys
-sys.path.append(os.path.join('v7', 'yolov7-main'))
+sys.path.append(os.path.join('v7', 'yolov7_main'))
 import hubconf
 from models.experimental import attempt_load
 
