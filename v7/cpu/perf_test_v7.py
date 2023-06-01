@@ -16,7 +16,7 @@ def load_models():
     os.chdir(os.path.join('v7', 'models'))
     for name in ['yolov7.pt', 'yolov7x.pt', 'yolov7-e6.pt', 'yolov7-e6e.pt', 'yolov7-d6.pt', 'yolov7-w6.pt', 'yolov7-w6-pose.pt']:
         if not os.path.exists(name):
-            print(f'Downloading {name}...\n')
+            print(f'\nDownloading {name}...')
             wget.download(f'https://github.com/WongKinYiu/yolov7/releases/download/v0.1/{name}', name)
     models.append(ModelWrapper(hubconf.custom('yolov7.pt'), 'yolov7'))
     models.append(ModelWrapper(hubconf.custom('yolov7x.pt'), 'yolov7x'))
