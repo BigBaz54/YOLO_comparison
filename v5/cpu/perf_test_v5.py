@@ -63,7 +63,7 @@ def perf_test(models):
     for model in models:
         imgs_copy = [img.copy() for img in imgs_by_size[model.size]]
         result = model(imgs_copy, size=model.size)
-        print(f'{f"{model.name} " + f"({model.size}x{model.size})":>25} - {round(model.detection_time, 3)}s - {round(len(imgs)/model.detection_time, 3)} FPS')
+        print(f'{f"{model.name} " + f"({model.size}x{model.size})":>25} - {round(model.detection_time, 3):>7}s - {round(len(imgs)/model.detection_time, 3):>6} FPS')
         # result.save()
 
 if __name__=="__main__":
