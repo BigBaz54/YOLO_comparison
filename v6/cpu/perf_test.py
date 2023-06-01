@@ -1,6 +1,5 @@
 from model_wrapper import ModelWrapper
 
-import cv2
 import torch
 import os
 import sys
