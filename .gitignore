@@ -4,6 +4,7 @@ runs/*
 # Models
 v5/models/*.pt
 v6/models/*.pt
+v7/models/*.pt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

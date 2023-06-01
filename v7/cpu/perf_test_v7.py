@@ -1,5 +1,6 @@
 from model_wrapper_v7 import ModelWrapper
 
+import wget
 import torch
 import os
 import cv2
@@ -13,12 +14,16 @@ def load_models():
     models = []
 
     os.chdir(os.path.join('v7', 'models'))
+    for name in ['yolov7.pt', 'yolov7x.pt', 'yolov7-e6.pt', 'yolov7-e6e.pt', 'yolov7-d6.pt', 'yolov7-w6.pt', 'yolov7-w6-pose.pt']:
+        if not os.path.exists(name):
+            print(f'Downloading {name}...\n')
+            wget.download(f'https://github.com/WongKinYiu/yolov7/releases/download/v0.1/{name}', name)
     models.append(ModelWrapper(hubconf.custom('yolov7.pt'), 'yolov7'))
     models.append(ModelWrapper(hubconf.custom('yolov7x.pt'), 'yolov7x'))
-    models.append(ModelWrapper(hubconf.custom('yolov7-e6.pt'), 'yolov7w6', size=640))
-    models.append(ModelWrapper(hubconf.custom('yolov7-e6e.pt'), 'yolov7w6', size=640))
-    models.append(ModelWrapper(hubconf.custom('yolov7-d6.pt'), 'yolov7w6', size=640))
-    models.append(ModelWrapper(hubconf.custom('yolov7-w6.pt'), 'yolov7w6', size=640))
+    models.append(ModelWrapper(hubconf.custom('yolov7-e6.pt'), 'yolov7-e6', size=640))
+    models.append(ModelWrapper(hubconf.custom('yolov7-e6e.pt'), 'yolov7-e6e', size=640))
+    models.append(ModelWrapper(hubconf.custom('yolov7-d6.pt'), 'yolov7-d6', size=640))
+    models.append(ModelWrapper(hubconf.custom('yolov7-w6.pt'), 'yolov7-w6', size=640))
     # models.append(ModelWrapper(attempt_load('yolov7-w6-pose.pt'), map_location=torch.device('cpu')), 'yolov7w6', size=640))
     os.chdir(os.path.join('..', '..'))
 
