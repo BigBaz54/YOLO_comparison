@@ -6,7 +6,11 @@ import os
 import cv2
 import sys
 sys.path.append(os.path.join('v7', 'yolov7_main'))
-import hubconf
+try:
+    import hubconf
+except ModuleNotFoundError:
+    print("Please run the file from the root of the repository.")
+    exit(1)
 from models.experimental import attempt_load
 
 

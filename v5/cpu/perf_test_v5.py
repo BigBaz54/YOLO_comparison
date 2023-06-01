@@ -1,7 +1,12 @@
 import sys
 import os
 sys.path.append(os.path.join('.'))
-from v5.cpu.model_wrapper_v5 import ModelWrapper
+try:
+    from v5.cpu.model_wrapper_v5 import ModelWrapper
+except ModuleNotFoundError:
+    print("Please run the file from the root of the repository.")
+    exit(1)
+
 
 import torch
 import os

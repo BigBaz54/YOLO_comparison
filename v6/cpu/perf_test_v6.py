@@ -5,7 +5,12 @@ import os
 import sys
 
 sys.path.append(os.path.join('v6', 'yolov6_main'))
-from yolov6.core.inferer import Inferer
+try:
+    from yolov6.core.inferer import Inferer
+except ModuleNotFoundError:
+    print("Please run the file from the root of the repository.")
+    exit(1)
+
 
 
 
