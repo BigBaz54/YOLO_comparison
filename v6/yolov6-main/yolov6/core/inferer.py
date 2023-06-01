@@ -71,7 +71,7 @@ class Inferer:
         ''' Model Inference and results visualization '''
         vid_path, vid_writer, windows = None, None, []
         fps_calculator = CalcFPS()
-        for img_src, img_path, vid_cap in tqdm(self.files):
+        for img_src, img_path, vid_cap in self.files:
             img, img_src = self.process_image(img_src, self.img_size, self.stride, self.half)
             img = img.to(self.device)
             if len(img.shape) == 3:
