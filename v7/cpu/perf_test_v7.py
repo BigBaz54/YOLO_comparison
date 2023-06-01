@@ -12,13 +12,15 @@ from models.experimental import attempt_load
 def load_models():
     models = []
 
-    models.append(ModelWrapper(hubconf.custom(os.path.join('v7', 'models', 'yolov7.pt')), 'yolov7'))
-    models.append(ModelWrapper(hubconf.custom(os.path.join('v7', 'models', 'yolov7x.pt')), 'yolov7x'))
-    models.append(ModelWrapper(hubconf.custom(os.path.join('v7', 'models', 'yolov7-e6.pt')), 'yolov7w6', size=640))
-    models.append(ModelWrapper(hubconf.custom(os.path.join('v7', 'models', 'yolov7-e6e.pt')), 'yolov7w6', size=640))
-    models.append(ModelWrapper(hubconf.custom(os.path.join('v7', 'models', 'yolov7-d6.pt')), 'yolov7w6', size=640))
-    models.append(ModelWrapper(hubconf.custom(os.path.join('v7', 'models', 'yolov7-w6.pt')), 'yolov7w6', size=640))
-    # models.append(ModelWrapper(attempt_load(os.path.join('v7', 'models', 'yolov7-w6-pose.pt'), map_location=torch.device('cpu')), 'yolov7w6', size=640))
+    os.chdir(os.path.join('v7', 'models'))
+    models.append(ModelWrapper(hubconf.custom('yolov7.pt'), 'yolov7'))
+    models.append(ModelWrapper(hubconf.custom('yolov7x.pt'), 'yolov7x'))
+    models.append(ModelWrapper(hubconf.custom('yolov7-e6.pt'), 'yolov7w6', size=640))
+    models.append(ModelWrapper(hubconf.custom('yolov7-e6e.pt'), 'yolov7w6', size=640))
+    models.append(ModelWrapper(hubconf.custom('yolov7-d6.pt'), 'yolov7w6', size=640))
+    models.append(ModelWrapper(hubconf.custom('yolov7-w6.pt'), 'yolov7w6', size=640))
+    # models.append(ModelWrapper(attempt_load('yolov7-w6-pose.pt'), map_location=torch.device('cpu')), 'yolov7w6', size=640))
+    os.chdir(os.path.join('..', '..'))
 
     for model in models:
         model.eval()
