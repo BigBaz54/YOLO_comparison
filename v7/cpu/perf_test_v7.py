@@ -12,6 +12,8 @@ except ModuleNotFoundError:
     print("Please run the file from the root of the repository.")
     exit(1)
 from models.experimental import attempt_load
+import platform
+import GPUtil
 
 
 def load_models():
@@ -66,7 +68,9 @@ def perf_test(models):
         imgs_preprocessed = [image_preprocess(img, size) for img in imgs]
         imgs_by_size[size] = imgs_preprocessed
 
-    print(f'\n\n>>>>> YOLOv7 : Run inference on {len(imgs)} images <<<<<\n')
+    print(f'\n\nCPU: {platform.processor()}')
+    print(f'GPUs: {[gpu.name for gpu in GPUtil.getGPUs()]}')
+    print(f'\n>>>>> YOLOv5 : Run inference on {len(imgs)} images <<<<<\n')
     for model in models:
         imgs_copy = [img.copy() for img in imgs_by_size[model.size]]
         result = model(imgs_copy, size=model.size)

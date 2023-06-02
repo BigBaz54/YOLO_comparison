@@ -3,6 +3,9 @@ from model_wrapper_v6 import ModelWrapper
 import torch
 import os
 import sys
+import platform
+import GPUtil
+
 
 sys.path.append(os.path.join('v6', 'yolov6_main'))
 try:
@@ -36,7 +39,9 @@ def load_models():
 
 def perf_test(models):
     img_nb = len(os.listdir('img'))
-    print(f'\n\n>>>>> YOLOv6 : Run inference on {img_nb} images <<<<<\n')
+    print(f'\n\nCPU: {platform.processor()}')
+    print(f'GPUs: {[gpu.name for gpu in GPUtil.getGPUs()]}')
+    print(f'\n>>>>> YOLOv5 : Run inference on {img_nb} images <<<<<\n')
     os.chdir(os.path.join('v6', 'yolov6_main'))
     for model in models:
         model()
