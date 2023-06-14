@@ -74,7 +74,7 @@ def perf_test_vid(models, video_name):
     results = {model.name: cv2.VideoWriter(os.path.join('vid', 'results', f'{video_name[:-4]}_{model.name}.mp4'), cv2.VideoWriter_fourcc(*'avc1'), video.get(cv2.CAP_PROP_FPS) , (int(img_width), int(img_height))) for model in models}
     frame_total = int(video.get(cv2.CAP_PROP_FRAME_COUNT))
     frame_done = 0
-    while (video.isOpened() and frame_done < 200):
+    while (video.isOpened() and frame_done < 100):
         ret, frame = video.read()
         if not ret:
             break
@@ -84,10 +84,11 @@ def perf_test_vid(models, video_name):
             frame_with_boxes = frame.copy()
             for box in result.pred[0]:
                 if box[4] > 0.5:
-                    left = box[0]*img_width/model.size
-                    top = box[1]*img_height/model.size
-                    right = box[2]*img_width/model.size
-                    bottom = box[3]*img_height/model.size
+                    max_dim = max(img_width, img_height)
+                    left = (float(box[0])*max_dim)/model.size
+                    top = (float(box[1])*max_dim)/model.size
+                    right = (float(box[2])*max_dim)/model.size
+                    bottom = (float(box[3])*max_dim)/model.size
                     cv2.rectangle(frame_with_boxes, (int(left), int(top)), (int(right), int(bottom)), (0, 255, 0), 2)
             results[model.name].write(frame_with_boxes)
         frame_done += 1
@@ -99,4 +100,4 @@ def perf_test_vid(models, video_name):
 if __name__=="__main__":
     models = load_models()
     # perf_test_img(models)
-    perf_test_vid(models, 'redbox1_cropped.mp4')
+    perf_test_vid(models, 'redbox1.mp4')
