@@ -19,7 +19,7 @@ except ModuleNotFoundError:
 
 @torch.no_grad()
 def get_inferer(weights, size=640):
-    return Inferer(os.path.join('..', '..', 'img'), False, 0, weights, 0, os.path.join('data', 'coco.yaml'), size, False)
+    return Inferer(os.path.join('..', '..', 'img', 'coco'), False, 0, weights, 0, os.path.join('data', 'coco.yaml'), size, False)
 
 def load_models():
     models = []
@@ -38,7 +38,7 @@ def load_models():
     return models
 
 def perf_test(models):
-    img_nb = len(os.listdir('img'))
+    img_nb = len(os.listdir(os.path.join('img', 'coco')))
     print(f'\n\nCPU: {platform.processor()}')
     print(f'GPUs: {[gpu.name for gpu in GPUtil.getGPUs()]}')
     print(f'\n>>>>> YOLOv6 : Run inference on {img_nb} images <<<<<\n')

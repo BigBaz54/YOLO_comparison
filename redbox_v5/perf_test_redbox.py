@@ -51,7 +51,7 @@ def image_preprocess(image, target_size):
 def perf_test(models):
     sizes = [160, 320, 640]
 
-    imgs = [os.path.join('img', img) for img in os.listdir('img') if img.endswith('.jpg') or img.endswith('.png') or img.endswith('.jpeg')]
+    imgs = [os.path.join('img', 'redbox', img) for img in os.listdir(os.path.join('img', 'redbox')) if img.endswith('.jpg') or img.endswith('.png') or img.endswith('.jpeg')]
     imgs_by_size = {}
     for size in sizes:
         imgs_preprocessed = [image_preprocess(img, size) for img in imgs]
