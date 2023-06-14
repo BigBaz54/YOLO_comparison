@@ -65,7 +65,7 @@ def perf_test_img(models):
         print(f'{f"{model.name} " + f"({model.size}x{model.size})":>25} - {round(model.detection_time, 3):>7}s - {round(len(imgs)/model.detection_time, 3):>6} FPS')
         # result.save()
 
-def perf_test_vid(models, video_name):
+def perf_test_vid(models, video_name, max_frames=None):
     vid_path = os.path.join('vid', video_name)
     video = cv2.VideoCapture(vid_path)
     if not os.path.exists(os.path.join('vid', 'results')):
@@ -74,7 +74,7 @@ def perf_test_vid(models, video_name):
     results = {model.name: cv2.VideoWriter(os.path.join('vid', 'results', f'{video_name[:-4]}_{model.name}.mp4'), cv2.VideoWriter_fourcc(*'avc1'), video.get(cv2.CAP_PROP_FPS) , (int(img_width), int(img_height))) for model in models}
     frame_total = int(video.get(cv2.CAP_PROP_FRAME_COUNT))
     frame_done = 0
-    while (video.isOpened() and frame_done < 100):
+    while (video.isOpened() and ((max_frames is None) or (frame_done < max_frames))):
         ret, frame = video.read()
         if not ret:
             break
