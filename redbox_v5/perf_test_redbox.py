@@ -48,7 +48,7 @@ def image_preprocess(image, target_size):
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     return img
 
-def perf_test(models):
+def perf_test_img(models):
     sizes = [160, 320, 640]
 
     imgs = [os.path.join('img', 'redbox', img) for img in os.listdir(os.path.join('img', 'redbox')) if img.endswith('.jpg') or img.endswith('.png') or img.endswith('.jpeg')]
@@ -67,4 +67,4 @@ def perf_test(models):
 
 if __name__=="__main__":
     models = load_models()
-    perf_test(models)
+    perf_test_img(models)
