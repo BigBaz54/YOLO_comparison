@@ -84,13 +84,10 @@ def perf_test_vid(models, video_name):
             frame_with_boxes = frame.copy()
             for box in result.pred[0]:
                 if box[4] > 0.5:
-                    print(img_width, img_height)
-                    print(box)
                     left = box[0]*img_width/model.size
                     top = box[1]*img_height/model.size
                     right = box[2]*img_width/model.size
                     bottom = box[3]*img_height/model.size
-                    print(left, top, right, bottom)
                     cv2.rectangle(frame_with_boxes, (int(left), int(top)), (int(right), int(bottom)), (0, 255, 0), 2)
             results[model.name].write(frame_with_boxes)
         frame_done += 1
@@ -102,4 +99,4 @@ def perf_test_vid(models, video_name):
 if __name__=="__main__":
     models = load_models()
     # perf_test_img(models)
-    perf_test_vid(models, 'redbox1.mp4')
+    perf_test_vid(models, 'redbox1_cropped.mp4')
