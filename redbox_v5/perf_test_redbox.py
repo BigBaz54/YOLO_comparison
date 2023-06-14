@@ -18,9 +18,9 @@ import GPUtil
 def load_models():
     models = []
     
-    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'custom', path=os.path.join('redbox_v5', 'models', 'v5s160_fit_within.pt'), force_reload=True), 'v5s160', size=160))
-    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'custom', path=os.path.join('redbox_v5', 'models', 'v5s320_fit_within.pt'), force_reload=True), 'v5s320', size=320))
-    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'custom', path=os.path.join('redbox_v5', 'models', 'v5s640.pt'), force_reload=True), 'v5s640', size=640))
+    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'custom', path=os.path.join('redbox_v5', 'models', 'v5s160_fit_within.pt')), 'v5s160', size=160))
+    # models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'custom', path=os.path.join('redbox_v5', 'models', 'v5s320_fit_within.pt')), 'v5s320', size=320))
+    # models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'custom', path=os.path.join('redbox_v5', 'models', 'v5s640.pt')), 'v5s640', size=640))
 
     for model in models:
         model.eval()
@@ -65,6 +65,33 @@ def perf_test_img(models):
         print(f'{f"{model.name} " + f"({model.size}x{model.size})":>25} - {round(model.detection_time, 3):>7}s - {round(len(imgs)/model.detection_time, 3):>6} FPS')
         # result.save()
 
+def perf_test_vid(models, video_name):
+    vid_path = os.path.join('vid', video_name)
+    video = cv2.VideoCapture(vid_path)
+    results = {model.name: cv2.VideoWriter(os.path.join('vid', 'results', f'{video_name[:-4]}_{model.name}.mp4'), cv2.VideoWriter_fourcc(*'mp4v'), video.get(cv2.CAP_PROP_FPS) , (model.size, model.size)) for model in models}
+    frame_total = int(video.get(cv2.CAP_PROP_FRAME_COUNT))
+    frame_done = 0
+    while (video.isOpened() and frame_done < 1000):
+        ret, frame = video.read()
+        if not ret:
+            break
+        for model in models:
+            frame_preprocessed = cv2.cvtColor(image_resize(frame, model.size, model.size), cv2.COLOR_BGR2RGB)
+            result = model(frame_preprocessed, size=model.size)
+            frame_with_boxes = frame.copy()
+            for box in result.pred[0]:
+                if box[4] > 0.5:
+                    cv2.rectangle(frame_with_boxes, (int(box[0]), int(box[1]), int(box[2]), int(box[3])), (0, 0, 255), 2)
+            results[model.name].write(frame_with_boxes)
+        frame_done += 1
+        cv2.imshow(f'Frame {frame_done}/{frame_total}', frame_with_boxes)
+        cv2.waitKey(0)
+        print(f'Frame {frame_done}/{frame_total}')
+    video.release()
+    for model in models:
+        results[model.name].release()
+
 if __name__=="__main__":
     models = load_models()
-    perf_test_img(models)
+    # perf_test_img(models)
+    perf_test_vid(models, 'redbox1.mp4')
