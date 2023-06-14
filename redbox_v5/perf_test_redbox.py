@@ -70,11 +70,11 @@ def perf_test_vid(models, video_name):
     video = cv2.VideoCapture(vid_path)
     if not os.path.exists(os.path.join('vid', 'results')):
         os.makedirs(os.path.join('vid', 'results'))
-    results = {model.name: cv2.VideoWriter(os.path.join('vid', 'results', f'{video_name[:-4]}_{model.name}.mp4'), cv2.VideoWriter_fourcc(*'mp4v'), video.get(cv2.CAP_PROP_FPS) , (model.size, model.size)) for model in models}
-    img_width, img_height = video.get(cv2.CAP_PROP_FRAME_WIDTH), video.get(cv2.CAP_PROP_FRAME_HEIGHT)*2
+    img_width, img_height = video.get(cv2.CAP_PROP_FRAME_WIDTH), video.get(cv2.CAP_PROP_FRAME_HEIGHT)
+    results = {model.name: cv2.VideoWriter(os.path.join('vid', 'results', f'{video_name[:-4]}_{model.name}.mp4'), cv2.VideoWriter_fourcc(*'avc1'), video.get(cv2.CAP_PROP_FPS) , (int(img_width), int(img_height))) for model in models}
     frame_total = int(video.get(cv2.CAP_PROP_FRAME_COUNT))
     frame_done = 0
-    while (video.isOpened()):
+    while (video.isOpened() and frame_done < 200):
         ret, frame = video.read()
         if not ret:
             break
