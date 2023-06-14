@@ -68,10 +68,13 @@ def perf_test_img(models):
 def perf_test_vid(models, video_name):
     vid_path = os.path.join('vid', video_name)
     video = cv2.VideoCapture(vid_path)
+    if not os.path.exists(os.path.join('vid', 'results')):
+        os.makedirs(os.path.join('vid', 'results'))
     results = {model.name: cv2.VideoWriter(os.path.join('vid', 'results', f'{video_name[:-4]}_{model.name}.mp4'), cv2.VideoWriter_fourcc(*'mp4v'), video.get(cv2.CAP_PROP_FPS) , (model.size, model.size)) for model in models}
+    img_width, img_height = video.get(cv2.CAP_PROP_FRAME_WIDTH), video.get(cv2.CAP_PROP_FRAME_HEIGHT)*2
     frame_total = int(video.get(cv2.CAP_PROP_FRAME_COUNT))
     frame_done = 0
-    while (video.isOpened() and frame_done < 1000):
+    while (video.isOpened()):
         ret, frame = video.read()
         if not ret:
             break
@@ -81,11 +84,16 @@ def perf_test_vid(models, video_name):
             frame_with_boxes = frame.copy()
             for box in result.pred[0]:
                 if box[4] > 0.5:
-                    cv2.rectangle(frame_with_boxes, (int(box[0]), int(box[1]), int(box[2]), int(box[3])), (0, 0, 255), 2)
+                    print(img_width, img_height)
+                    print(box)
+                    left = box[0]*img_width/model.size
+                    top = box[1]*img_height/model.size
+                    right = box[2]*img_width/model.size
+                    bottom = box[3]*img_height/model.size
+                    print(left, top, right, bottom)
+                    cv2.rectangle(frame_with_boxes, (int(left), int(top)), (int(right), int(bottom)), (0, 255, 0), 2)
             results[model.name].write(frame_with_boxes)
         frame_done += 1
-        cv2.imshow(f'Frame {frame_done}/{frame_total}', frame_with_boxes)
-        cv2.waitKey(0)
         print(f'Frame {frame_done}/{frame_total}')
     video.release()
     for model in models:
