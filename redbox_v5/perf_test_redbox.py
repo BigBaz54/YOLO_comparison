@@ -71,7 +71,13 @@ def perf_test_vid(models, video_name, max_frames=None):
     if not os.path.exists(os.path.join('vid', 'results')):
         os.makedirs(os.path.join('vid', 'results'))
     img_width, img_height = video.get(cv2.CAP_PROP_FRAME_WIDTH), video.get(cv2.CAP_PROP_FRAME_HEIGHT)
-    results = {model.name: cv2.VideoWriter(os.path.join('vid', 'results', f'{video_name[:-4]}_{model.name}.mp4'), cv2.VideoWriter_fourcc(*'avc1'), video.get(cv2.CAP_PROP_FPS) , (int(img_width), int(img_height))) for model in models}
+    results = {}
+    for model in models:
+        if os.path.exists(os.path.join('vid', 'results', f'{video_name[:-4]}_{model.name}.mp4')):
+            n=1
+            while os.path.exists(os.path.join('vid', 'results', f'{video_name[:-4]}_{model.name}_{n}.mp4')):
+                n+=1
+            results[model.name] = cv2.VideoWriter(os.path.join('vid', 'results', f'{video_name[:-4]}_{model.name}_{n}.mp4'), cv2.VideoWriter_fourcc(*'avc1'), video.get(cv2.CAP_PROP_FPS) , (int(img_width), int(img_height)))
     frame_total = int(video.get(cv2.CAP_PROP_FRAME_COUNT))
     frame_done = 0
     while (video.isOpened() and ((max_frames is None) or (frame_done < max_frames))):
