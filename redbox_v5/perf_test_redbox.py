@@ -162,7 +162,7 @@ def perf_test_vid(models, video_name, confidence=0.5, max_frames=None):
 
     # Printing the stats
     for model in models:
-        print(f'{model.name} - Accuracy : {1 - total_errors[model.name]/total_objects}%')
+        print(f'{model.name} - Accuracy : {(1 - total_errors[model.name]/total_objects)*100:5}%')
         
     # Releasing the video and the writers
     video.release()
