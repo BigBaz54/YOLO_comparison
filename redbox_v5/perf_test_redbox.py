@@ -65,7 +65,7 @@ def perf_test_img(models):
         print(f'{f"{model.name} " + f"({model.size}x{model.size})":>25} - {round(model.detection_time, 3):>7}s - {round(len(imgs)/model.detection_time, 3):>6} FPS')
         # result.save()
 
-def perf_test_vid(models, video_name, max_frames=None):
+def perf_test_vid(models, video_name, confidence=0.5, max_frames=None):
     vid_path = os.path.join('vid', video_name)
     video = cv2.VideoCapture(vid_path)
     if not os.path.exists(os.path.join('vid', 'results')):
@@ -82,6 +82,10 @@ def perf_test_vid(models, video_name, max_frames=None):
             results[model.name] = cv2.VideoWriter(os.path.join('vid', 'results', f'{video_name[:-4]}_{model.name}.mp4'), cv2.VideoWriter_fourcc(*'avc1'), video.get(cv2.CAP_PROP_FPS) , (int(img_width), int(img_height)))
     frame_total = int(video.get(cv2.CAP_PROP_FRAME_COUNT))
     frame_done = 0
+    video_fps = video.get(cv2.CAP_PROP_FPS)
+    print(video_fps)
+    time_step = frame_total/video_fps/1000
+    time = 0
     while (video.isOpened() and ((max_frames is None) or (frame_done < max_frames))):
         ret, frame = video.read()
         if not ret:
@@ -90,15 +94,18 @@ def perf_test_vid(models, video_name, max_frames=None):
             frame_preprocessed = cv2.cvtColor(image_resize(frame, model.size, model.size), cv2.COLOR_BGR2RGB)
             result = model(frame_preprocessed, size=model.size)
             frame_with_boxes = frame.copy()
-            for box in result.pred[0]:
-                if box[4] > 0.5:
-                    max_dim = max(img_width, img_height)
-                    left = (float(box[0])*max_dim)/model.size
-                    top = (float(box[1])*max_dim)/model.size
-                    right = (float(box[2])*max_dim)/model.size
-                    bottom = (float(box[3])*max_dim)/model.size
-                    cv2.rectangle(frame_with_boxes, (int(left), int(top)), (int(right), int(bottom)), (0, 255, 0), 2)
+            detections = [pred for pred in result.pred[0] if pred[4] > confidence]
+            nb_detections = len(detections)
+            print(f'{model.name} - {time} - {nb_detections} detections')
+            for box in detections:
+                max_dim = max(img_width, img_height)
+                left = (float(box[0])*max_dim)/model.size
+                top = (float(box[1])*max_dim)/model.size
+                right = (float(box[2])*max_dim)/model.size
+                bottom = (float(box[3])*max_dim)/model.size
+                cv2.rectangle(frame_with_boxes, (int(left), int(top)), (int(right), int(bottom)), (0, 255, 0), 2)
             results[model.name].write(frame_with_boxes)
+        time = round(time + time_step, 6)
         frame_done += 1
         print(f'Frame {frame_done}/{frame_total}')
     video.release()
