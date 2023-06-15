@@ -110,7 +110,7 @@ def perf_test_vid(models, video_name, confidence=0.5, max_frames=None):
     time_step = frame_total/video_fps/1000
     time = 0.494677
     while (video.isOpened() and ((max_frames is None) or (frame_done < max_frames))):
-        if time > nb_objects_evolution[0][0] and len(nb_objects_evolution) > 0:
+        if (len(nb_objects_evolution) > 0) and (time > nb_objects_evolution[0][0]):
             nb_objects = nb_objects_evolution[0][1]
             nb_objects_evolution.pop(0)
         ret, frame = video.read()
