@@ -89,12 +89,20 @@ def get_nb_objects_evolution(video_name):
 def perf_test_vid(models, video_name, confidence=0.5, max_frames=None):
     vid_path = os.path.join('vid', video_name)
     video = cv2.VideoCapture(vid_path)
-    if not os.path.exists(os.path.join('vid', 'results')):
-        os.makedirs(os.path.join('vid', 'results'))
+    img_width, img_height = video.get(cv2.CAP_PROP_FRAME_WIDTH), video.get(cv2.CAP_PROP_FRAME_HEIGHT)
+    frame_total = int(video.get(cv2.CAP_PROP_FRAME_COUNT))
+    video_fps = video.get(cv2.CAP_PROP_FPS)
+    print('FPS :', video_fps)
+
+    # Get the truth from the txt file
     nb_objects_evolution = get_nb_objects_evolution(video_name)
     nb_objects = 0
-    img_width, img_height = video.get(cv2.CAP_PROP_FRAME_WIDTH), video.get(cv2.CAP_PROP_FRAME_HEIGHT)
+
+    if not os.path.exists(os.path.join('vid', 'results')):
+        os.makedirs(os.path.join('vid', 'results'))
     results = {}
+
+    # Chosing available names for the results and creating the video writers
     for model in models:
         if os.path.exists(os.path.join('vid', 'results', f'{video_name[:-4]}_{model.name}.mp4')):
             n=1
@@ -103,26 +111,39 @@ def perf_test_vid(models, video_name, confidence=0.5, max_frames=None):
             results[model.name] = cv2.VideoWriter(os.path.join('vid', 'results', f'{video_name[:-4]}_{model.name}_{n}.mp4'), cv2.VideoWriter_fourcc(*'avc1'), video.get(cv2.CAP_PROP_FPS) , (int(img_width), int(img_height)))
         else:
             results[model.name] = cv2.VideoWriter(os.path.join('vid', 'results', f'{video_name[:-4]}_{model.name}.mp4'), cv2.VideoWriter_fourcc(*'avc1'), video.get(cv2.CAP_PROP_FPS) , (int(img_width), int(img_height)))
-    frame_total = int(video.get(cv2.CAP_PROP_FRAME_COUNT))
+    
+    # Initializing the variables
     frame_done = 0
-    video_fps = video.get(cv2.CAP_PROP_FPS)
-    print(video_fps)
+    total_objects_detected = 0
+    total_objects = 0
     time_step = frame_total/video_fps/1000
-    time = 0.494677
+    time = 0.494677 # To sync with the start of the video
+
+    # Starting the detection
     while (video.isOpened() and ((max_frames is None) or (frame_done < max_frames))):
+        # Getting the number of objects at the current time
         if (len(nb_objects_evolution) > 0) and (time > nb_objects_evolution[0][0]):
             nb_objects = nb_objects_evolution[0][1]
             nb_objects_evolution.pop(0)
+
         ret, frame = video.read()
         if not ret:
             break
+
         for model in models:
+            # Detecting
             frame_preprocessed = cv2.cvtColor(image_resize(frame, model.size, model.size), cv2.COLOR_BGR2RGB)
             result = model(frame_preprocessed, size=model.size)
-            frame_with_boxes = frame.copy()
             detections = [pred for pred in result.pred[0] if pred[4] > confidence]
             nb_detections = len(detections)
+
+            # Updating stats
+            total_objects_detected += nb_detections
+            total_objects += nb_objects
             print(f'{model.name} - {time} - detections : {nb_detections}/{nb_objects}')
+
+            # Drawing the boxes
+            frame_with_boxes = frame.copy()
             for box in detections:
                 max_dim = max(img_width, img_height)
                 left = (float(box[0])*max_dim)/model.size
@@ -130,10 +151,15 @@ def perf_test_vid(models, video_name, confidence=0.5, max_frames=None):
                 right = (float(box[2])*max_dim)/model.size
                 bottom = (float(box[3])*max_dim)/model.size
                 cv2.rectangle(frame_with_boxes, (int(left), int(top)), (int(right), int(bottom)), (0, 255, 0), 2)
+
+            # Writing the frame
             results[model.name].write(frame_with_boxes)
+
+        # Updating the time
         time = round(time + time_step, 6)
         frame_done += 1
         print(f'Frame {frame_done}/{frame_total}')
+
     video.release()
     for model in models:
         results[model.name].release()
