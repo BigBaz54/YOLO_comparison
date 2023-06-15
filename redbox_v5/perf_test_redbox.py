@@ -166,7 +166,7 @@ def perf_test_vid(models, video_name, confidence=0.5, max_frames=None):
         time = round(time + time_step, 6)
 
     # Printing the stats
-    print(f'\nStats for {video_name}:}')
+    print(f'\nStats for {video_name}:')
     for model in models:
         print(f'{model.name} - Accuracy: {round((1 - total_errors[model.name]/total_objects)*100, 2)}% - FPS: {round(min(frame_total, max_frames or frame_total)/total_detection_time[model.name], 2)} - output: {output_names[model.name]}')
         
