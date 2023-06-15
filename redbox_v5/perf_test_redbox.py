@@ -65,11 +65,34 @@ def perf_test_img(models):
         print(f'{f"{model.name} " + f"({model.size}x{model.size})":>25} - {round(model.detection_time, 3):>7}s - {round(len(imgs)/model.detection_time, 3):>6} FPS')
         # result.save()
 
+def get_nb_objects_evolution(video_name):
+    nb_objects_changes = []
+    with open(os.path.join('vid', f'{video_name[:-4]}.txt'), 'r') as f:
+        for line in f:
+            if 'plus' in line:
+                nb_objects_changes.append((float(line.split(': ')[-1].strip().replace(',', '.')[:-1]), -1))
+            else:
+                nb_objects_changes.append((float(line.split(': ')[-1].strip().replace(',', '.')[:-1]), 1))
+    nb_objects_evolution = []
+    nb_objects = 0
+    for i in range(len(nb_objects_changes)):
+        nb_objects += nb_objects_changes[i][1]
+        nb_objects_evolution.append((nb_objects_changes[i][0], nb_objects))
+    # Remove duplicates and keeps the last one
+    while (sorted(list(set([evo[0] for evo in nb_objects_evolution]))) != [evo[0] for evo in nb_objects_evolution]):
+        for i in range(len(nb_objects_evolution)):
+            if nb_objects_evolution[i][0] in [evo[0] for evo in nb_objects_evolution[i:]]:
+                nb_objects_evolution.pop(i)
+                break
+    return nb_objects_evolution
+
 def perf_test_vid(models, video_name, confidence=0.5, max_frames=None):
     vid_path = os.path.join('vid', video_name)
     video = cv2.VideoCapture(vid_path)
     if not os.path.exists(os.path.join('vid', 'results')):
         os.makedirs(os.path.join('vid', 'results'))
+    nb_objects_evolution = get_nb_objects_evolution(video_name)
+    nb_objects = 0
     img_width, img_height = video.get(cv2.CAP_PROP_FRAME_WIDTH), video.get(cv2.CAP_PROP_FRAME_HEIGHT)
     results = {}
     for model in models:
@@ -87,6 +110,9 @@ def perf_test_vid(models, video_name, confidence=0.5, max_frames=None):
     time_step = frame_total/video_fps/1000
     time = 0.494677
     while (video.isOpened() and ((max_frames is None) or (frame_done < max_frames))):
+        if time > nb_objects_evolution[0][0]:
+            nb_objects = nb_objects_evolution[0][1]
+            nb_objects_evolution.pop(0)
         ret, frame = video.read()
         if not ret:
             break
@@ -96,7 +122,7 @@ def perf_test_vid(models, video_name, confidence=0.5, max_frames=None):
             frame_with_boxes = frame.copy()
             detections = [pred for pred in result.pred[0] if pred[4] > confidence]
             nb_detections = len(detections)
-            print(f'{model.name} - {time} - {nb_detections} detections')
+            print(f'{model.name} - {time} - detections : {nb_detections}/{nb_objects}')
             for box in detections:
                 max_dim = max(img_width, img_height)
                 left = (float(box[0])*max_dim)/model.size
@@ -113,6 +139,7 @@ def perf_test_vid(models, video_name, confidence=0.5, max_frames=None):
         results[model.name].release()
 
 if __name__=="__main__":
-    models = load_models()
+    # models = load_models()
     # perf_test_img(models)
-    perf_test_vid(models, 'cam05.mp4')
+    # perf_test_vid(models, 'cam05.mp4')
+    print(get_nb_objects_evolution('cam05.mp4'))
