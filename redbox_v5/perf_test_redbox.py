@@ -100,17 +100,20 @@ def perf_test_vid(models, video_name, confidence=0.5, max_frames=None):
 
     if not os.path.exists(os.path.join('vid', 'results')):
         os.makedirs(os.path.join('vid', 'results'))
-    results = {}
+    output_names = {}
 
-    # Chosing available names for the results and creating the video writers
+    # Chosing available names for the results
     for model in models:
         if os.path.exists(os.path.join('vid', 'results', f'{video_name[:-4]}_{model.name}.mp4')):
             n=1
             while os.path.exists(os.path.join('vid', 'results', f'{video_name[:-4]}_{model.name}_{n}.mp4')):
                 n+=1
-            results[model.name] = cv2.VideoWriter(os.path.join('vid', 'results', f'{video_name[:-4]}_{model.name}_{n}.mp4'), cv2.VideoWriter_fourcc(*'avc1'), video.get(cv2.CAP_PROP_FPS) , (int(img_width), int(img_height)))
+            output_names[model.name] = f'{video_name[:-4]}_{model.name}_{n}.mp4'
         else:
-            results[model.name] = cv2.VideoWriter(os.path.join('vid', 'results', f'{video_name[:-4]}_{model.name}.mp4'), cv2.VideoWriter_fourcc(*'avc1'), video.get(cv2.CAP_PROP_FPS) , (int(img_width), int(img_height)))
+            output_names[model.name] = f'{video_name[:-4]}_{model.name}.mp4'
+    
+    # Creating the video writers
+    results = {model.name: cv2.VideoWriter(os.path.join('vid', 'results', output_names[model.name]), cv2.VideoWriter_fourcc(*'mp4v'), video_fps, (int(img_width), int(img_height))) for model in models}
     
     # Initializing the variables
     frame_done = 0
@@ -163,9 +166,9 @@ def perf_test_vid(models, video_name, confidence=0.5, max_frames=None):
         time = round(time + time_step, 6)
 
     # Printing the stats
-    print('\nStats :')
+    print('\nStats for {video_name}:}')
     for model in models:
-        print(f'{model.name} - Accuracy : {round((1 - total_errors[model.name]/total_objects)*100, 2)}% - FPS : {round(min(frame_total, max_frames or frame_total)/total_detection_time[model.name], 2)}')
+        print(f'{model.name} - Accuracy: {round((1 - total_errors[model.name]/total_objects)*100, 2)}% - FPS: {round(min(frame_total, max_frames or frame_total)/total_detection_time[model.name], 2)} - output: {output_names[model.name]}')
         
     # Releasing the video and the writers
     video.release()
