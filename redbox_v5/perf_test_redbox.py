@@ -114,7 +114,7 @@ def perf_test_vid(models, video_name, confidence=0.5, max_frames=None):
     
     # Initializing the variables
     frame_done = 0
-    total_objects_detected = 0
+    total_errors = {model.name: 0 for model in models}
     total_objects = 0
     time_step = frame_total/video_fps/1000
     time = 0.494677 # To sync with the start of the video
@@ -138,7 +138,7 @@ def perf_test_vid(models, video_name, confidence=0.5, max_frames=None):
             nb_detections = len(detections)
 
             # Updating stats
-            total_objects_detected += nb_detections
+            total_errors[model.name] += abs(nb_detections - nb_objects)
             total_objects += nb_objects
             print(f'{model.name} - {time} - detections : {nb_detections}/{nb_objects}')
 
@@ -160,6 +160,11 @@ def perf_test_vid(models, video_name, confidence=0.5, max_frames=None):
         frame_done += 1
         print(f'Frame {frame_done}/{frame_total}')
 
+    # Printing the stats
+    for model in models:
+        print(f'{model.name} - Accuracy : {1 - total_errors[model.name]/total_objects}%')
+        
+    # Releasing the video and the writers
     video.release()
     for model in models:
         results[model.name].release()
