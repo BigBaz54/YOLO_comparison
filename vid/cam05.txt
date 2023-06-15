@@ -1,0 +1,13 @@
+Objet : Objet0 vu après : 5,016677s
+Objet : Objet1 vu après : 5,016677s
+Objet : Objet1 plus vu après : 7,600045s
+Objet : Objet1 vu après : 7,833381s
+Objet : Objet0 plus vu après : 9,150032s
+Objet : Objet0 vu après : 9,466694s
+Objet : Objet1 plus vu après : 10,25002s
+Objet : Objet1 vu après : 10,58334s
+Objet : Objet0 plus vu après : 11,68333s
+Objet : Objet0 vu après : 12,18332s
+Objet : Objet2 vu après : 12,86664s
+Objet : Objet2 plus vu après : 13,09997s
+Objet : Objet2 vu après : 13,31664s
