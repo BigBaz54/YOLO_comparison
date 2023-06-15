@@ -19,8 +19,8 @@ def load_models():
     models = []
     
     models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'custom', path=os.path.join('redbox_v5', 'models', 'v5s160_fit_within.pt')), 'v5s160', size=160))
-    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'custom', path=os.path.join('redbox_v5', 'models', 'v5s320_fit_within.pt')), 'v5s320', size=320))
-    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'custom', path=os.path.join('redbox_v5', 'models', 'v5s640.pt')), 'v5s640', size=640))
+    # models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'custom', path=os.path.join('redbox_v5', 'models', 'v5s320_fit_within.pt')), 'v5s320', size=320))
+    # models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'custom', path=os.path.join('redbox_v5', 'models', 'v5s640.pt')), 'v5s640', size=640))
 
     for model in models:
         model.eval()
@@ -78,6 +78,8 @@ def perf_test_vid(models, video_name, max_frames=None):
             while os.path.exists(os.path.join('vid', 'results', f'{video_name[:-4]}_{model.name}_{n}.mp4')):
                 n+=1
             results[model.name] = cv2.VideoWriter(os.path.join('vid', 'results', f'{video_name[:-4]}_{model.name}_{n}.mp4'), cv2.VideoWriter_fourcc(*'avc1'), video.get(cv2.CAP_PROP_FPS) , (int(img_width), int(img_height)))
+        else:
+            results[model.name] = cv2.VideoWriter(os.path.join('vid', 'results', f'{video_name[:-4]}_{model.name}.mp4'), cv2.VideoWriter_fourcc(*'avc1'), video.get(cv2.CAP_PROP_FPS) , (int(img_width), int(img_height)))
     frame_total = int(video.get(cv2.CAP_PROP_FRAME_COUNT))
     frame_done = 0
     while (video.isOpened() and ((max_frames is None) or (frame_done < max_frames))):
@@ -106,4 +108,4 @@ def perf_test_vid(models, video_name, max_frames=None):
 if __name__=="__main__":
     models = load_models()
     # perf_test_img(models)
-    perf_test_vid(models, 'redbox1.mp4')
+    perf_test_vid(models, 'cam05.mp4')
