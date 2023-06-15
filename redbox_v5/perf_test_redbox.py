@@ -115,6 +115,7 @@ def perf_test_vid(models, video_name, confidence=0.5, max_frames=None):
     # Initializing the variables
     frame_done = 0
     total_errors = {model.name: 0 for model in models}
+    total_detection_time = {model.name: 0 for model in models}
     total_objects = 0
     time_step = frame_total/video_fps/1000
     time = 0.494677 # To sync with the start of the video
@@ -141,6 +142,7 @@ def perf_test_vid(models, video_name, confidence=0.5, max_frames=None):
             # Updating stats
             total_errors[model.name] += abs(nb_detections - nb_objects)
             print(f'{model.name} - detections : {nb_detections}/{nb_objects}')
+            total_detection_time[model.name] += model.detection_time
 
             # Drawing the boxes
             frame_with_boxes = frame.copy()
@@ -163,7 +165,7 @@ def perf_test_vid(models, video_name, confidence=0.5, max_frames=None):
     # Printing the stats
     print('\nStats :')
     for model in models:
-        print(f'{model.name} - Accuracy : {round((1 - total_errors[model.name]/total_objects)*100, 2)}% - FPS : {round(min(frame_total, max_frames)/total_detection_time[model.name], 2)}')
+        print(f'{model.name} - Accuracy : {round((1 - total_errors[model.name]/total_objects)*100, 2)}% - FPS : {round(min(frame_total, max_frames or frame_total)/total_detection_time[model.name], 2)}')
         
     # Releasing the video and the writers
     video.release()
