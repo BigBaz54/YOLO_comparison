@@ -85,7 +85,7 @@ def perf_test_vid(models, video_name, confidence=0.5, max_frames=None):
     video_fps = video.get(cv2.CAP_PROP_FPS)
     print(video_fps)
     time_step = frame_total/video_fps/1000
-    time = 0
+    time = 0.494677
     while (video.isOpened() and ((max_frames is None) or (frame_done < max_frames))):
         ret, frame = video.read()
         if not ret:
