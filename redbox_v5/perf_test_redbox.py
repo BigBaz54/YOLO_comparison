@@ -19,8 +19,8 @@ def load_models():
     models = []
     
     models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'custom', path=os.path.join('redbox_v5', 'models', 'v5s160_fit_within.pt')), 'v5s160', size=160))
-    # models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'custom', path=os.path.join('redbox_v5', 'models', 'v5s320_fit_within.pt')), 'v5s320', size=320))
-    # models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'custom', path=os.path.join('redbox_v5', 'models', 'v5s640.pt')), 'v5s640', size=640))
+    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'custom', path=os.path.join('redbox_v5', 'models', 'v5s320_fit_within.pt')), 'v5s320', size=320))
+    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'custom', path=os.path.join('redbox_v5', 'models', 'v5s640.pt')), 'v5s640', size=640))
 
     for model in models:
         model.eval()
@@ -125,6 +125,7 @@ def perf_test_vid(models, video_name, confidence=0.5, max_frames=None):
         if (len(nb_objects_evolution) > 0) and (time > nb_objects_evolution[0][0]):
             nb_objects = nb_objects_evolution[0][1]
             nb_objects_evolution.pop(0)
+        total_objects += nb_objects
 
         ret, frame = video.read()
         if not ret:
@@ -139,7 +140,6 @@ def perf_test_vid(models, video_name, confidence=0.5, max_frames=None):
 
             # Updating stats
             total_errors[model.name] += abs(nb_detections - nb_objects)
-            total_objects += nb_objects
             print(f'{model.name} - detections : {nb_detections}/{nb_objects}')
 
             # Drawing the boxes
@@ -163,7 +163,7 @@ def perf_test_vid(models, video_name, confidence=0.5, max_frames=None):
     # Printing the stats
     print('\nStats :')
     for model in models:
-        print(f'{model.name} - Accuracy : {round((1 - total_errors[model.name]/total_objects)*100, 2)}%')
+        print(f'{model.name} - Accuracy : {round((1 - total_errors[model.name]/total_objects)*100, 2)}% - FPS : {round(min(frame_total, max_frames)/total_detection_time[model.name], 2)}')
         
     # Releasing the video and the writers
     video.release()
