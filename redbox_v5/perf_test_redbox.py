@@ -140,7 +140,7 @@ def perf_test_vid(models, video_name, confidence=0.5, max_frames=None):
             # Updating stats
             total_errors[model.name] += abs(nb_detections - nb_objects)
             total_objects += nb_objects
-            print(f'{model.name} - {time} - detections : {nb_detections}/{nb_objects}')
+            print(f'{model.name} - detections : {nb_detections}/{nb_objects}')
 
             # Drawing the boxes
             frame_with_boxes = frame.copy()
@@ -156,13 +156,13 @@ def perf_test_vid(models, video_name, confidence=0.5, max_frames=None):
             results[model.name].write(frame_with_boxes)
 
         # Updating the time
-        time = round(time + time_step, 6)
         frame_done += 1
-        print(f'Frame {frame_done}/{frame_total}')
+        print(f'Frame {frame_done}/{frame_total} - {time}s')
+        time = round(time + time_step, 6)
 
     # Printing the stats
     for model in models:
-        print(f'{model.name} - Accuracy : {(1 - total_errors[model.name]/total_objects)*100:5}%')
+        print(f'{model.name} - Accuracy : {round((1 - total_errors[model.name]/total_objects)*100, 2)}%')
         
     # Releasing the video and the writers
     video.release()
