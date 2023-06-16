@@ -18,8 +18,8 @@ import GPUtil
 def load_models():
     models = []
     
-    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'custom', path=os.path.join('redbox_v5', 'models', 'v5s160_fit_within.pt')), 'v5s160', size=160))
-    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'custom', path=os.path.join('redbox_v5', 'models', 'v5s320_fit_within.pt')), 'v5s320', size=320))
+    # models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'custom', path=os.path.join('redbox_v5', 'models', 'v5s160_fit_within.pt')), 'v5s160', size=160))
+    # models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'custom', path=os.path.join('redbox_v5', 'models', 'v5s320_fit_within.pt')), 'v5s320', size=320))
     models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'custom', path=os.path.join('redbox_v5', 'models', 'v5s640.pt')), 'v5s640', size=640))
 
     for model in models:
@@ -68,7 +68,7 @@ def perf_test_img(models):
 def get_nb_objects_evolution(video_name):
     nb_objects_changes = []
     with open(os.path.join('vid', f'{video_name[:-4]}.txt'), 'r') as f:
-        for line in f:
+        for line in f.readlines()[1:]:
             if 'plus' in line:
                 nb_objects_changes.append((float(line.split(': ')[-1].strip().replace(',', '.')[:-1]), -1))
             else:
@@ -120,8 +120,8 @@ def perf_test_vid(models, video_name, confidence=0.5, max_frames=None):
     total_errors = {model.name: 0 for model in models}
     total_detection_time = {model.name: 0 for model in models}
     total_objects = 0
-    time_step = frame_total/video_fps/1000
-    time = 0.494677 # To sync with the start of the video
+    time_step = 1/video_fps
+    time = 0 # To sync with the start of the video
 
     # Starting the detection
     while (video.isOpened() and ((max_frames is None) or (frame_done < max_frames))):
@@ -178,5 +178,5 @@ def perf_test_vid(models, video_name, confidence=0.5, max_frames=None):
 if __name__=="__main__":
     models = load_models()
     # perf_test_img(models)
-    perf_test_vid(models, 'cam05.mp4')
+    perf_test_vid(models, 'camreal_t.mp4')
     # print(get_nb_objects_evolution('cam05.mp4'))
