@@ -61,7 +61,7 @@ def image_preprocess(image, target_size):
     return img
 
 def perf_test(models):
-    sizes = [640, 1280]
+    sizes = [160, 640, 1280]
 
     imgs = [os.path.join('img', 'coco', img) for img in os.listdir(os.path.join('img', 'coco')) if img.endswith('.jpg') or img.endswith('.png') or img.endswith('.jpeg')]
     imgs_by_size = {}
