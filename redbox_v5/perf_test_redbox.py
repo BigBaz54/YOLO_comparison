@@ -75,15 +75,14 @@ def get_nb_objects_evolution(video_name):
                 nb_objects_changes.append((float(line.split(': ')[-1].strip().replace(',', '.')[:-1]), 1))
     nb_objects_evolution = []
     nb_objects = 0
-    for i in range(len(nb_objects_changes)):
-        nb_objects += nb_objects_changes[i][1]
-        nb_objects_evolution.append((nb_objects_changes[i][0], nb_objects))
-    # Remove duplicates and keeps the last one
-    while (sorted(list(set([evo[0] for evo in nb_objects_evolution]))) != [evo[0] for evo in nb_objects_evolution]):
-        for i in range(len(nb_objects_evolution)):
-            if nb_objects_evolution[i][0] in [evo[0] for evo in nb_objects_evolution[i:]]:
-                nb_objects_evolution.pop(i)
-                break
+    changes_processed = 0
+    while changes_processed < len(nb_objects_changes):
+        current_time = nb_objects_changes[changes_processed][0]
+        objects_change_at_current_time = [changes[1] for changes in nb_objects_changes if changes[0] == current_time]
+        nb_objects += sum(objects_change_at_current_time)
+        nb_objects_evolution.append((current_time, nb_objects))
+        changes_processed += len(objects_change_at_current_time)
+    
     return nb_objects_evolution
 
 def perf_test_vid(models, video_name, confidence=0.5, max_frames=None):
@@ -176,7 +175,7 @@ def perf_test_vid(models, video_name, confidence=0.5, max_frames=None):
         results[model.name].release()
 
 if __name__=="__main__":
-    models = load_models()
+    # models = load_models()
     # perf_test_img(models)
-    perf_test_vid(models, 'camreal_t.mp4')
-    # print(get_nb_objects_evolution('cam05.mp4'))
+    # perf_test_vid(models, 'cam03_5fps.mp4')
+    print(get_nb_objects_evolution('cam03_5fps.mp4'))
