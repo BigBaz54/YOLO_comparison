@@ -57,14 +57,12 @@ def image_preprocess(image, target_size):
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     return img
 
-def perf_test(models):
-    sizes = [160, 640, 1280]
-
+def perf_test(size):
+    models = load_models(size)
     imgs = [os.path.join('img', 'coco', img) for img in os.listdir(os.path.join('img', 'coco')) if img.endswith('.jpg') or img.endswith('.png') or img.endswith('.jpeg')]
     imgs_by_size = {}
-    for size in sizes:
-        imgs_preprocessed = [image_preprocess(img, size) for img in imgs]
-        imgs_by_size[size] = imgs_preprocessed
+    imgs_preprocessed = [image_preprocess(img, size) for img in imgs]
+    imgs_by_size[size] = imgs_preprocessed
     print(f'\n\nCPU: {platform.processor()}')
     print(f'GPUs: {[gpu.name for gpu in GPUtil.getGPUs()]}')
     print(f'\n>>>>> YOLOv5 : Run inference on {len(imgs)} images <<<<<\n')
@@ -189,5 +187,5 @@ def perf_test_vid(video_name, size, confidence=0.5, max_frames=None):
 
 
 if __name__=="__main__":
-    # perf_test(models)
+    # perf_test(640)
     perf_test_vid('cam07.mp4', 160)
