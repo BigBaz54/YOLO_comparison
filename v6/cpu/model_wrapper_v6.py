@@ -18,8 +18,8 @@ class ModelWrapper:
     def __str__(self):
         return self.name
     
-    def __call__(self, save_dir=os.path.join('..', '..', 'runs', 'v6')):
+    def __call__(self, conf=0.5, iou=0.45, save_dir=None, save_img=True):
         t1 = time.time()
-        r = self.inferer.infer(0.25, 0.45, None, False, 1000, save_dir, False, True, False, False, False)
+        self.inferer.infer(conf, iou, None, False, 1000, save_dir, False, save_img, False, False, False)
         self.detection_time = time.time() - t1
-        return r
+        return self.inferer.detections

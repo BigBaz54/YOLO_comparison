@@ -35,6 +35,7 @@ class Inferer:
         self.class_names = load_yaml(yaml)['names']
         self.img_size = self.check_img_size(self.img_size, s=self.stride)  # check image size
         self.half = half
+        self.detections = []
 
         # Switch model to deploy status
         self.model_switch(self.model.model, self.img_size)
@@ -82,7 +83,8 @@ class Inferer:
             det = non_max_suppression(pred_results, conf_thres, iou_thres, classes, agnostic_nms, max_det=max_det)[0]
             t2 = time.time()
             self.pred_time = t2 - t1
-            self.pred_results = det
+            self.detections.append(det)
+            print(det)
 
             if self.webcam:
                 save_path = osp.join(save_dir, self.webcam_addr)
