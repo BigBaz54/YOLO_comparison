@@ -1,0 +1,11 @@
+Détection des objets de la caméra à 0s
+Objet : Objet0 vu après : 5s
+Objet : Objet3 vu après : 5,033334s
+Objet : Objet0 plus vu après : 6,5s
+Objet : Objet3 plus vu après : 6,933334s
+Objet : Objet2 vu après : 7,2s
+Objet : Objet1 vu après : 7,366667s
+Objet : Objet1 plus vu après : 7,400001s
+Objet : Objet2 plus vu après : 7,566667s
+Objet : Objet3 vu après : 7,666667s
+Objet : Objet0 vu après : 8,066668s
