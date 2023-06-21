@@ -83,8 +83,7 @@ class Inferer:
             det = non_max_suppression(pred_results, conf_thres, iou_thres, classes, agnostic_nms, max_det=max_det)[0]
             t2 = time.time()
             self.pred_time = t2 - t1
-            self.detections.append(det)
-            print(det)
+            self.detections.append(det.tolist())
 
             if self.webcam:
                 save_path = osp.join(save_dir, self.webcam_addr)

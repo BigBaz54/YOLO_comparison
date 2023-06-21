@@ -21,11 +21,11 @@ except ModuleNotFoundError:
 def get_inferer(weights, file_path, size=640):
     return Inferer(file_path, False, 0, weights, 0, os.path.join('data', 'coco.yaml'), size, False)
 
-def load_models(file_path):
+def load_models(file_path, size):
     models = []
 
     os.chdir(os.path.join('v6', 'yolov6_main'))
-    models.append(ModelWrapper(get_inferer(os.path.join('..', 'models', 'yolov6n.pt'), file_path), 'yolov6n'))
+    models.append(ModelWrapper(get_inferer(os.path.join('..', 'models', 'yolov6n.pt'), file_path, size), 'yolov6n'))
     # models.append(ModelWrapper(get_inferer(os.path.join('..', 'models', 'yolov6s.pt'), file_path), 'yolov6s'))
     # models.append(ModelWrapper(get_inferer(os.path.join('..', 'models', 'yolov6m.pt'), file_path), 'yolov6m'))
     # models.append(ModelWrapper(get_inferer(os.path.join('..', 'models', 'yolov6l.pt'), file_path), 'yolov6l'))
@@ -37,8 +37,8 @@ def load_models(file_path):
 
     return models
 
-def perf_test(file_path, confidence=0.5):
-    models = load_models(file_path)
+def perf_test(file_path, size, confidence=0.5):
+    models = load_models(file_path, size)
 
     # if file_path is a directory, count the number of images in it
     if os.path.isdir(os.path.join(os.path.dirname(os.path.realpath(__file__)), file_path)):
@@ -53,8 +53,20 @@ def perf_test(file_path, confidence=0.5):
     for model in models:
         r = model(save_dir=os.path.join('..', '..', 'runs', 'v6', model.name), conf=confidence)
         print(f'{f"{model.name} " + f"({model.size}x{model.size})":>25} - {round(model.detection_time, 3):>7}s - {round(img_nb/model.detection_time, 3):>6} FPS')
-        # result.save()
+    os.chdir(os.path.join('..', '..'))
+
+def perf_test_vid(file_path, size, confidence=0.5):
+    models = load_models(file_path, size)
+
+    print(f'\n\nCPU: {platform.processor()}')
+    print(f'GPUs: {[gpu.name for gpu in GPUtil.getGPUs()]}')
+    os.chdir(os.path.join('v6', 'yolov6_main'))
+    for model in models:
+        print(f"{model.name} is running...")
+        detections = model(save_dir=os.path.join('..', '..', 'vid', 'result'), conf=confidence)
+        print(f'{f"{model.name} " + f"({model.size}x{model.size})":>25} - {round(model.detection_time, 3):>7}s - {round(len(model.inferer.detections)/model.detection_time, 3):>6} FPS')
     os.chdir(os.path.join('..', '..'))
 
 if __name__=="__main__":
-    perf_test(os.path.join('..', '..', 'img', 'coco'))
+    # perf_test(os.path.join('..', '..', 'img', 'coco'), 640)
+    perf_test_vid(os.path.join('..', '..', 'vid', 'test_voiture2.mp4'), 640)
