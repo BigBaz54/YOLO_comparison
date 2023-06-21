@@ -19,6 +19,7 @@ class ModelWrapper:
         return self.name
     
     def __call__(self, save_dir=os.path.join('..', '..', 'runs', 'v6')):
-        t = time.time()
-        self.inferer.infer(0.25, 0.45, None, False, 1000, save_dir, False, True, False, False, False)
-        self.detection_time = time.time() - t
+        t1 = time.time()
+        r = self.inferer.infer(0.25, 0.45, None, False, 1000, save_dir, False, True, False, False, False)
+        self.detection_time = time.time() - t1
+        return r

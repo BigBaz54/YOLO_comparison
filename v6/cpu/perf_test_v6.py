@@ -37,14 +37,15 @@ def load_models():
 
     return models
 
-def perf_test(models):
+def perf_test(models, confidence=0.5):
     img_nb = len(os.listdir(os.path.join('img', 'coco')))
     print(f'\n\nCPU: {platform.processor()}')
     print(f'GPUs: {[gpu.name for gpu in GPUtil.getGPUs()]}')
     print(f'\n>>>>> YOLOv6 : Run inference on {img_nb} images <<<<<\n')
     os.chdir(os.path.join('v6', 'yolov6_main'))
     for model in models:
-        model()
+        r = model()
+        print(r)
         print(f'{f"{model.name} " + f"({model.size}x{model.size})":>25} - {round(model.detection_time, 3):>7}s - {round(img_nb/model.detection_time, 3):>6} FPS')
         # result.save()
     os.chdir(os.path.join('..', '..'))

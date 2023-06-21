@@ -81,6 +81,8 @@ class Inferer:
             pred_results = self.model(img)
             det = non_max_suppression(pred_results, conf_thres, iou_thres, classes, agnostic_nms, max_det=max_det)[0]
             t2 = time.time()
+            self.pred_time = t2 - t1
+            self.pred_results = det
 
             if self.webcam:
                 save_path = osp.join(save_dir, self.webcam_addr)
@@ -157,6 +159,7 @@ class Inferer:
                         save_path = str(Path(save_path).with_suffix('.mp4'))  # force *.mp4 suffix on results videos
                         vid_writer = cv2.VideoWriter(save_path, cv2.VideoWriter_fourcc(*'mp4v'), fps, (w, h))
                     vid_writer.write(img_src)
+        return det
 
     @staticmethod
     def process_image(img_src, img_size, stride, half):
