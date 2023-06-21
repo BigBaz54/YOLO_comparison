@@ -62,7 +62,7 @@ def perf_test_vid(file_path, size, confidence=0.5):
     print(f'GPUs: {[gpu.name for gpu in GPUtil.getGPUs()]}')
     os.chdir(os.path.join('v6', 'yolov6_main'))
     for model in models:
-        print(f"{model.name} is running...")
+        print(f"\n{model.name} is running...")
         detections = model(save_dir=os.path.join('..', '..', 'vid', 'results'), conf=confidence)
         print(f'{f"{model.name} " + f"({model.size}x{model.size})":>25} - {round(model.detection_time, 3):>7}s - {round(len(model.inferer.detections)/model.detection_time, 3):>6} FPS')
     os.chdir(os.path.join('..', '..'))

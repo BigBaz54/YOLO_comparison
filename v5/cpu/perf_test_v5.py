@@ -15,20 +15,20 @@ import platform
 import GPUtil
 
 
-def load_models():
+def load_models(size):
     models = []
     
     os.chdir(os.path.join('v5', 'models'))
-    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5n', pretrained=True), 'yolov5n'))
-    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5s', pretrained=True), 'yolov5s'))
-    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5m', pretrained=True), 'yolov5m'))
-    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5l', pretrained=True), 'yolov5l'))
-    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5x', pretrained=True), 'yolov5x'))
-    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5n6', pretrained=True), 'yolov5n6', size=640))
-    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5s6', pretrained=True), 'yolov5s6', size=640))
-    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5m6', pretrained=True), 'yolov5m6', size=640))
-    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5l6', pretrained=True), 'yolov5l6', size=640))
-    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5x6', pretrained=True), 'yolov5x6', size=640))
+    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5n', pretrained=True), 'yolov5n', size))
+    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5s', pretrained=True), 'yolov5s', size))
+    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5m', pretrained=True), 'yolov5m', size))
+    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5l', pretrained=True), 'yolov5l', size))
+    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5x', pretrained=True), 'yolov5x', size))
+    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5n6', pretrained=True), 'yolov5n6', size))
+    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5s6', pretrained=True), 'yolov5s6', size))
+    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5m6', pretrained=True), 'yolov5m6', size))
+    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5l6', pretrained=True), 'yolov5l6', size))
+    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5x6', pretrained=True), 'yolov5x6', size))
     os.chdir(os.path.join('..', '..'))
 
     for model in models:
@@ -58,7 +58,7 @@ def image_preprocess(image, target_size):
     return img
 
 def perf_test(models):
-    sizes = [640, 1280]
+    sizes = [160, 640, 1280]
 
     imgs = [os.path.join('img', 'coco', img) for img in os.listdir(os.path.join('img', 'coco')) if img.endswith('.jpg') or img.endswith('.png') or img.endswith('.jpeg')]
     imgs_by_size = {}
@@ -94,7 +94,8 @@ def get_nb_objects_evolution(video_name):
     
     return nb_objects_evolution
 
-def perf_test_vid(models, video_name, confidence=0.5, max_frames=None):
+def perf_test_vid(video_name, size, confidence=0.5, max_frames=None):
+    models = load_models(size)
     vid_path = os.path.join('vid', video_name)
     video = cv2.VideoCapture(vid_path)
     img_width, img_height = video.get(cv2.CAP_PROP_FRAME_WIDTH), video.get(cv2.CAP_PROP_FRAME_HEIGHT)
@@ -133,7 +134,7 @@ def perf_test_vid(models, video_name, confidence=0.5, max_frames=None):
 
     # Starting the detection
     for model in models:
-        print(f"{model.name} is running...")
+        print(f"\n{model.name} is running...")
     
     while (video.isOpened() and ((max_frames is None) or (frame_done < max_frames))):
         # Getting the number of objects at the current time
@@ -179,7 +180,7 @@ def perf_test_vid(models, video_name, confidence=0.5, max_frames=None):
     # Printing the stats
     print(f'\nStats for {video_name}:')
     for model in models:
-        print(f'{model.name} - Accuracy: {round((1 - total_errors[model.name]/total_objects)*100, 2)}% - FPS: {round(min(frame_total, max_frames or frame_total)/total_detection_time[model.name], 2)} - output: {output_names[model.name]}')
+        print(f'{model.name} ({model.size}x{model.size}) - Accuracy: {round((1 - total_errors[model.name]/total_objects)*100, 2)}% - FPS: {round(min(frame_total, max_frames or frame_total)/total_detection_time[model.name], 2)} - output: {output_names[model.name]}')
         
     # Releasing the video and the writers
     video.release()
@@ -188,6 +189,5 @@ def perf_test_vid(models, video_name, confidence=0.5, max_frames=None):
 
 
 if __name__=="__main__":
-    models = load_models()
     # perf_test(models)
-    perf_test_vid(models, 'cam07.mp4')
+    perf_test_vid('cam07.mp4', 160)
