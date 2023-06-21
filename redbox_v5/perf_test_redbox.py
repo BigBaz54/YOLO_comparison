@@ -15,12 +15,17 @@ import platform
 import GPUtil
 
 
-def load_models():
+def load_models(size):
     models = []
     
-    # models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'custom', path=os.path.join('redbox_v5', 'models', 'v5s160_fit_within.pt')), 'v5s160', size=160))
-    # models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'custom', path=os.path.join('redbox_v5', 'models', 'v5s320_fit_within.pt')), 'v5s320', size=320))
-    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'custom', path=os.path.join('redbox_v5', 'models', 'v5s640.pt')), 'v5s640', size=640))
+    if isinstance(size, list):
+        models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'custom', path=os.path.join('redbox_v5', 'models', 'v5s160_fit_within.pt')), 'v5s160', size[0]))
+        models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'custom', path=os.path.join('redbox_v5', 'models', 'v5s320_fit_within.pt')), 'v5s320', size[1]))
+        models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'custom', path=os.path.join('redbox_v5', 'models', 'v5s640.pt')), 'v5s640', size[2]))
+    else:
+        # models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'custom', path=os.path.join('redbox_v5', 'models', 'v5s160_fit_within.pt')), 'v5s160', size))
+        # models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'custom', path=os.path.join('redbox_v5', 'models', 'v5s320_fit_within.pt')), 'v5s320', size))
+        models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'custom', path=os.path.join('redbox_v5', 'models', 'v5s640.pt')), 'v5s640', size))
 
     for model in models:
         model.eval()
@@ -48,14 +53,13 @@ def image_preprocess(image, target_size):
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     return img
 
-def perf_test_img(models):
-    sizes = [160, 320, 640]
+def perf_test_img(size):
+    models = load_models(size)
 
     imgs = [os.path.join('img', 'redbox', img) for img in os.listdir(os.path.join('img', 'redbox')) if img.endswith('.jpg') or img.endswith('.png') or img.endswith('.jpeg')]
     imgs_by_size = {}
-    for size in sizes:
-        imgs_preprocessed = [image_preprocess(img, size) for img in imgs]
-        imgs_by_size[size] = imgs_preprocessed
+    imgs_preprocessed = [image_preprocess(img, size) for img in imgs]
+    imgs_by_size[size] = imgs_preprocessed
     print(f'\n\nCPU: {platform.processor()}')
     print(f'GPUs: {[gpu.name for gpu in GPUtil.getGPUs()]}')
     print(f'\n>>>>> YOLOv5 : Run inference on {len(imgs)} images <<<<<\n')
@@ -85,7 +89,9 @@ def get_nb_objects_evolution(video_name):
     
     return nb_objects_evolution
 
-def perf_test_vid(models, video_name, confidence=0.5, max_frames=None):
+def perf_test_vid(video_name, size, confidence=0.5, max_frames=None):
+    models = load_models(size)
+
     vid_path = os.path.join('vid', video_name)
     video = cv2.VideoCapture(vid_path)
     img_width, img_height = video.get(cv2.CAP_PROP_FRAME_WIDTH), video.get(cv2.CAP_PROP_FRAME_HEIGHT)
@@ -175,7 +181,6 @@ def perf_test_vid(models, video_name, confidence=0.5, max_frames=None):
         results[model.name].release()
 
 if __name__=="__main__":
-    # models = load_models()
-    # perf_test_img(models)
-    # perf_test_vid(models, 'cam03_5fps.mp4')
-    print(get_nb_objects_evolution('cam03_5fps.mp4'))
+    perf_test_img(640)
+    perf_test_vid('cam07.mp4', [160, 320, 640])
+    # print(get_nb_objects_evolution('cam03_5fps.mp4'))
