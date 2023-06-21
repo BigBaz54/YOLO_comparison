@@ -73,6 +73,7 @@ def perf_test(models):
         result = model(imgs_copy, size=model.size)
         print(f'{f"{model.name} " + f"({model.size}x{model.size})":>25} - {round(model.detection_time, 3):>7}s - {round(len(imgs)/model.detection_time, 3):>6} FPS')
         # result.save()
+        
 def get_nb_objects_evolution(video_name):
     nb_objects_changes = []
     with open(os.path.join('vid', f'{video_name[:-4]}.txt'), 'r') as f:
