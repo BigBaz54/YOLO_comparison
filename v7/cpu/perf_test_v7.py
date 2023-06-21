@@ -104,7 +104,7 @@ def perf_test_vid(models, video_name, confidence=0.5, max_frames=None):
     img_width, img_height = video.get(cv2.CAP_PROP_FRAME_WIDTH), video.get(cv2.CAP_PROP_FRAME_HEIGHT)
     frame_total = int(video.get(cv2.CAP_PROP_FRAME_COUNT))
     video_fps = video.get(cv2.CAP_PROP_FPS)
-    print('FPS :', video_fps)
+    # print('FPS :', video_fps)
 
     # Get the truth from the txt file
     nb_objects_evolution = get_nb_objects_evolution(video_name)
@@ -138,7 +138,7 @@ def perf_test_vid(models, video_name, confidence=0.5, max_frames=None):
     # Starting the detection
     for model in models:
         print(f"{model.name} is running...")
-        
+
     while (video.isOpened() and ((max_frames is None) or (frame_done < max_frames))):
         # Getting the number of objects at the current time
         if (len(nb_objects_evolution) > 0) and (time > nb_objects_evolution[0][0]):
