@@ -136,6 +136,9 @@ def perf_test_vid(models, video_name, confidence=0.5, max_frames=None):
     time = 0 # To sync with the start of the video
 
     # Starting the detection
+    for model in models:
+        print(f"{model.name} is running...")
+        
     while (video.isOpened() and ((max_frames is None) or (frame_done < max_frames))):
         # Getting the number of objects at the current time
         if (len(nb_objects_evolution) > 0) and (time > nb_objects_evolution[0][0]):
@@ -156,7 +159,7 @@ def perf_test_vid(models, video_name, confidence=0.5, max_frames=None):
 
             # Updating stats
             total_errors[model.name] += abs(nb_detections - nb_objects)
-            print(f'{model.name} - detections : {nb_detections}/{nb_objects}')
+            # print(f'{model.name} - detections : {nb_detections}/{nb_objects}')
             total_detection_time[model.name] += model.detection_time
 
             # Drawing the boxes
@@ -174,7 +177,7 @@ def perf_test_vid(models, video_name, confidence=0.5, max_frames=None):
 
         # Updating the time
         frame_done += 1
-        print(f'Frame {frame_done}/{frame_total} - {time}s')
+        # print(f'Frame {frame_done}/{frame_total} - {time}s')
         time = round(time + time_step, 6)
 
     # Printing the stats
