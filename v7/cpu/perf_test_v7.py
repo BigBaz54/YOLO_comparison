@@ -16,7 +16,7 @@ import platform
 import GPUtil
 
 
-def load_models():
+def load_models(size):
     models = []
 
     os.chdir(os.path.join('v7', 'models'))
@@ -24,14 +24,14 @@ def load_models():
         if not os.path.exists(name):
             print(f'\nDownloading {name}...')
             wget.download(f'https://github.com/WongKinYiu/yolov7/releases/download/v0.1/{name}', name)
-    models.append(ModelWrapper(hubconf.custom('yolov7-tiny.pt'), 'yolov7-tiny', size=640))
-    models.append(ModelWrapper(hubconf.custom('yolov7.pt'), 'yolov7'))
-    models.append(ModelWrapper(hubconf.custom('yolov7x.pt'), 'yolov7x'))
-    models.append(ModelWrapper(hubconf.custom('yolov7-e6.pt'), 'yolov7-e6', size=640))
-    models.append(ModelWrapper(hubconf.custom('yolov7-e6e.pt'), 'yolov7-e6e', size=640))
-    models.append(ModelWrapper(hubconf.custom('yolov7-d6.pt'), 'yolov7-d6', size=640))
-    models.append(ModelWrapper(hubconf.custom('yolov7-w6.pt'), 'yolov7-w6', size=640))
-    # models.append(ModelWrapper(attempt_load('yolov7-w6-pose.pt'), map_location=torch.device('cpu')), 'yolov7w6', size=640))
+    models.append(ModelWrapper(hubconf.custom('yolov7-tiny.pt'), 'yolov7-tiny', size))
+    models.append(ModelWrapper(hubconf.custom('yolov7.pt'), 'yolov7', size))
+    models.append(ModelWrapper(hubconf.custom('yolov7x.pt'), 'yolov7x', size))
+    models.append(ModelWrapper(hubconf.custom('yolov7-e6.pt'), 'yolov7-e6', size))
+    models.append(ModelWrapper(hubconf.custom('yolov7-e6e.pt'), 'yolov7-e6e', size))
+    models.append(ModelWrapper(hubconf.custom('yolov7-d6.pt'), 'yolov7-d6', size))
+    models.append(ModelWrapper(hubconf.custom('yolov7-w6.pt'), 'yolov7-w6', size))
+    # models.append(ModelWrapper(attempt_load('yolov7-w6-pose.pt'), map_location=torch.device('cpu')), 'yolov7w6', size))
     os.chdir(os.path.join('..', '..'))
 
     for model in models:
@@ -60,14 +60,13 @@ def image_preprocess(image, target_size):
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     return img
 
-def perf_test(models):
-    sizes = [160, 640, 1280]
+def perf_test(size):
+    models = load_models(size)
 
     imgs = [os.path.join('img', 'coco', img) for img in os.listdir(os.path.join('img', 'coco')) if img.endswith('.jpg') or img.endswith('.png') or img.endswith('.jpeg')]
     imgs_by_size = {}
-    for size in sizes:
-        imgs_preprocessed = [image_preprocess(img, size) for img in imgs]
-        imgs_by_size[size] = imgs_preprocessed
+    imgs_preprocessed = [image_preprocess(img, size) for img in imgs]
+    imgs_by_size[size] = imgs_preprocessed
 
     print(f'\n\nCPU: {platform.processor()}')
     print(f'GPUs: {[gpu.name for gpu in GPUtil.getGPUs()]}')
@@ -98,7 +97,9 @@ def get_nb_objects_evolution(video_name):
     
     return nb_objects_evolution
 
-def perf_test_vid(models, video_name, confidence=0.5, max_frames=None):
+def perf_test_vid(video_name, size, confidence=0.5, max_frames=None):
+    models = load_models(size)
+
     vid_path = os.path.join('vid', video_name)
     video = cv2.VideoCapture(vid_path)
     img_width, img_height = video.get(cv2.CAP_PROP_FRAME_WIDTH), video.get(cv2.CAP_PROP_FRAME_HEIGHT)
@@ -192,6 +193,5 @@ def perf_test_vid(models, video_name, confidence=0.5, max_frames=None):
 
 
 if __name__=="__main__":
-    models = load_models()
-    # perf_test(models)
-    perf_test_vid(models, 'cam07.mp4')
+    perf_test(160)
+    perf_test_vid('cam07.mp4', 160)
