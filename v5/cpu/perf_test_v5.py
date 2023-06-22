@@ -21,14 +21,14 @@ def load_models(size):
     os.chdir(os.path.join('v5', 'models'))
     models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5n', pretrained=True), 'yolov5n', size))
     models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5s', pretrained=True), 'yolov5s', size))
-    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5m', pretrained=True), 'yolov5m', size))
-    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5l', pretrained=True), 'yolov5l', size))
-    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5x', pretrained=True), 'yolov5x', size))
-    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5n6', pretrained=True), 'yolov5n6', size))
-    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5s6', pretrained=True), 'yolov5s6', size))
-    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5m6', pretrained=True), 'yolov5m6', size))
-    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5l6', pretrained=True), 'yolov5l6', size))
-    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5x6', pretrained=True), 'yolov5x6', size))
+    # models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5m', pretrained=True), 'yolov5m', size))
+    # models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5l', pretrained=True), 'yolov5l', size))
+    # models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5x', pretrained=True), 'yolov5x', size))
+    # models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5n6', pretrained=True), 'yolov5n6', size))
+    # models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5s6', pretrained=True), 'yolov5s6', size))
+    # models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5m6', pretrained=True), 'yolov5m6', size))
+    # models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5l6', pretrained=True), 'yolov5l6', size))
+    # models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5x6', pretrained=True), 'yolov5x6', size))
     os.chdir(os.path.join('..', '..'))
 
     for model in models:
@@ -94,6 +94,7 @@ def get_nb_objects_evolution(video_name):
 
 def perf_test_vid(video_name, size, confidence=0.5, max_frames=None):
     models = load_models(size)
+    all_detections = {model.name: [] for model in models}
     vid_path = os.path.join('vid', video_name)
     video = cv2.VideoCapture(vid_path)
     img_width, img_height = video.get(cv2.CAP_PROP_FRAME_WIDTH), video.get(cv2.CAP_PROP_FRAME_HEIGHT)
@@ -150,6 +151,11 @@ def perf_test_vid(video_name, size, confidence=0.5, max_frames=None):
             frame_preprocessed = cv2.cvtColor(image_resize(frame, model.size, model.size), cv2.COLOR_BGR2RGB)
             result = model(frame_preprocessed, size=model.size)
             detections = [pred for pred in result.pred[0] if pred[4] > confidence]
+            this_frame_detections = []
+            for detection in detections:
+                det_l = detection.tolist()
+                this_frame_detections.append({'class_id': det_l[5], 'confidence': det_l[4], 'left': det_l[0]/model.size, 'top': det_l[1]/model.size, 'right': det_l[2]/model.size, 'bottom': det_l[3]/model.size})
+            all_detections[model.name].append(this_frame_detections)
             nb_detections = len(detections)
 
             # Updating stats
@@ -188,4 +194,4 @@ def perf_test_vid(video_name, size, confidence=0.5, max_frames=None):
 
 if __name__=="__main__":
     # perf_test(640)
-    perf_test_vid('cam07.mp4', 160)
+    perf_test_vid('test_voiture2.mp4', 640)
