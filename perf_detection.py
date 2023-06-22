@@ -53,6 +53,7 @@ def iou(bbox1, bbox2):
     return intersection / union
 
 def parse_gt(gt_file):
+    # ne pas oublier de faire 1 - y pour bottom et top
     return [
         {'class_id': 0, 'left': 0.1, 'bottom': 0.2, 'right': 0.2, 'top': 0.1},
     ]
