@@ -25,8 +25,8 @@ def load_models(file_path, size):
     models = []
 
     os.chdir(os.path.join('v6', 'yolov6_main'))
-    models.append(ModelWrapper(get_inferer(os.path.join('..', 'models', 'yolov6n.pt'), file_path, size), 'yolov6n'))
-    models.append(ModelWrapper(get_inferer(os.path.join('..', 'models', 'yolov6s.pt'), file_path, size), 'yolov6s'))
+    models.append(ModelWrapper(get_inferer(os.path.join('..', 'models', 'yolov6n.pt'), file_path, size), 'yolov6n', size))
+    models.append(ModelWrapper(get_inferer(os.path.join('..', 'models', 'yolov6s.pt'), file_path, size), 'yolov6s', size))
     # models.append(ModelWrapper(get_inferer(os.path.join('..', 'models', 'yolov6m.pt'), file_path), 'yolov6m'))
     # models.append(ModelWrapper(get_inferer(os.path.join('..', 'models', 'yolov6l.pt'), file_path), 'yolov6l'))
     models.append(ModelWrapper(get_inferer(os.path.join('..', 'models', 'yolov6n6.pt'), file_path, size), 'yolov6n6', size))
