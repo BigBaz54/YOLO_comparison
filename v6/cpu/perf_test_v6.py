@@ -26,13 +26,13 @@ def load_models(file_path, size):
 
     os.chdir(os.path.join('v6', 'yolov6_main'))
     models.append(ModelWrapper(get_inferer(os.path.join('..', 'models', 'yolov6n.pt'), file_path, size), 'yolov6n'))
-    # models.append(ModelWrapper(get_inferer(os.path.join('..', 'models', 'yolov6s.pt'), file_path), 'yolov6s'))
+    models.append(ModelWrapper(get_inferer(os.path.join('..', 'models', 'yolov6s.pt'), file_path), 'yolov6s'))
     # models.append(ModelWrapper(get_inferer(os.path.join('..', 'models', 'yolov6m.pt'), file_path), 'yolov6m'))
     # models.append(ModelWrapper(get_inferer(os.path.join('..', 'models', 'yolov6l.pt'), file_path), 'yolov6l'))
-    # models.append(ModelWrapper(get_inferer(os.path.join('..', 'models', 'yolov6n6.pt'), file_path, size=640), 'yolov6n6', size=640))
-    # models.append(ModelWrapper(get_inferer(os.path.join('..', 'models', 'yolov6s6.pt'), file_path, size=640), 'yolov6s6', size=640))
-    # models.append(ModelWrapper(get_inferer(os.path.join('..', 'models', 'yolov6m6.pt'), file_path, size=640), 'yolov6m6', size=640))
-    # models.append(ModelWrapper(get_inferer(os.path.join('..', 'models', 'yolov6l6.pt'), file_path, size=640), 'yolov6l6', size=640))
+    models.append(ModelWrapper(get_inferer(os.path.join('..', 'models', 'yolov6n6.pt'), file_path, size), 'yolov6n6', size))
+    models.append(ModelWrapper(get_inferer(os.path.join('..', 'models', 'yolov6s6.pt'), file_path, size), 'yolov6s6', size))
+    # models.append(ModelWrapper(get_inferer(os.path.join('..', 'models', 'yolov6m6.pt'), file_path, size), 'yolov6m6', size))
+    # models.append(ModelWrapper(get_inferer(os.path.join('..', 'models', 'yolov6l6.pt'), file_path, size), 'yolov6l6', size))
     os.chdir(os.path.join('..', '..'))
 
     return models
