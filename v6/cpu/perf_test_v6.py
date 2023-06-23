@@ -38,7 +38,7 @@ def load_models(file_path, size):
     return models
 
 def perf_test(file_path, size, confidence=0.5):
-    models = load_models(file_path, size)
+    models = load_models(os.path.join('..', '..', file_path), size)
 
     # if file_path is a directory, count the number of images in it
     if os.path.isdir(os.path.join(os.path.dirname(os.path.realpath(__file__)), file_path)):
@@ -68,5 +68,5 @@ def perf_test_vid(file_path, size, confidence=0.5):
     os.chdir(os.path.join('..', '..'))
 
 if __name__=="__main__":
-    # perf_test(os.path.join('img', 'coco'), 640)
-    perf_test_vid(os.path.join('vid', 'test_voiture2.mp4'), 640)
+    perf_test(os.path.join('img', 'coco'), 160)
+    # perf_test_vid(os.path.join('vid', 'test_voiture2.mp4'), 640)
