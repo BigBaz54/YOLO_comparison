@@ -41,8 +41,8 @@ def perf_test(file_path, size, confidence=0.5):
     models = load_models(os.path.join('..', '..', file_path), size)
 
     # if file_path is a directory, count the number of images in it
-    if os.path.isdir(os.path.join(os.path.dirname(os.path.realpath(__file__)), file_path)):
-        img_nb = len(os.listdir(os.path.join(os.path.dirname(os.path.realpath(__file__)), file_path)))
+    if os.path.isdir(os.path.join(os.path.join(os.path.dirname(os.path.realpath(__file__)), '..', '..', file_path))):
+        img_nb = len(os.listdir(os.path.join(os.path.dirname(os.path.realpath(__file__)), '..', '..', file_path)))
     else:
         img_nb = 1
 
