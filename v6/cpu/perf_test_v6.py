@@ -81,8 +81,7 @@ def perf_test_vid(file_path, size, confidence=0.5):
             formatted_detections.append(frame_detections.copy())
         gt_file = os.path.join('..', '..', file_path.replace('.mp4', 'start.txt'))
         metrics = get_metrics(gt_file, formatted_detections)
-        print(metrics)
-        print(f'{f"{model.name} " + f"({model.size}x{model.size})":>25} - {round(model.detection_time, 3):>7}s - {round(len(model.inferer.detections)/model.detection_time, 3):>6} FPS')
+        print(f'{f"{model.name} " + f"({model.size}x{model.size})":>25} - Recall: {round(metrics["recall"]*100, 2)}% - Precision: {round(metrics["precision"]*100, 2)}% - F1: {round(metrics["f1"]*100, 2)}% - {round(len(model.inferer.detections)/model.detection_time, 3):>6} FPS')
     os.chdir(os.path.join('..', '..'))
 
 if __name__=="__main__":
