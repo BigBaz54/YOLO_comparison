@@ -1,10 +1,12 @@
-from model_wrapper_v6 import ModelWrapper
-
 import torch
 import os
 import sys
 import platform
 import GPUtil
+
+from model_wrapper_v6 import ModelWrapper
+sys.path.append(os.path.join('.'))
+from perf_detection import get_metrics
 
 
 sys.path.append(os.path.join('v6', 'yolov6_main'))
@@ -77,10 +79,12 @@ def perf_test_vid(file_path, size, confidence=0.5):
                     'bottom': d[3]/model.size
                 })
             formatted_detections.append(frame_detections.copy())
-        print(formatted_detections)
+        gt_file = os.path.join('..', '..', file_path.replace('.mp4', 'start.txt'))
+        metrics = get_metrics(gt_file, formatted_detections)
+        print(metrics)
         print(f'{f"{model.name} " + f"({model.size}x{model.size})":>25} - {round(model.detection_time, 3):>7}s - {round(len(model.inferer.detections)/model.detection_time, 3):>6} FPS')
     os.chdir(os.path.join('..', '..'))
 
 if __name__=="__main__":
     # perf_test(os.path.join('img', 'coco'), 160)
-    perf_test_vid(os.path.join('vid', 'test_voiture2.mp4'), 640)
+    perf_test_vid(os.path.join('vid', 'cam15.mp4'), 640)
