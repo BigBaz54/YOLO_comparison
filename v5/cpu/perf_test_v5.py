@@ -7,7 +7,7 @@ except ModuleNotFoundError:
     print("Please run the file from the root of the repository.")
     exit(1)
 
-
+from perf_detection import get_metrics
 import torch
 import os
 import cv2
@@ -102,10 +102,6 @@ def perf_test_vid(video_name, size, confidence=0.5, max_frames=None):
     video_fps = video.get(cv2.CAP_PROP_FPS)
     # print('FPS :', video_fps)
 
-    # Get the truth from the txt file
-    nb_objects_evolution = get_nb_objects_evolution(video_name)
-    nb_objects = 0
-
     if not os.path.exists(os.path.join('vid', 'results')):
         os.makedirs(os.path.join('vid', 'results'))
     output_names = {}
@@ -125,23 +121,17 @@ def perf_test_vid(video_name, size, confidence=0.5, max_frames=None):
     
     # Initializing the variables
     frame_done = 0
-    total_errors = {model.name: 0 for model in models}
     total_detection_time = {model.name: 0 for model in models}
-    total_objects = 0
     time_step = 1/video_fps
     time = 0 # To sync with the start of the video
 
     # Starting the detection
+    print(f'\n\nCPU: {platform.processor()}')
+    print(f'GPUs: {[gpu.name for gpu in GPUtil.getGPUs()]}')
     for model in models:
         print(f"\n{model.name} is running...")
     
     while (video.isOpened() and ((max_frames is None) or (frame_done < max_frames))):
-        # Getting the number of objects at the current time
-        if (len(nb_objects_evolution) > 0) and (time > nb_objects_evolution[0][0]):
-            nb_objects = nb_objects_evolution[0][1]
-            nb_objects_evolution.pop(0)
-        total_objects += nb_objects
-
         ret, frame = video.read()
         if not ret:
             break
@@ -156,11 +146,8 @@ def perf_test_vid(video_name, size, confidence=0.5, max_frames=None):
                 det_l = detection.tolist()
                 this_frame_detections.append({'class_id': det_l[5], 'confidence': det_l[4], 'left': det_l[0]/model.size, 'top': det_l[1]/model.size, 'right': det_l[2]/model.size, 'bottom': det_l[3]/model.size})
             all_detections[model.name].append(this_frame_detections)
-            nb_detections = len(detections)
 
             # Updating stats
-            total_errors[model.name] += abs(nb_detections - nb_objects)
-            # print(f'{model.name} - detections : {nb_detections}/{nb_objects}')
             total_detection_time[model.name] += model.detection_time
 
             # Drawing the boxes
@@ -184,7 +171,8 @@ def perf_test_vid(video_name, size, confidence=0.5, max_frames=None):
     # Printing the stats
     print(f'\nStats for {video_name}:')
     for model in models:
-        print(f'{model.name} ({model.size}x{model.size}) - Accuracy: {round((1 - total_errors[model.name]/total_objects)*100, 2)}% - FPS: {round(min(frame_total, max_frames or frame_total)/total_detection_time[model.name], 2)} - output: {output_names[model.name]}')
+        metrics = get_metrics(vid_path.replace('.mp4', 'start.txt'), all_detections[model.name])
+        print(f'{model.name} ({model.size}x{model.size}) - Recall: {round(metrics["recall"]*100, 2)}% - Precision: {round(metrics["precision"]*100, 2)}% - F1: {round(metrics["f1"]*100, 2)}% - FPS: {round(min(frame_total, max_frames or frame_total)/total_detection_time[model.name], 2)} - output: {output_names[model.name]}')
         
     # Releasing the video and the writers
     video.release()
@@ -194,4 +182,4 @@ def perf_test_vid(video_name, size, confidence=0.5, max_frames=None):
 
 if __name__=="__main__":
     # perf_test(640)
-    perf_test_vid('test_voiture2.mp4', 640)
+    perf_test_vid('cam15.mp4', 640)
