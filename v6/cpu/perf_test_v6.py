@@ -71,10 +71,10 @@ def perf_test_vid(file_path, size, confidence=0.5):
                 frame_detections.append({
                     'class_id': d[5],
                     'confidence': d[4],
-                    'left': d[0],
-                    'top': d[1],
-                    'right': d[2],
-                    'bottom': d[3]
+                    'left': d[0]/model.size,
+                    'top': d[1]/model.size,
+                    'right': d[2]/model.size,
+                    'bottom': d[3]/model.size
                 })
             formatted_detections.append(frame_detections.copy())
         print(formatted_detections)
