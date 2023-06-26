@@ -39,11 +39,8 @@ def get_metrics(gt_file, all_detections):
             gt_det_pairs_with_iou = [pair for pair in gt_det_pairs_with_iou if pair[0][1] != gt_det_pairs_with_iou[0][0][1]]
     
     # Compute the metrics
-    print('tp: ', tp)
     nb_detections = sum([len(detections) for detections in all_detections])
-    print('nb_detections: ', nb_detections)
     nb_gt = sum([len(gt) for gt in ground_truth])
-    print('nb_gt: ', nb_gt)
     fp = nb_detections - tp
     fn = nb_gt - tp  
     precision = tp / (tp + fp)
