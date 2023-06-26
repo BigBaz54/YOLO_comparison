@@ -65,19 +65,34 @@ def iou(bbox1, bbox2):
 
 def parse_gt(gt_file):
     # ne pas oublier de faire 1 - y pour bottom et top
-    return [
-        [{'class_id': 0, 'left': 0.1, 'bottom': 0.2, 'right': 0.2, 'top': 0.1}],
-    ]
+    gt_by_frame = []
+    current_frame = []
+    with open(gt_file, 'r') as f:
+        for line in f.readlines()[1:]:
+            if "Temps" in line:
+                gt_by_frame.append(current_frame.copy())
+                current_frame = []
+            else:
+                if "cube" in line.lower():
+                    class_id = 0
+                elif "voiture" in line.lower():
+                    class_id = 2
+                else:
+                    class_id = 0
+                coords = line.split(':')[1]
+                coords = coords.split(',')
+                coords = [coords.replace('(', '').replace(')', '').replace(' ', '') for coords in coords]
+                coords = [float(coords) for coords in coords]
+                current_frame.append({
+                    'class_id': class_id,
+                    'left': coords[0],
+                    'top': 1 - coords[1],
+                    'right': coords[2],
+                    'bottom': 1 - coords[3]
+                })
+    return gt_by_frame
 
 
 if __name__ == '__main__':
-    gt_file = 'gt.txt'
-    detections = [
-        [{'class_id': 0, 'left': 0.1, 'bottom': 0.2, 'right': 0.2, 'top': 0.1},
-        {'class_id': 0, 'left': 0.2, 'bottom': 0.3, 'right': 0.3, 'top': 0.2},
-        {'class_id': 0, 'left': 0.3, 'bottom': 0.4, 'right': 0.4, 'top': 0.3},
-        {'class_id': 0, 'left': 0.4, 'bottom': 0.5, 'right': 0.5, 'top': 0.4},
-        {'class_id': 0, 'left': 0.5, 'bottom': 0.6, 'right': 0.6, 'top': 0.5}],
-    ]
-    metrics = get_metrics(gt_file, detections)
-    print(metrics)
+    gt_file = 'cam11start.txt'
+    print(len(parse_gt(gt_file)))
