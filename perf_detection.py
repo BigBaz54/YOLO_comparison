@@ -9,6 +9,9 @@ def get_metrics(gt_file, all_detections):
     # Keep only the last nb_frames frames of the ground truth 
     ground_truth = ground_truth[-nb_frames:]
 
+    # Count the number of true positives
+    tp = 0
+
     for i in range(nb_frames):
         gt = ground_truth[i]
         detections = all_detections[i]
@@ -23,22 +26,24 @@ def get_metrics(gt_file, all_detections):
         gt_det_pairs_with_iou = []
         for pair in gt_det_pairs:
             pair_iou = iou(pair[0], pair[1])
-            if pair_iou > 0.3:
+            if pair_iou > 0.4:
                 gt_det_pairs_with_iou.append((pair, pair_iou))
         
         # Sort the pairs by decreasing IOU
         gt_det_pairs_with_iou.sort(key=lambda x: x[1], reverse=True)
 
         # Count the number of true positives
-        tp = 0
         while len(gt_det_pairs_with_iou) > 0:
             tp += 1
             # Remove the pair with the highest IOU from the list and remove all the pairs that have the same det
             gt_det_pairs_with_iou = [pair for pair in gt_det_pairs_with_iou if pair[0][1] != gt_det_pairs_with_iou[0][0][1]]
     
     # Compute the metrics
+    print('tp: ', tp)
     nb_detections = sum([len(detections) for detections in all_detections])
+    print('nb_detections: ', nb_detections)
     nb_gt = sum([len(gt) for gt in ground_truth])
+    print('nb_gt: ', nb_gt)
     fp = nb_detections - tp
     fn = nb_gt - tp  
     precision = tp / (tp + fp)
