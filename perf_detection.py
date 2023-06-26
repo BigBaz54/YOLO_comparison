@@ -15,12 +15,7 @@ def get_metrics(gt_file, all_detections):
         # Build a list of all the (gt, det) pairs
         gt_det_pairs = []
         for det in detections:
-            print()
-            print()
             for g in gt:
-                print('gt:', g)
-                print('det:', det)
-                print()
                 # If the class is the same, add the pair to the list
                 if int(g['class_id']) == int(det['class_id']):
                     gt_det_pairs.append((g, det))
