@@ -22,7 +22,6 @@ def get_metrics(gt_file, all_detections):
         
         gt_det_pairs_with_iou = []
         for pair in gt_det_pairs:
-            plot_iou(pair[0], pair[1])
             pair_iou = iou(pair[0], pair[1])
             if pair_iou > 0.3:
                 gt_det_pairs_with_iou.append((pair, pair_iou))
