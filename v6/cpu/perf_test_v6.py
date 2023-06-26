@@ -66,6 +66,7 @@ def perf_test_vid(file_path, size, confidence=0.5):
     for model in models:
         print(f"\n{model.name} is running...")
         detections = model(save_dir=os.path.join('..', '..', 'vid', 'results'), conf=confidence)
+        max_dim = max(model.inferer.img_width, model.inferer.img_height)
         formatted_detections = []
         for detection in detections:
             frame_detections = []
@@ -73,10 +74,10 @@ def perf_test_vid(file_path, size, confidence=0.5):
                 frame_detections.append({
                     'class_id': d[5],
                     'confidence': d[4],
-                    'left': d[0]/model.size,
-                    'top': d[1]/model.size,
-                    'right': d[2]/model.size,
-                    'bottom': d[3]/model.size
+                    'left': d[0]*(max_dim/model.inferer.img_width)/model.size,
+                    'top': d[1]*(max_dim/model.inferer.img_height)/model.size,
+                    'right': d[2]*(max_dim/model.inferer.img_width)/model.size,
+                    'bottom': d[3]*(max_dim/model.inferer.img_height)/model.size
                 })
             formatted_detections.append(frame_detections.copy())
         gt_file = os.path.join('..', '..', file_path.replace('.mp4', 'start.txt'))
@@ -86,4 +87,4 @@ def perf_test_vid(file_path, size, confidence=0.5):
 
 if __name__=="__main__":
     # perf_test(os.path.join('img', 'coco'), 160)
-    perf_test_vid(os.path.join('vid', 'cam15.mp4'), 640)
+    perf_test_vid(os.path.join('vid', 'test_voiture2.mp4'), 640)

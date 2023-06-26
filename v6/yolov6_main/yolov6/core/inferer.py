@@ -36,6 +36,8 @@ class Inferer:
         self.img_size = self.check_img_size(self.img_size, s=self.stride)  # check image size
         self.half = half
         self.detections = []
+        self.img_width = None
+        self.img_height = None
 
         # Switch model to deploy status
         self.model_switch(self.model.model, self.img_size)
@@ -73,6 +75,9 @@ class Inferer:
         vid_path, vid_writer, windows = None, None, []
         fps_calculator = CalcFPS()
         for img_src, img_path, vid_cap in self.files:
+            if self.img_width is None:
+                self.img_width = int(vid_cap.get(cv2.CAP_PROP_FRAME_WIDTH))
+                self.img_height = int(vid_cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
             img, img_src = self.process_image(img_src, self.img_size, self.stride, self.half)
             img = img.to(self.device)
             if len(img.shape) == 3:
