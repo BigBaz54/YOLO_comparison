@@ -18,21 +18,21 @@ def get_metrics(gt_file, all_detections):
                 if int(g['class_id']) == int(det['class_id']):
                     gt_det_pairs.append((g, det))
         
-        gt_get_pairs_with_iou = []
+        gt_det_pairs_with_iou = []
         for pair in gt_det_pairs:
             pair_iou = iou(pair[0], pair[1])
             if pair_iou > 0.5:
-                gt_get_pairs_with_iou.append((pair, pair_iou))
+                gt_det_pairs_with_iou.append((pair, pair_iou))
         
         # Sort the pairs by decreasing IOU
-        gt_get_pairs_with_iou.sort(key=lambda x: x[1], reverse=True)
+        gt_det_pairs_with_iou.sort(key=lambda x: x[1], reverse=True)
 
         # Count the number of true positives
         tp = 0
-        while len(gt_get_pairs_with_iou) > 0:
+        while len(gt_det_pairs_with_iou) > 0:
             tp += 1
             # Remove the pair with the highest IOU from the list and remove all the pairs that have the same det
-            gt_get_pairs_with_iou = [pair for pair in gt_get_pairs_with_iou if pair[0][1] != gt_get_pairs_with_iou[0][0][1]]
+            gt_det_pairs_with_iou = [pair for pair in gt_det_pairs_with_iou if pair[0][1] != gt_det_pairs_with_iou[0][0][1]]
     
     # Compute the metrics
     nb_detections = sum([len(detections) for detections in all_detections])
