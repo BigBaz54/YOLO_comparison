@@ -23,9 +23,9 @@ def load_models(size):
         models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'custom', path=os.path.join('redbox_v5', 'models', 'v5s320_fit_within.pt')), 'v5s320', size[1]))
         models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'custom', path=os.path.join('redbox_v5', 'models', 'v5s640.pt')), 'v5s640', size[2]))
     else:
-        # models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'custom', path=os.path.join('redbox_v5', 'models', 'v5s160_fit_within.pt')), 'v5s160', size))
+        models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'custom', path=os.path.join('redbox_v5', 'models', 'v5s160_fit_within.pt')), 'v5s160', size))
         # models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'custom', path=os.path.join('redbox_v5', 'models', 'v5s320_fit_within.pt')), 'v5s320', size))
-        models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'custom', path=os.path.join('redbox_v5', 'models', 'v5s640.pt')), 'v5s640', size))
+        # models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'custom', path=os.path.join('redbox_v5', 'models', 'v5s640.pt')), 'v5s640', size))
 
     for model in models:
         model.eval()
@@ -97,6 +97,7 @@ def perf_test_vid(video_name, size, confidence=0.5, max_frames=None):
     results = {model.name: cv2.VideoWriter(os.path.join('vid', 'results', output_names[model.name]), cv2.VideoWriter_fourcc(*'mp4v'), video_fps, (int(img_width), int(img_height))) for model in models}
     
     # Initializing the variables
+    max_dim = max(img_width, img_height)
     frame_done = 0
     total_detection_time = {model.name: 0 for model in models}
     time_step = 1/video_fps
@@ -118,7 +119,7 @@ def perf_test_vid(video_name, size, confidence=0.5, max_frames=None):
             this_frame_detections = []
             for detection in detections:
                 det_l = detection.tolist()
-                this_frame_detections.append({'class_id': det_l[5], 'confidence': det_l[4], 'left': det_l[0]/model.size, 'top': det_l[1]/model.size, 'right': det_l[2]/model.size, 'bottom': det_l[3]/model.size})
+                this_frame_detections.append({'class_id': int(det_l[5]), 'confidence': det_l[4], 'left': det_l[0]*(max_dim/img_width)/model.size, 'top': det_l[1]*(max_dim/img_height)/model.size, 'right': det_l[2]*(max_dim/img_width)/model.size, 'bottom': det_l[3]*(max_dim/img_height)/model.size})
             all_detections[model.name].append(this_frame_detections)
 
             # Updating stats
@@ -127,7 +128,6 @@ def perf_test_vid(video_name, size, confidence=0.5, max_frames=None):
             # Drawing the boxes
             frame_with_boxes = frame.copy()
             for box in detections:
-                max_dim = max(img_width, img_height)
                 left = (float(box[0])*max_dim)/model.size
                 top = (float(box[1])*max_dim)/model.size
                 right = (float(box[2])*max_dim)/model.size
@@ -154,4 +154,5 @@ def perf_test_vid(video_name, size, confidence=0.5, max_frames=None):
 
 if __name__=="__main__":
     # perf_test_img(640)
-    perf_test_vid('cube.mp4', [160, 320, 640])
+    # perf_test_vid('cube.mp4', [160, 320, 640])
+    perf_test_vid('cube.mp4', 160)
