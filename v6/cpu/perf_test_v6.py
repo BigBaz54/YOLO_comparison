@@ -29,12 +29,12 @@ def load_models(file_path, size):
     os.chdir(os.path.join('v6', 'yolov6_main'))
     models.append(ModelWrapper(get_inferer(os.path.join('..', 'models', 'yolov6n.pt'), file_path, size), 'yolov6n', size))
     models.append(ModelWrapper(get_inferer(os.path.join('..', 'models', 'yolov6s.pt'), file_path, size), 'yolov6s', size))
-    # models.append(ModelWrapper(get_inferer(os.path.join('..', 'models', 'yolov6m.pt'), file_path), 'yolov6m'))
-    # models.append(ModelWrapper(get_inferer(os.path.join('..', 'models', 'yolov6l.pt'), file_path), 'yolov6l'))
+    models.append(ModelWrapper(get_inferer(os.path.join('..', 'models', 'yolov6m.pt'), file_path), 'yolov6m'))
+    models.append(ModelWrapper(get_inferer(os.path.join('..', 'models', 'yolov6l.pt'), file_path), 'yolov6l'))
     models.append(ModelWrapper(get_inferer(os.path.join('..', 'models', 'yolov6n6.pt'), file_path, size), 'yolov6n6', size))
     models.append(ModelWrapper(get_inferer(os.path.join('..', 'models', 'yolov6s6.pt'), file_path, size), 'yolov6s6', size))
-    # models.append(ModelWrapper(get_inferer(os.path.join('..', 'models', 'yolov6m6.pt'), file_path, size), 'yolov6m6', size))
-    # models.append(ModelWrapper(get_inferer(os.path.join('..', 'models', 'yolov6l6.pt'), file_path, size), 'yolov6l6', size))
+    models.append(ModelWrapper(get_inferer(os.path.join('..', 'models', 'yolov6m6.pt'), file_path, size), 'yolov6m6', size))
+    models.append(ModelWrapper(get_inferer(os.path.join('..', 'models', 'yolov6l6.pt'), file_path, size), 'yolov6l6', size))
     os.chdir(os.path.join('..', '..'))
 
     return models
@@ -87,4 +87,4 @@ def perf_test_vid(file_path, size, confidence=0.5):
 
 if __name__=="__main__":
     # perf_test(os.path.join('img', 'coco'), 160)
-    perf_test_vid(os.path.join('vid', 'test_voiture2.mp4'), 640)
+    perf_test_vid(os.path.join('vid', 'cam16.mp4'), 640)

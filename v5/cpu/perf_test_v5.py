@@ -21,14 +21,14 @@ def load_models(size):
     os.chdir(os.path.join('v5', 'models'))
     models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5n', pretrained=True), 'yolov5n', size))
     models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5s', pretrained=True), 'yolov5s', size))
-    # models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5m', pretrained=True), 'yolov5m', size))
-    # models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5l', pretrained=True), 'yolov5l', size))
-    # models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5x', pretrained=True), 'yolov5x', size))
-    # models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5n6', pretrained=True), 'yolov5n6', size))
-    # models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5s6', pretrained=True), 'yolov5s6', size))
-    # models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5m6', pretrained=True), 'yolov5m6', size))
-    # models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5l6', pretrained=True), 'yolov5l6', size))
-    # models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5x6', pretrained=True), 'yolov5x6', size))
+    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5m', pretrained=True), 'yolov5m', size))
+    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5l', pretrained=True), 'yolov5l', size))
+    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5x', pretrained=True), 'yolov5x', size))
+    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5n6', pretrained=True), 'yolov5n6', size))
+    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5s6', pretrained=True), 'yolov5s6', size))
+    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5m6', pretrained=True), 'yolov5m6', size))
+    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5l6', pretrained=True), 'yolov5l6', size))
+    models.append(ModelWrapper(torch.hub.load('ultralytics/yolov5', 'yolov5x6', pretrained=True), 'yolov5x6', size))
     os.chdir(os.path.join('..', '..'))
 
     for model in models:
@@ -182,4 +182,4 @@ def perf_test_vid(video_name, size, confidence=0.5, max_frames=None):
 
 if __name__=="__main__":
     # perf_test(640)
-    perf_test_vid('cam15.mp4', 640)
+    perf_test_vid('cam16.mp4', 160)

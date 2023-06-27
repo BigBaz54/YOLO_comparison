@@ -169,4 +169,4 @@ def perf_test_vid(video_name, size, confidence=0.5, max_frames=None):
 
 if __name__=="__main__":
     # perf_test(160)
-    perf_test_vid('cam15.mp4', 160)
+    perf_test_vid('cam16.mp4', 160)
