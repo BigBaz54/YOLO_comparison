@@ -1,8 +1,9 @@
 import os
 import cv2
 
-def save_vid_for_train(video_path, save_path, result_name, sample_rate=1):
-    # saves the frames of a video and the corresponding labels in the YOLOv5 format
+def save_vid_for_train(video_path, save_path, result_name, sample_rate=3):
+    # saves the frames of a video and the corresponding labels in the YOLOv5 format wich is:
+    # class_id x_center y_center width height
     video = cv2.VideoCapture(video_path)
     nb_frames = int(video.get(cv2.CAP_PROP_FRAME_COUNT))
     ground_truth_frames = parse_gt(video_path.replace('.mp4', 'start.txt'))[-nb_frames:]
@@ -15,7 +16,7 @@ def save_vid_for_train(video_path, save_path, result_name, sample_rate=1):
             cv2.imwrite(os.path.join(save_path, f'{result_name}_{frame_count}.jpg'), frame)
             with open(os.path.join(save_path, f'{result_name}_{frame_count}.txt'), 'w') as f:
                 for bbox in ground_truth_frames[frame_count]:
-                    f.write(f'{bbox["class_id"]} {bbox["left"]} {bbox["top"]} {bbox["right"] - bbox["left"]} {bbox["bottom"] - bbox["top"]}\n')
+                    f.write(f'{bbox["class_id"]} {(bbox["left"] + bbox["right"])/2} {(bbox["top"] + bbox["bottom"])/2} {bbox["right"] - bbox["left"]} {bbox["bottom"] - bbox["top"]}\n')
         frame_count += 1
     video.release()
 
@@ -29,7 +30,7 @@ def parse_gt(gt_file):
                 current_frame = []
             else:
                 if "cube" in line.lower():
-                    class_id = "redbox"
+                    class_id = 0
                 elif "voiture" in line.lower():
                     class_id = 2
                 else:
