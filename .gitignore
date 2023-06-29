@@ -1,6 +1,9 @@
 # Video results
 vid/results/*
 
+# Train files
+vid/train/*
+
 # Results
 runs/*
 
