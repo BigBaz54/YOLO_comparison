@@ -15,7 +15,7 @@ def save_vid_for_train(video_path, save_path, result_name, sample_rate=1):
             cv2.imwrite(os.path.join(save_path, f'{result_name}_{frame_count}.jpg'), frame)
             with open(os.path.join(save_path, f'{result_name}_{frame_count}.txt'), 'w') as f:
                 for bbox in ground_truth_frames[frame_count]:
-                    f.write(f'{bbox["class_id"]} {bbox["left"]} {bbox["top"]} {bbox["right"]} {bbox["bottom"]}\n')
+                    f.write(f'{bbox["class_id"]} {bbox["left"]} {bbox["top"]} {bbox["right"] - bbox["left"]} {bbox["bottom"] - bbox["top"]}\n')
         frame_count += 1
     video.release()
 
@@ -29,7 +29,7 @@ def parse_gt(gt_file):
                 current_frame = []
             else:
                 if "cube" in line.lower():
-                    class_id = 0
+                    class_id = "redbox"
                 elif "voiture" in line.lower():
                     class_id = 2
                 else:
