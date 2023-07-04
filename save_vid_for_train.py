@@ -5,10 +5,11 @@ def save_vid_for_train(video_path, save_path, result_name, sample_rate=1):
     # saves the frames of a video and the corresponding labels in the YOLOv5 format which is:
     # class_id x_center y_center width height
     video = cv2.VideoCapture(video_path)
-    nb_frames = int(video.get(cv2.CAP_PROP_FRAME_COUNT))
-    ground_truth_frames = parse_gt(video_path.replace('.mp4', 'start.txt'))[-nb_frames:]
+    ground_truth_frames = parse_gt(video_path.replace('.mp4', 'start.txt'))
     # duplicate the last frame as the ground truth is missing one
     ground_truth_frames.append(ground_truth_frames[-1])
+    for i in range(len(ground_truth_frames)-15, len(ground_truth_frames)):
+        print(ground_truth_frames[i])
     frame_count = 0
     while (video.isOpened()):
         ret, frame = video.read()
@@ -48,11 +49,12 @@ def parse_gt(gt_file):
                     'right': coords[2],
                     'bottom': 1 - coords[3]
                 })
+    gt_by_frame.append(current_frame.copy())
     return gt_by_frame
 
 
 if __name__ == '__main__':
-    video_path = 'vid/camreal.mp4'
+    video_path = 'vid/correctbbox.mp4'
     save_path = 'vid/train/'
     result_name = 'test_bbox'
     save_vid_for_train(video_path, save_path, result_name, sample_rate=1)
