@@ -25,7 +25,9 @@ def parse_gt(gt_file):
     gt_by_frame = []
     current_frame = []
     with open(gt_file, 'r') as f:
-        for line in f.readlines():
+        for i, line in enumerate(f.readlines()):
+            if i == 0:
+                continue
             if "Temps" in line:
                 gt_by_frame.append(current_frame.copy())
                 current_frame = []
