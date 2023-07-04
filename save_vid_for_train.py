@@ -5,6 +5,8 @@ def save_vid_for_train(video_path, save_path, result_name, sample_rate=3):
     # saves the frames of a video and the corresponding labels in the YOLOv5 format wich is:
     # class_id x_center y_center width height
     video = cv2.VideoCapture(video_path)
+    print("vid", int(video.get(cv2.CAP_PROP_FRAME_COUNT)))
+    print(len(parse_gt(video_path.replace('.mp4', 'start.txt'))))
     nb_frames = int(video.get(cv2.CAP_PROP_FRAME_COUNT))
     ground_truth_frames = parse_gt(video_path.replace('.mp4', 'start.txt'))[-nb_frames:]
     frame_count = 0
@@ -24,7 +26,7 @@ def parse_gt(gt_file):
     gt_by_frame = []
     current_frame = []
     with open(gt_file, 'r') as f:
-        for line in f.readlines()[1:]:
+        for line in f.readlines():
             if "Temps" in line:
                 gt_by_frame.append(current_frame.copy())
                 current_frame = []
@@ -50,7 +52,7 @@ def parse_gt(gt_file):
 
 
 if __name__ == '__main__':
-    video_path = 'vid/cube.mp4'
+    video_path = 'vid/camreal.mp4'
     save_path = 'vid/train/'
-    result_name = 'cube_full'
+    result_name = 'test_bbox'
     save_vid_for_train(video_path, save_path, result_name, sample_rate=1)
