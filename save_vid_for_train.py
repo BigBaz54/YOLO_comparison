@@ -5,8 +5,6 @@ def save_vid_for_train(video_path, save_path, result_name, sample_rate=3):
     # saves the frames of a video and the corresponding labels in the YOLOv5 format wich is:
     # class_id x_center y_center width height
     video = cv2.VideoCapture(video_path)
-    print("vid", int(video.get(cv2.CAP_PROP_FRAME_COUNT)))
-    print(len(parse_gt(video_path.replace('.mp4', 'start.txt'))))
     nb_frames = int(video.get(cv2.CAP_PROP_FRAME_COUNT))
     ground_truth_frames = parse_gt(video_path.replace('.mp4', 'start.txt'))[-nb_frames:]
     frame_count = 0
