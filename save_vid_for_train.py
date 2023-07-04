@@ -8,8 +8,6 @@ def save_vid_for_train(video_path, save_path, result_name, sample_rate=1):
     ground_truth_frames = parse_gt(video_path.replace('.mp4', 'start.txt'))
     # duplicate the last frame as the ground truth is missing one
     ground_truth_frames.append(ground_truth_frames[-1])
-    for i in range(len(ground_truth_frames)-15, len(ground_truth_frames)):
-        print(ground_truth_frames[i])
     frame_count = 0
     while (video.isOpened()):
         ret, frame = video.read()
