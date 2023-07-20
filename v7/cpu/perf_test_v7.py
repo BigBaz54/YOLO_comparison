@@ -62,7 +62,7 @@ def image_preprocess(image, target_size):
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     return img
 
-def perf_test(size):
+def perf_test_img(size):
     models = load_models(size)
 
     imgs = [os.path.join('img', 'coco', img) for img in os.listdir(os.path.join('img', 'coco')) if img.endswith('.jpg') or img.endswith('.png') or img.endswith('.jpeg')]
@@ -168,5 +168,5 @@ def perf_test_vid(video_name, size, confidence=0.5, max_frames=None):
 
 
 if __name__=="__main__":
-    # perf_test(160)
+    # perf_test_img(160)
     perf_test_vid('cam16.mp4', 160)
