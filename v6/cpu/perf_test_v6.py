@@ -57,8 +57,8 @@ def perf_test_img(size, confidence=0.5):
         print(f'{f"{model.name} " + f"({model.size}x{model.size})":>25} - {round(model.detection_time, 3):>7}s - {round(img_nb/model.detection_time, 3):>6} FPS')
     os.chdir(os.path.join('..', '..'))
 
-def perf_test_vid(file_path, size, confidence=0.5):
-    models = load_models(os.path.join('..', '..', file_path), size)
+def perf_test_vid(video_name, size, confidence=0.5):
+    models = load_models(os.path.join('..', '..', 'vid', video_name), size)
 
     print(f'\n\nCPU: {platform.processor()}')
     print(f'GPUs: {[gpu.name for gpu in GPUtil.getGPUs()]}')
@@ -80,11 +80,11 @@ def perf_test_vid(file_path, size, confidence=0.5):
                     'bottom': d[3]*(max_dim/model.inferer.img_height)/model.size
                 })
             formatted_detections.append(frame_detections.copy())
-        gt_file = os.path.join('..', '..', file_path.replace('.mp4', 'start.txt'))
+        gt_file = os.path.join('..', '..', 'vid', video_name).replace('.mp4', 'start.txt')
         metrics = get_metrics(gt_file, formatted_detections)
         print(f'{f"{model.name} " + f"({model.size}x{model.size})":>25} - Recall: {round(metrics["recall"]*100, 2)}% - Precision: {round(metrics["precision"]*100, 2)}% - F1: {round(metrics["f1"]*100, 2)}% - {round(len(model.inferer.detections)/model.detection_time, 3):>6} FPS')
     os.chdir(os.path.join('..', '..'))
 
 if __name__=="__main__":
-    perf_test_img(160)
-    # perf_test_vid(os.path.join('vid', 'correctbbox.mp4'), 640)
+    # perf_test_img(160)
+    perf_test_vid('correctbbox.mp4', 640)
