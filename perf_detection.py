@@ -6,9 +6,6 @@ def get_metrics(gt_file, all_detections):
     # The actual number of frames in the video
     nb_frames = len(all_detections)
 
-    # Keep only the last nb_frames frames of the ground truth 
-    ground_truth = ground_truth[-nb_frames:]
-
     # Count the number of true positives
     tp = 0
 
@@ -72,7 +69,7 @@ def parse_gt(gt_file):
     gt_by_frame = []
     current_frame = []
     with open(gt_file, 'r') as f:
-        for line in f.readlines()[1:]:
+        for line in f.readlines():
             if "Temps" in line:
                 gt_by_frame.append(current_frame.copy())
                 current_frame = []
@@ -94,6 +91,7 @@ def parse_gt(gt_file):
                     'right': coords[2],
                     'bottom': 1 - coords[3]
                 })
+    gt_by_frame.append(current_frame.copy())
     return gt_by_frame
 
 def plot_iou(bbox1, bbox2):
