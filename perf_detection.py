@@ -39,9 +39,15 @@ def get_metrics(gt_file, all_detections):
     nb_detections = sum([len(detections) for detections in all_detections])
     nb_gt = sum([len(gt) for gt in ground_truth])
     fp = nb_detections - tp
-    fn = nb_gt - tp  
-    precision = tp / (tp + fp)
-    recall = tp / (tp + fn)
+    fn = nb_gt - tp
+    if tp + fp == 0:
+        precision = 0
+    else:
+        precision = tp / (tp + fp)
+    if tp + fn == 0:
+        recall = 0
+    else:
+        recall = tp / (tp + fn)
     if precision + recall == 0:
         f1 = 0
     else:
