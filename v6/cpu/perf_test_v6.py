@@ -39,12 +39,12 @@ def load_models(file_path, size):
 
     return models
 
-def perf_test_img(file_path, size, confidence=0.5):
-    models = load_models(os.path.join('..', '..', file_path), size)
+def perf_test_img(size, confidence=0.5):
+    models = load_models(os.path.join('..', '..', os.path.join('img', 'coco')), size)
 
     # if file_path is a directory, count the number of images in it
-    if os.path.isdir(os.path.join(os.path.join(os.path.dirname(os.path.realpath(__file__)), '..', '..', file_path))):
-        img_nb = len(os.listdir(os.path.join(os.path.dirname(os.path.realpath(__file__)), '..', '..', file_path)))
+    if os.path.isdir(os.path.join(os.path.join(os.path.dirname(os.path.realpath(__file__)), '..', '..', os.path.join('img', 'coco')))):
+        img_nb = len(os.listdir(os.path.join(os.path.dirname(os.path.realpath(__file__)), '..', '..', os.path.join('img', 'coco'))))
     else:
         img_nb = 1
 
@@ -86,5 +86,5 @@ def perf_test_vid(file_path, size, confidence=0.5):
     os.chdir(os.path.join('..', '..'))
 
 if __name__=="__main__":
-    # perf_test_img(os.path.join('img', 'coco'), 160)
-    perf_test_vid(os.path.join('vid', 'correctbbox.mp4'), 640)
+    perf_test_img(160)
+    # perf_test_vid(os.path.join('vid', 'correctbbox.mp4'), 640)
