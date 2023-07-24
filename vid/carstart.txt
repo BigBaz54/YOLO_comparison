@@ -1,0 +1,2323 @@
+Temps :0s
+Temps :0,03333334s
+Temps :0,06666668s
+Temps :0,1s
+Temps :0,1333333s
+Temps :0,1666667s
+Temps :0,2s
+Temps :0,2333333s
+Temps :0,2666667s
+Temps :0,3s
+Temps :0,3333333s
+Temps :0,3666667s
+Temps :0,4s
+Temps :0,4333334s
+Temps :0,4666667s
+Temps :0,5s
+Temps :0,5333334s
+Temps :0,5666667s
+Temps :0,6s
+Temps :0,6333333s
+Temps :0,6666667s
+Temps :0,7s
+Temps :0,7333333s
+Temps :0,7666667s
+Temps :0,8s
+Temps :0,8333334s
+Temps :0,8666667s
+Temps :0,9s
+Temps :0,9333333s
+Temps :0,9666666s
+Temps :1s
+Temps :1,033333s
+Temps :1,066667s
+Temps :1,1s
+Temps :1,133333s
+Temps :1,166667s
+Temps :1,2s
+Temps :1,233333s
+Temps :1,266667s
+Temps :1,3s
+Temps :1,333333s
+Temps :1,366667s
+Temps :1,4s
+Temps :1,433333s
+Temps :1,466667s
+Temps :1,5s
+Temps :1,533333s
+Temps :1,566667s
+Temps :1,6s
+Temps :1,633333s
+Temps :1,666667s
+Temps :1,7s
+Temps :1,733333s
+Temps :1,766667s
+Temps :1,8s
+Temps :1,833333s
+Temps :1,866667s
+Temps :1,9s
+Temps :1,933334s
+Temps :1,966667s
+Temps :2s
+Temps :2,033334s
+Temps :2,066667s
+Temps :2,1s
+Temps :2,133333s
+Temps :2,166667s
+Temps :2,2s
+Temps :2,233334s
+Temps :2,266667s
+Temps :2,3s
+Temps :2,333333s
+Temps :2,366667s
+Temps :2,4s
+Temps :2,433333s
+Temps :2,466667s
+Temps :2,5s
+Temps :2,533334s
+Temps :2,566667s
+Temps :2,6s
+Temps :2,633333s
+Temps :2,666667s
+Temps :2,7s
+Temps :2,733334s
+Temps :2,766667s
+Temps :2,8s
+Temps :2,833333s
+Temps :2,866667s
+Temps :2,9s
+Temps :2,933334s
+Temps :2,966667s
+Temps :3s
+Temps :3,033334s
+Temps :3,066667s
+Temps :3,1s
+Temps :3,133333s
+Temps :3,166667s
+Temps :3,2s
+Temps :3,233334s
+Temps :3,266667s
+Temps :3,3s
+Temps :3,333333s
+Temps :3,366667s
+Temps :3,4s
+Temps :3,433334s
+Temps :3,466667s
+Temps :3,5s
+Temps :3,533334s
+Temps :3,566667s
+Temps :3,6s
+Temps :3,633333s
+Temps :3,666667s
+Temps :3,7s
+Temps :3,733334s
+Temps :3,766667s
+Temps :3,8s
+Temps :3,833333s
+Temps :3,866667s
+Temps :3,9s
+Temps :3,933334s
+Temps :3,966667s
+Temps :4s
+Temps :4,033334s
+Temps :4,066667s
+Temps :4,1s
+Temps :4,133334s
+Temps :4,166667s
+Temps :4,2s
+Temps :4,233334s
+Temps :4,266667s
+Temps :4,3s
+Temps :4,333333s
+Temps :4,366667s
+Temps :4,4s
+Temps :4,433333s
+Temps :4,466667s
+Temps :4,5s
+Temps :4,533334s
+Temps :4,566667s
+Temps :4,6s
+Temps :4,633334s
+Temps :4,666667s
+Temps :4,7s
+Temps :4,733334s
+Temps :4,766667s
+Temps :4,8s
+Temps :4,833333s
+Temps :4,866667s
+Temps :4,9s
+Temps :4,933333s
+Temps :4,966667s
+Temps :5s
+Objet voiture0 vu en :(0.34, 0.42),(0.53, 0.32)
+Objet voiture1 vu en :(-0.15, 0.34),(0.34, 0.01)
+Temps :5,033334s
+Objet voiture0 vu en :(0.34, 0.42),(0.53, 0.32)
+Objet voiture1 vu en :(-0.15, 0.34),(0.34, 0.01)
+Temps :5,066667s
+Objet voiture0 vu en :(0.36, 0.42),(0.54, 0.32)
+Objet voiture1 vu en :(-0.11, 0.34),(0.36, 0.01)
+Temps :5,1s
+Objet voiture0 vu en :(0.38, 0.42),(0.56, 0.32)
+Objet voiture1 vu en :(-0.08, 0.34),(0.38, 0.02)
+Temps :5,133334s
+Objet voiture0 vu en :(0.39, 0.42),(0.58, 0.32)
+Objet voiture1 vu en :(-0.04, 0.34),(0.39, 0.03)
+Temps :5,166667s
+Objet voiture0 vu en :(0.41, 0.42),(0.60, 0.32)
+Objet voiture1 vu en :(-0.01, 0.35),(0.41, 0.03)
+Temps :5,2s
+Objet voiture0 vu en :(0.43, 0.42),(0.61, 0.32)
+Objet voiture1 vu en :(0.02, 0.35),(0.43, 0.04)
+Temps :5,233334s
+Objet voiture0 vu en :(0.44, 0.42),(0.63, 0.32)
+Objet voiture1 vu en :(0.04, 0.35),(0.44, 0.04)
+Temps :5,266667s
+Objet voiture0 vu en :(0.46, 0.42),(0.65, 0.31)
+Objet voiture1 vu en :(0.07, 0.35),(0.46, 0.04)
+Temps :5,3s
+Objet voiture0 vu en :(0.46, 0.42),(0.65, 0.31)
+Objet voiture1 vu en :(0.07, 0.35),(0.46, 0.04)
+Temps :5,333333s
+Objet voiture0 vu en :(0.46, 0.42),(0.65, 0.31)
+Objet voiture1 vu en :(0.07, 0.35),(0.46, 0.04)
+Temps :5,366667s
+Objet voiture0 vu en :(0.46, 0.42),(0.65, 0.31)
+Objet voiture1 vu en :(0.07, 0.35),(0.46, 0.04)
+Temps :5,4s
+Objet voiture0 vu en :(0.48, 0.42),(0.67, 0.31)
+Objet voiture1 vu en :(0.10, 0.36),(0.48, 0.05)
+Temps :5,433334s
+Objet voiture0 vu en :(0.50, 0.42),(0.69, 0.31)
+Objet voiture1 vu en :(0.12, 0.36),(0.50, 0.05)
+Temps :5,466667s
+Objet voiture0 vu en :(0.51, 0.42),(0.70, 0.31)
+Objet voiture1 vu en :(0.14, 0.36),(0.51, 0.05)
+Temps :5,5s
+Objet voiture0 vu en :(0.51, 0.42),(0.70, 0.31)
+Objet voiture1 vu en :(0.14, 0.36),(0.51, 0.05)
+Temps :5,533334s
+Objet voiture0 vu en :(0.51, 0.42),(0.70, 0.31)
+Objet voiture1 vu en :(0.14, 0.36),(0.51, 0.05)
+Temps :5,566667s
+Objet voiture0 vu en :(0.51, 0.42),(0.70, 0.31)
+Objet voiture1 vu en :(0.14, 0.36),(0.51, 0.05)
+Temps :5,6s
+Objet voiture0 vu en :(0.51, 0.42),(0.70, 0.31)
+Objet voiture1 vu en :(0.14, 0.36),(0.51, 0.05)
+Temps :5,633334s
+Objet voiture0 vu en :(0.51, 0.42),(0.70, 0.31)
+Objet voiture1 vu en :(0.14, 0.36),(0.51, 0.05)
+Temps :5,666667s
+Objet voiture0 vu en :(0.51, 0.42),(0.70, 0.31)
+Objet voiture1 vu en :(0.14, 0.36),(0.51, 0.05)
+Temps :5,7s
+Objet voiture0 vu en :(0.51, 0.42),(0.70, 0.31)
+Objet voiture1 vu en :(0.14, 0.36),(0.51, 0.05)
+Temps :5,733334s
+Objet voiture0 vu en :(0.51, 0.42),(0.70, 0.31)
+Objet voiture1 vu en :(0.14, 0.36),(0.50, 0.05)
+Temps :5,766667s
+Objet voiture0 vu en :(0.49, 0.42),(0.68, 0.31)
+Objet voiture1 vu en :(0.11, 0.36),(0.47, 0.05)
+Temps :5,8s
+Objet voiture0 vu en :(0.47, 0.42),(0.66, 0.31)
+Objet voiture1 vu en :(0.08, 0.36),(0.44, 0.05)
+Temps :5,833333s
+Objet voiture0 vu en :(0.48, 0.42),(0.67, 0.31)
+Objet voiture1 vu en :(0.09, 0.36),(0.44, 0.06)
+Temps :5,866667s
+Objet voiture0 vu en :(0.47, 0.42),(0.66, 0.31)
+Objet voiture1 vu en :(0.08, 0.36),(0.41, 0.06)
+Temps :5,900001s
+Objet voiture0 vu en :(0.47, 0.42),(0.66, 0.31)
+Objet voiture1 vu en :(0.08, 0.37),(0.40, 0.07)
+Temps :5,933334s
+Objet voiture0 vu en :(0.48, 0.42),(0.67, 0.30)
+Objet voiture1 vu en :(0.10, 0.37),(0.40, 0.08)
+Temps :5,966667s
+Objet voiture0 vu en :(0.49, 0.42),(0.68, 0.30)
+Objet voiture1 vu en :(0.11, 0.37),(0.41, 0.08)
+Temps :6s
+Objet voiture0 vu en :(0.50, 0.42),(0.70, 0.30)
+Objet voiture1 vu en :(0.13, 0.37),(0.42, 0.09)
+Temps :6,033334s
+Objet voiture0 vu en :(0.52, 0.42),(0.71, 0.30)
+Objet voiture1 vu en :(0.15, 0.37),(0.43, 0.09)
+Temps :6,066667s
+Objet voiture0 vu en :(0.53, 0.42),(0.73, 0.30)
+Objet voiture1 vu en :(0.17, 0.37),(0.44, 0.10)
+Temps :6,1s
+Objet voiture0 vu en :(0.54, 0.42),(0.74, 0.30)
+Objet voiture1 vu en :(0.18, 0.38),(0.44, 0.11)
+Temps :6,133334s
+Objet voiture0 vu en :(0.55, 0.42),(0.75, 0.29)
+Objet voiture1 vu en :(0.19, 0.38),(0.44, 0.11)
+Temps :6,166667s
+Objet voiture0 vu en :(0.54, 0.42),(0.75, 0.29)
+Objet voiture1 vu en :(0.19, 0.38),(0.43, 0.12)
+Temps :6,2s
+Objet voiture0 vu en :(0.55, 0.42),(0.75, 0.29)
+Objet voiture1 vu en :(0.20, 0.38),(0.42, 0.12)
+Temps :6,233334s
+Objet voiture0 vu en :(0.56, 0.42),(0.77, 0.29)
+Objet voiture1 vu en :(0.21, 0.38),(0.43, 0.13)
+Temps :6,266667s
+Objet voiture0 vu en :(0.57, 0.42),(0.78, 0.28)
+Objet voiture1 vu en :(0.22, 0.38),(0.44, 0.13)
+Temps :6,3s
+Objet voiture0 vu en :(0.58, 0.42),(0.80, 0.28)
+Objet voiture1 vu en :(0.24, 0.38),(0.45, 0.14)
+Temps :6,333333s
+Objet voiture0 vu en :(0.59, 0.42),(0.81, 0.28)
+Objet voiture1 vu en :(0.25, 0.39),(0.45, 0.14)
+Temps :6,366667s
+Objet voiture0 vu en :(0.59, 0.42),(0.81, 0.28)
+Objet voiture1 vu en :(0.25, 0.39),(0.44, 0.15)
+Temps :6,400001s
+Objet voiture0 vu en :(0.60, 0.42),(0.82, 0.27)
+Objet voiture1 vu en :(0.26, 0.39),(0.44, 0.15)
+Temps :6,433334s
+Objet voiture0 vu en :(0.61, 0.42),(0.84, 0.27)
+Objet voiture1 vu en :(0.28, 0.39),(0.45, 0.16)
+Temps :6,466667s
+Objet voiture0 vu en :(0.62, 0.42),(0.85, 0.27)
+Objet voiture1 vu en :(0.28, 0.39),(0.44, 0.16)
+Temps :6,5s
+Objet voiture0 vu en :(0.62, 0.42),(0.85, 0.26)
+Objet voiture1 vu en :(0.28, 0.39),(0.43, 0.17)
+Temps :6,533334s
+Objet voiture0 vu en :(0.62, 0.42),(0.86, 0.26)
+Objet voiture1 vu en :(0.29, 0.39),(0.43, 0.17)
+Temps :6,566667s
+Objet voiture0 vu en :(0.60, 0.42),(0.82, 0.26)
+Objet voiture1 vu en :(0.24, 0.39),(0.39, 0.17)
+Temps :6,6s
+Objet voiture0 vu en :(0.57, 0.42),(0.79, 0.26)
+Objet voiture1 vu en :(0.20, 0.39),(0.35, 0.17)
+Temps :6,633334s
+Objet voiture0 vu en :(0.56, 0.42),(0.78, 0.26)
+Objet voiture1 vu en :(0.19, 0.39),(0.34, 0.17)
+Temps :6,666667s
+Objet voiture0 vu en :(0.55, 0.42),(0.77, 0.26)
+Objet voiture1 vu en :(0.17, 0.39),(0.32, 0.17)
+Temps :6,7s
+Objet voiture0 vu en :(0.56, 0.42),(0.78, 0.26)
+Objet voiture1 vu en :(0.18, 0.39),(0.33, 0.18)
+Temps :6,733334s
+Objet voiture0 vu en :(0.57, 0.42),(0.80, 0.26)
+Objet voiture1 vu en :(0.19, 0.40),(0.34, 0.19)
+Temps :6,766667s
+Objet voiture0 vu en :(0.59, 0.42),(0.81, 0.26)
+Objet voiture1 vu en :(0.21, 0.40),(0.35, 0.19)
+Temps :6,8s
+Objet voiture0 vu en :(0.60, 0.42),(0.83, 0.25)
+Objet voiture1 vu en :(0.23, 0.40),(0.37, 0.20)
+Temps :6,833333s
+Objet voiture0 vu en :(0.62, 0.41),(0.85, 0.25)
+Objet voiture1 vu en :(0.24, 0.40),(0.38, 0.20)
+Temps :6,866667s
+Objet voiture0 vu en :(0.63, 0.41),(0.88, 0.24)
+Objet voiture1 vu en :(0.26, 0.40),(0.40, 0.20)
+Temps :6,900001s
+Objet voiture0 vu en :(0.64, 0.41),(0.89, 0.24)
+Objet voiture1 vu en :(0.27, 0.40),(0.41, 0.21)
+Temps :6,933334s
+Objet voiture0 vu en :(0.66, 0.41),(0.91, 0.24)
+Objet voiture1 vu en :(0.28, 0.40),(0.42, 0.21)
+Temps :6,966667s
+Objet voiture0 vu en :(0.65, 0.41),(0.90, 0.24)
+Objet voiture1 vu en :(0.28, 0.40),(0.42, 0.21)
+Temps :7s
+Objet voiture0 vu en :(0.65, 0.41),(0.89, 0.24)
+Objet voiture1 vu en :(0.27, 0.40),(0.41, 0.21)
+Temps :7,033334s
+Objet voiture0 vu en :(0.65, 0.41),(0.89, 0.24)
+Objet voiture1 vu en :(0.27, 0.40),(0.41, 0.21)
+Temps :7,066667s
+Objet voiture0 vu en :(0.64, 0.41),(0.89, 0.24)
+Objet voiture1 vu en :(0.27, 0.40),(0.41, 0.21)
+Temps :7,1s
+Objet voiture0 vu en :(0.64, 0.41),(0.89, 0.24)
+Objet voiture1 vu en :(0.27, 0.40),(0.41, 0.21)
+Temps :7,133334s
+Objet voiture0 vu en :(0.66, 0.41),(0.91, 0.23)
+Objet voiture1 vu en :(0.28, 0.40),(0.43, 0.22)
+Temps :7,166667s
+Objet voiture0 vu en :(0.67, 0.41),(0.93, 0.23)
+Objet voiture1 vu en :(0.29, 0.40),(0.44, 0.22)
+Temps :7,2s
+Objet voiture0 vu en :(0.67, 0.41),(0.93, 0.22)
+Objet voiture1 vu en :(0.29, 0.40),(0.44, 0.22)
+Temps :7,233334s
+Objet voiture0 vu en :(0.68, 0.41),(0.94, 0.22)
+Objet voiture1 vu en :(0.29, 0.40),(0.45, 0.22)
+Temps :7,266667s
+Objet voiture0 vu en :(0.67, 0.41),(0.93, 0.22)
+Objet voiture1 vu en :(0.28, 0.40),(0.44, 0.23)
+Temps :7,3s
+Objet voiture0 vu en :(0.66, 0.41),(0.92, 0.21)
+Objet voiture1 vu en :(0.27, 0.40),(0.44, 0.23)
+Temps :7,333334s
+Objet voiture0 vu en :(0.65, 0.41),(0.90, 0.21)
+Objet voiture1 vu en :(0.25, 0.40),(0.43, 0.23)
+Temps :7,366667s
+Objet voiture0 vu en :(0.62, 0.41),(0.86, 0.21)
+Objet voiture1 vu en :(0.21, 0.40),(0.40, 0.23)
+Temps :7,400001s
+Objet voiture0 vu en :(0.59, 0.41),(0.82, 0.22)
+Objet voiture1 vu en :(0.18, 0.40),(0.38, 0.23)
+Temps :7,433334s
+Objet voiture0 vu en :(0.58, 0.41),(0.80, 0.22)
+Objet voiture1 vu en :(0.16, 0.40),(0.37, 0.23)
+Temps :7,466667s
+Objet voiture0 vu en :(0.56, 0.41),(0.78, 0.21)
+Objet voiture1 vu en :(0.14, 0.41),(0.36, 0.24)
+Temps :7,5s
+Objet voiture0 vu en :(0.55, 0.41),(0.75, 0.21)
+Objet voiture1 vu en :(0.13, 0.41),(0.35, 0.24)
+Temps :7,533334s
+Objet voiture0 vu en :(0.55, 0.41),(0.75, 0.21)
+Objet voiture1 vu en :(0.13, 0.41),(0.36, 0.24)
+Temps :7,566667s
+Objet voiture0 vu en :(0.54, 0.41),(0.72, 0.21)
+Objet voiture1 vu en :(0.12, 0.41),(0.35, 0.25)
+Temps :7,6s
+Objet voiture0 vu en :(0.52, 0.41),(0.70, 0.21)
+Objet voiture1 vu en :(0.11, 0.41),(0.34, 0.25)
+Temps :7,633334s
+Objet voiture0 vu en :(0.53, 0.41),(0.69, 0.21)
+Objet voiture1 vu en :(0.12, 0.41),(0.35, 0.26)
+Temps :7,666667s
+Objet voiture0 vu en :(0.51, 0.41),(0.66, 0.21)
+Objet voiture1 vu en :(0.11, 0.41),(0.34, 0.26)
+Temps :7,7s
+Objet voiture0 vu en :(0.50, 0.41),(0.64, 0.21)
+Objet voiture1 vu en :(0.11, 0.42),(0.34, 0.27)
+Temps :7,733334s
+Objet voiture0 vu en :(0.50, 0.41),(0.63, 0.22)
+Objet voiture1 vu en :(0.12, 0.42),(0.34, 0.27)
+Temps :7,766667s
+Objet voiture0 vu en :(0.48, 0.41),(0.60, 0.22)
+Objet voiture1 vu en :(0.11, 0.42),(0.34, 0.28)
+Temps :7,800001s
+Objet voiture0 vu en :(0.46, 0.41),(0.58, 0.22)
+Objet voiture1 vu en :(0.11, 0.42),(0.34, 0.28)
+Temps :7,833334s
+Objet voiture0 vu en :(0.45, 0.41),(0.57, 0.22)
+Objet voiture1 vu en :(0.12, 0.42),(0.34, 0.29)
+Temps :7,866667s
+Objet voiture0 vu en :(0.42, 0.41),(0.54, 0.22)
+Objet voiture1 vu en :(0.11, 0.42),(0.34, 0.29)
+Temps :7,900001s
+Objet voiture0 vu en :(0.40, 0.41),(0.53, 0.22)
+Objet voiture1 vu en :(0.11, 0.42),(0.33, 0.30)
+Temps :7,933334s
+Objet voiture0 vu en :(0.40, 0.41),(0.53, 0.23)
+Objet voiture1 vu en :(0.12, 0.42),(0.34, 0.30)
+Temps :7,966667s
+Objet voiture0 vu en :(0.39, 0.41),(0.52, 0.23)
+Objet voiture1 vu en :(0.13, 0.43),(0.35, 0.31)
+Temps :8s
+Objet voiture0 vu en :(0.39, 0.41),(0.53, 0.24)
+Objet voiture1 vu en :(0.15, 0.43),(0.36, 0.32)
+Temps :8,033334s
+Objet voiture0 vu en :(0.41, 0.42),(0.54, 0.25)
+Objet voiture1 vu en :(0.18, 0.43),(0.37, 0.32)
+Temps :8,066667s
+Objet voiture0 vu en :(0.42, 0.42),(0.55, 0.26)
+Objet voiture1 vu en :(0.21, 0.43),(0.39, 0.33)
+Temps :8,1s
+Objet voiture0 vu en :(0.44, 0.42),(0.56, 0.28)
+Objet voiture1 vu en :(0.24, 0.44),(0.41, 0.34)
+Temps :8,133333s
+Objet voiture0 vu en :(0.46, 0.42),(0.58, 0.28)
+Objet voiture1 vu en :(0.26, 0.44),(0.43, 0.34)
+Temps :8,166667s
+Objet voiture0 vu en :(0.48, 0.43),(0.59, 0.29)
+Objet voiture1 vu en :(0.29, 0.44),(0.45, 0.35)
+Temps :8,2s
+Objet voiture0 vu en :(0.49, 0.43),(0.61, 0.30)
+Objet voiture1 vu en :(0.31, 0.44),(0.47, 0.36)
+Temps :8,233334s
+Objet voiture0 vu en :(0.50, 0.43),(0.61, 0.31)
+Objet voiture1 vu en :(0.32, 0.44),(0.47, 0.36)
+Temps :8,266666s
+Objet voiture0 vu en :(0.50, 0.43),(0.60, 0.32)
+Objet voiture1 vu en :(0.32, 0.44),(0.47, 0.36)
+Temps :8,3s
+Objet voiture0 vu en :(0.50, 0.44),(0.60, 0.33)
+Objet voiture1 vu en :(0.33, 0.45),(0.47, 0.37)
+Temps :8,333333s
+Objet voiture0 vu en :(0.50, 0.44),(0.60, 0.33)
+Objet voiture1 vu en :(0.33, 0.45),(0.47, 0.37)
+Temps :8,366667s
+Objet voiture0 vu en :(0.50, 0.44),(0.59, 0.34)
+Objet voiture1 vu en :(0.34, 0.45),(0.47, 0.38)
+Temps :8,4s
+Objet voiture0 vu en :(0.50, 0.44),(0.59, 0.35)
+Objet voiture1 vu en :(0.34, 0.45),(0.47, 0.38)
+Temps :8,433333s
+Objet voiture0 vu en :(0.50, 0.44),(0.59, 0.35)
+Objet voiture1 vu en :(0.34, 0.45),(0.47, 0.38)
+Temps :8,466666s
+Objet voiture0 vu en :(0.50, 0.44),(0.59, 0.35)
+Objet voiture1 vu en :(0.35, 0.45),(0.47, 0.38)
+Temps :8,5s
+Objet voiture0 vu en :(0.50, 0.44),(0.59, 0.35)
+Objet voiture1 vu en :(0.35, 0.45),(0.47, 0.38)
+Temps :8,533334s
+Objet voiture0 vu en :(0.50, 0.44),(0.59, 0.35)
+Objet voiture1 vu en :(0.35, 0.45),(0.47, 0.38)
+Temps :8,566667s
+Objet voiture0 vu en :(0.50, 0.44),(0.59, 0.35)
+Objet voiture1 vu en :(0.35, 0.45),(0.47, 0.38)
+Temps :8,6s
+Objet voiture0 vu en :(0.50, 0.44),(0.59, 0.36)
+Objet voiture1 vu en :(0.35, 0.45),(0.47, 0.39)
+Temps :8,633333s
+Objet voiture0 vu en :(0.50, 0.44),(0.59, 0.36)
+Objet voiture1 vu en :(0.35, 0.45),(0.47, 0.39)
+Temps :8,666667s
+Objet voiture0 vu en :(0.50, 0.44),(0.59, 0.36)
+Objet voiture1 vu en :(0.35, 0.45),(0.47, 0.39)
+Temps :8,7s
+Objet voiture0 vu en :(0.50, 0.44),(0.59, 0.36)
+Objet voiture1 vu en :(0.35, 0.45),(0.47, 0.39)
+Temps :8,733334s
+Objet voiture0 vu en :(0.50, 0.44),(0.59, 0.36)
+Objet voiture1 vu en :(0.35, 0.45),(0.47, 0.39)
+Temps :8,766666s
+Objet voiture0 vu en :(0.48, 0.44),(0.57, 0.36)
+Objet voiture1 vu en :(0.33, 0.45),(0.46, 0.38)
+Temps :8,8s
+Objet voiture0 vu en :(0.46, 0.44),(0.55, 0.36)
+Objet voiture1 vu en :(0.31, 0.45),(0.44, 0.38)
+Temps :8,833333s
+Objet voiture0 vu en :(0.45, 0.44),(0.54, 0.36)
+Objet voiture1 vu en :(0.30, 0.45),(0.42, 0.38)
+Temps :8,866667s
+Objet voiture0 vu en :(0.43, 0.44),(0.52, 0.36)
+Objet voiture1 vu en :(0.28, 0.45),(0.41, 0.38)
+Temps :8,9s
+Objet voiture0 vu en :(0.41, 0.44),(0.50, 0.36)
+Objet voiture1 vu en :(0.26, 0.45),(0.39, 0.38)
+Temps :8,933333s
+Objet voiture0 vu en :(0.41, 0.44),(0.50, 0.36)
+Objet voiture1 vu en :(0.26, 0.45),(0.39, 0.38)
+Temps :8,966666s
+Objet voiture0 vu en :(0.40, 0.44),(0.48, 0.36)
+Objet voiture1 vu en :(0.24, 0.45),(0.37, 0.38)
+Temps :9s
+Objet voiture0 vu en :(0.38, 0.44),(0.47, 0.36)
+Objet voiture1 vu en :(0.22, 0.45),(0.35, 0.38)
+Temps :9,033334s
+Objet voiture0 vu en :(0.36, 0.44),(0.45, 0.36)
+Objet voiture1 vu en :(0.19, 0.45),(0.34, 0.38)
+Temps :9,066667s
+Objet voiture0 vu en :(0.34, 0.44),(0.43, 0.35)
+Objet voiture1 vu en :(0.17, 0.45),(0.32, 0.37)
+Temps :9,1s
+Objet voiture0 vu en :(0.33, 0.44),(0.42, 0.35)
+Objet voiture1 vu en :(0.15, 0.45),(0.30, 0.37)
+Temps :9,133333s
+Objet voiture0 vu en :(0.31, 0.44),(0.40, 0.35)
+Objet voiture1 vu en :(0.13, 0.45),(0.28, 0.37)
+Temps :9,166667s
+Objet voiture0 vu en :(0.29, 0.44),(0.38, 0.35)
+Objet voiture1 vu en :(0.10, 0.45),(0.26, 0.37)
+Temps :9,2s
+Objet voiture0 vu en :(0.27, 0.44),(0.36, 0.35)
+Objet voiture1 vu en :(0.08, 0.44),(0.24, 0.37)
+Temps :9,233334s
+Objet voiture0 vu en :(0.25, 0.44),(0.35, 0.35)
+Objet voiture1 vu en :(0.05, 0.44),(0.22, 0.36)
+Temps :9,266666s
+Objet voiture0 vu en :(0.23, 0.44),(0.33, 0.35)
+Objet voiture1 vu en :(0.02, 0.44),(0.20, 0.36)
+Temps :9,3s
+Objet voiture0 vu en :(0.21, 0.44),(0.31, 0.34)
+Objet voiture1 vu en :(-0.01, 0.44),(0.18, 0.36)
+Temps :9,333333s
+Objet voiture0 vu en :(0.19, 0.44),(0.29, 0.34)
+Objet voiture1 vu en :(-0.04, 0.44),(0.15, 0.35)
+Temps :9,366667s
+Objet voiture0 vu en :(0.16, 0.44),(0.27, 0.34)
+Objet voiture1 vu en :(-0.07, 0.44),(0.13, 0.35)
+Temps :9,4s
+Objet voiture0 vu en :(0.14, 0.44),(0.25, 0.34)
+Objet voiture1 vu en :(-0.10, 0.44),(0.11, 0.35)
+Temps :9,433333s
+Objet voiture0 vu en :(0.12, 0.44),(0.23, 0.33)
+Temps :9,466667s
+Objet voiture0 vu en :(0.09, 0.44),(0.21, 0.33)
+Temps :9,5s
+Objet voiture0 vu en :(0.07, 0.44),(0.19, 0.33)
+Temps :9,533334s
+Objet voiture0 vu en :(0.04, 0.43),(0.17, 0.32)
+Temps :9,566667s
+Objet voiture0 vu en :(0.01, 0.43),(0.15, 0.32)
+Temps :9,6s
+Objet voiture0 vu en :(-0.02, 0.43),(0.12, 0.31)
+Temps :9,633333s
+Objet voiture0 vu en :(-0.05, 0.43),(0.10, 0.31)
+Temps :9,666667s
+Objet voiture0 vu en :(-0.08, 0.43),(0.07, 0.30)
+Temps :9,7s
+Temps :9,733334s
+Temps :9,766666s
+Temps :9,8s
+Temps :9,833333s
+Temps :9,866667s
+Temps :9,9s
+Temps :9,933333s
+Temps :9,966667s
+Temps :10s
+Temps :10,03333s
+Temps :10,06667s
+Temps :10,1s
+Temps :10,13333s
+Temps :10,16667s
+Temps :10,2s
+Temps :10,23333s
+Temps :10,26667s
+Temps :10,3s
+Temps :10,33333s
+Temps :10,36667s
+Temps :10,4s
+Temps :10,43333s
+Temps :10,46667s
+Temps :10,5s
+Temps :10,53333s
+Temps :10,56667s
+Temps :10,6s
+Temps :10,63333s
+Temps :10,66667s
+Temps :10,7s
+Temps :10,73333s
+Temps :10,76667s
+Temps :10,8s
+Temps :10,83333s
+Temps :10,86667s
+Temps :10,9s
+Temps :10,93333s
+Temps :10,96667s
+Temps :11s
+Temps :11,03333s
+Temps :11,06667s
+Temps :11,1s
+Temps :11,13333s
+Temps :11,16667s
+Temps :11,2s
+Temps :11,23333s
+Temps :11,26667s
+Temps :11,3s
+Temps :11,33333s
+Temps :11,36667s
+Temps :11,4s
+Temps :11,43333s
+Temps :11,46667s
+Temps :11,5s
+Temps :11,53333s
+Temps :11,56667s
+Temps :11,6s
+Temps :11,63333s
+Temps :11,66667s
+Temps :11,7s
+Temps :11,73333s
+Temps :11,76667s
+Temps :11,8s
+Temps :11,83333s
+Temps :11,86667s
+Temps :11,9s
+Temps :11,93333s
+Temps :11,96667s
+Temps :12s
+Temps :12,03333s
+Temps :12,06667s
+Temps :12,1s
+Temps :12,13333s
+Temps :12,16667s
+Temps :12,2s
+Temps :12,23333s
+Temps :12,26667s
+Temps :12,3s
+Temps :12,33333s
+Temps :12,36667s
+Temps :12,4s
+Temps :12,43333s
+Temps :12,46667s
+Temps :12,5s
+Temps :12,53333s
+Temps :12,56667s
+Temps :12,6s
+Temps :12,63333s
+Temps :12,66667s
+Temps :12,7s
+Temps :12,73333s
+Temps :12,76667s
+Temps :12,8s
+Temps :12,83333s
+Temps :12,86667s
+Temps :12,9s
+Temps :12,93333s
+Temps :12,96667s
+Temps :13s
+Temps :13,03333s
+Temps :13,06667s
+Temps :13,1s
+Temps :13,13333s
+Temps :13,16667s
+Temps :13,2s
+Temps :13,23333s
+Temps :13,26667s
+Objet voiture2 vu en :(0.12, 0.44),(0.36, 0.26)
+Objet voiture3 vu en :(0.35, 0.41),(0.73, -0.14)
+Temps :13,3s
+Objet voiture2 vu en :(0.14, 0.44),(0.37, 0.25)
+Objet voiture3 vu en :(0.44, 0.41),(0.81, -0.12)
+Temps :13,33333s
+Objet voiture2 vu en :(0.14, 0.44),(0.37, 0.25)
+Objet voiture3 vu en :(0.48, 0.41),(0.84, -0.11)
+Temps :13,36667s
+Objet voiture2 vu en :(0.17, 0.44),(0.39, 0.25)
+Objet voiture3 vu en :(0.51, 0.41),(0.93, -0.10)
+Temps :13,4s
+Objet voiture2 vu en :(0.19, 0.44),(0.40, 0.25)
+Objet voiture3 vu en :(0.54, 0.41),(1.00, -0.08)
+Temps :13,43333s
+Objet voiture2 vu en :(0.20, 0.43),(0.40, 0.25)
+Objet voiture3 vu en :(0.54, 0.41),(1.02, -0.07)
+Temps :13,46667s
+Objet voiture2 vu en :(0.23, 0.44),(0.41, 0.25)
+Objet voiture3 vu en :(0.57, 0.42),(1.08, -0.05)
+Temps :13,5s
+Objet voiture2 vu en :(0.26, 0.44),(0.43, 0.25)
+Objet voiture3 vu en :(0.59, 0.42),(1.13, -0.03)
+Temps :13,53333s
+Objet voiture2 vu en :(0.26, 0.43),(0.42, 0.24)
+Objet voiture3 vu en :(0.59, 0.42),(1.12, -0.02)
+Temps :13,56667s
+Objet voiture2 vu en :(0.27, 0.44),(0.42, 0.24)
+Objet voiture3 vu en :(0.59, 0.42),(1.12, 0.00)
+Temps :13,6s
+Objet voiture2 vu en :(0.27, 0.43),(0.42, 0.24)
+Objet voiture3 vu en :(0.59, 0.42),(1.11, 0.02)
+Temps :13,63333s
+Objet voiture2 vu en :(0.25, 0.43),(0.41, 0.24)
+Objet voiture3 vu en :(0.58, 0.42),(1.08, 0.03)
+Temps :13,66667s
+Objet voiture2 vu en :(0.26, 0.43),(0.42, 0.24)
+Objet voiture3 vu en :(0.58, 0.42),(1.08, 0.04)
+Temps :13,7s
+Objet voiture2 vu en :(0.27, 0.43),(0.43, 0.24)
+Objet voiture3 vu en :(0.59, 0.43),(1.09, 0.05)
+Temps :13,73333s
+Objet voiture2 vu en :(0.27, 0.43),(0.43, 0.23)
+Objet voiture3 vu en :(0.59, 0.43),(1.08, 0.07)
+Temps :13,76667s
+Objet voiture2 vu en :(0.30, 0.43),(0.46, 0.23)
+Objet voiture3 vu en :(0.60, 0.43),(1.11, 0.08)
+Temps :13,8s
+Objet voiture2 vu en :(0.32, 0.43),(0.48, 0.23)
+Objet voiture3 vu en :(0.62, 0.43),(1.12, 0.10)
+Temps :13,83333s
+Objet voiture2 vu en :(0.31, 0.43),(0.49, 0.23)
+Objet voiture3 vu en :(0.62, 0.43),(1.12, 0.11)
+Temps :13,86667s
+Objet voiture2 vu en :(0.33, 0.43),(0.52, 0.23)
+Objet voiture3 vu en :(0.64, 0.43),(1.14, 0.12)
+Temps :13,9s
+Objet voiture2 vu en :(0.34, 0.43),(0.55, 0.23)
+Objet voiture3 vu en :(0.66, 0.43),(1.15, 0.14)
+Temps :13,93333s
+Objet voiture2 vu en :(0.34, 0.43),(0.55, 0.23)
+Objet voiture3 vu en :(0.66, 0.43),(1.14, 0.15)
+Temps :13,96667s
+Objet voiture2 vu en :(0.36, 0.44),(0.58, 0.23)
+Objet voiture3 vu en :(0.68, 0.44),(1.15, 0.17)
+Temps :14s
+Objet voiture2 vu en :(0.38, 0.44),(0.61, 0.24)
+Objet voiture3 vu en :(0.70, 0.44),(1.16, 0.18)
+Temps :14,03333s
+Objet voiture2 vu en :(0.38, 0.44),(0.62, 0.24)
+Objet voiture3 vu en :(0.70, 0.44),(1.15, 0.19)
+Temps :14,06667s
+Objet voiture2 vu en :(0.40, 0.44),(0.65, 0.24)
+Objet voiture3 vu en :(0.71, 0.44),(1.15, 0.20)
+Temps :14,1s
+Objet voiture2 vu en :(0.41, 0.44),(0.67, 0.24)
+Objet voiture3 vu en :(0.73, 0.44),(1.16, 0.22)
+Temps :14,13333s
+Objet voiture2 vu en :(0.42, 0.44),(0.67, 0.24)
+Objet voiture3 vu en :(0.72, 0.44),(1.14, 0.23)
+Temps :14,16667s
+Objet voiture2 vu en :(0.43, 0.44),(0.70, 0.25)
+Objet voiture3 vu en :(0.74, 0.44),(1.15, 0.24)
+Temps :14,2s
+Objet voiture2 vu en :(0.45, 0.44),(0.72, 0.25)
+Objet voiture3 vu en :(0.75, 0.45),(1.16, 0.25)
+Temps :14,23333s
+Objet voiture2 vu en :(0.45, 0.44),(0.72, 0.26)
+Objet voiture3 vu en :(0.75, 0.45),(1.14, 0.26)
+Temps :14,26667s
+Objet voiture2 vu en :(0.46, 0.44),(0.73, 0.26)
+Objet voiture3 vu en :(0.75, 0.45),(1.13, 0.27)
+Temps :14,3s
+Objet voiture2 vu en :(0.46, 0.44),(0.73, 0.26)
+Objet voiture3 vu en :(0.74, 0.45),(1.11, 0.28)
+Temps :14,33333s
+Objet voiture2 vu en :(0.45, 0.44),(0.72, 0.27)
+Objet voiture3 vu en :(0.73, 0.45),(1.08, 0.28)
+Temps :14,36667s
+Objet voiture2 vu en :(0.44, 0.44),(0.71, 0.27)
+Objet voiture3 vu en :(0.72, 0.45),(1.06, 0.29)
+Temps :14,4s
+Objet voiture2 vu en :(0.43, 0.44),(0.69, 0.27)
+Objet voiture3 vu en :(0.70, 0.45),(1.03, 0.30)
+Temps :14,43333s
+Objet voiture2 vu en :(0.41, 0.44),(0.68, 0.27)
+Objet voiture3 vu en :(0.69, 0.45),(1.00, 0.30)
+Temps :14,46667s
+Objet voiture2 vu en :(0.40, 0.44),(0.66, 0.27)
+Objet voiture3 vu en :(0.67, 0.45),(0.98, 0.31)
+Temps :14,5s
+Objet voiture2 vu en :(0.38, 0.44),(0.64, 0.28)
+Objet voiture3 vu en :(0.65, 0.45),(0.95, 0.31)
+Temps :14,53333s
+Objet voiture2 vu en :(0.37, 0.44),(0.63, 0.28)
+Objet voiture3 vu en :(0.64, 0.45),(0.92, 0.32)
+Temps :14,56667s
+Objet voiture2 vu en :(0.35, 0.44),(0.61, 0.28)
+Objet voiture3 vu en :(0.62, 0.45),(0.90, 0.32)
+Temps :14,6s
+Objet voiture2 vu en :(0.33, 0.44),(0.59, 0.28)
+Objet voiture3 vu en :(0.60, 0.45),(0.88, 0.32)
+Temps :14,63333s
+Objet voiture2 vu en :(0.31, 0.44),(0.58, 0.28)
+Objet voiture3 vu en :(0.58, 0.46),(0.85, 0.33)
+Temps :14,66667s
+Objet voiture2 vu en :(0.29, 0.44),(0.56, 0.28)
+Objet voiture3 vu en :(0.57, 0.46),(0.83, 0.33)
+Temps :14,7s
+Objet voiture2 vu en :(0.28, 0.44),(0.54, 0.28)
+Objet voiture3 vu en :(0.55, 0.46),(0.81, 0.33)
+Temps :14,73333s
+Objet voiture2 vu en :(0.26, 0.44),(0.53, 0.28)
+Objet voiture3 vu en :(0.53, 0.46),(0.79, 0.34)
+Temps :14,76667s
+Objet voiture1 vu en :(0.96, 0.47),(1.05, 0.44)
+Objet voiture2 vu en :(0.25, 0.44),(0.52, 0.28)
+Objet voiture3 vu en :(0.53, 0.46),(0.78, 0.34)
+Temps :14,8s
+Objet voiture0 vu en :(0.96, 0.47),(1.04, 0.44)
+Objet voiture1 vu en :(0.93, 0.47),(1.02, 0.44)
+Objet voiture2 vu en :(0.25, 0.44),(0.52, 0.28)
+Objet voiture3 vu en :(0.52, 0.46),(0.77, 0.34)
+Temps :14,83333s
+Objet voiture0 vu en :(0.94, 0.47),(1.01, 0.44)
+Objet voiture1 vu en :(0.91, 0.48),(0.99, 0.45)
+Objet voiture2 vu en :(0.24, 0.44),(0.52, 0.28)
+Objet voiture3 vu en :(0.52, 0.46),(0.76, 0.34)
+Temps :14,86667s
+Objet voiture0 vu en :(0.92, 0.47),(0.99, 0.45)
+Objet voiture1 vu en :(0.89, 0.48),(0.97, 0.45)
+Objet voiture2 vu en :(0.25, 0.44),(0.53, 0.28)
+Objet voiture3 vu en :(0.52, 0.46),(0.77, 0.35)
+Temps :14,9s
+Objet voiture0 vu en :(0.90, 0.48),(0.97, 0.45)
+Objet voiture1 vu en :(0.87, 0.48),(0.95, 0.45)
+Objet voiture2 vu en :(0.27, 0.44),(0.54, 0.28)
+Objet voiture3 vu en :(0.53, 0.46),(0.77, 0.35)
+Temps :14,93333s
+Objet voiture0 vu en :(0.88, 0.48),(0.94, 0.45)
+Objet voiture1 vu en :(0.85, 0.48),(0.92, 0.45)
+Objet voiture2 vu en :(0.26, 0.44),(0.54, 0.28)
+Objet voiture3 vu en :(0.53, 0.46),(0.76, 0.35)
+Temps :14,96667s
+Objet voiture0 vu en :(0.86, 0.48),(0.92, 0.45)
+Objet voiture1 vu en :(0.84, 0.48),(0.90, 0.45)
+Objet voiture2 vu en :(0.28, 0.44),(0.56, 0.28)
+Objet voiture3 vu en :(0.54, 0.46),(0.77, 0.35)
+Temps :15s
+Objet voiture0 vu en :(0.85, 0.45),(0.91, 0.42)
+Objet voiture1 vu en :(0.82, 0.45),(0.89, 0.42)
+Objet voiture2 vu en :(0.30, 0.41),(0.57, 0.26)
+Objet voiture3 vu en :(0.54, 0.43),(0.78, 0.32)
+Temps :15,03333s
+Objet voiture0 vu en :(0.83, 0.42),(0.89, 0.39)
+Objet voiture1 vu en :(0.80, 0.42),(0.87, 0.39)
+Objet voiture2 vu en :(0.30, 0.38),(0.57, 0.22)
+Objet voiture3 vu en :(0.54, 0.40),(0.77, 0.29)
+Temps :15,06667s
+Objet voiture0 vu en :(0.81, 0.39),(0.87, 0.36)
+Objet voiture1 vu en :(0.79, 0.39),(0.85, 0.36)
+Objet voiture2 vu en :(0.32, 0.35),(0.60, 0.20)
+Objet voiture3 vu en :(0.55, 0.37),(0.78, 0.26)
+Temps :15,1s
+Objet voiture0 vu en :(0.80, 0.39),(0.85, 0.36)
+Objet voiture1 vu en :(0.77, 0.39),(0.83, 0.36)
+Objet voiture2 vu en :(0.34, 0.35),(0.62, 0.20)
+Objet voiture3 vu en :(0.55, 0.37),(0.78, 0.26)
+Temps :15,13333s
+Objet voiture0 vu en :(0.78, 0.39),(0.83, 0.36)
+Objet voiture1 vu en :(0.76, 0.39),(0.82, 0.36)
+Objet voiture2 vu en :(0.35, 0.35),(0.62, 0.20)
+Objet voiture3 vu en :(0.55, 0.37),(0.78, 0.26)
+Temps :15,16667s
+Objet voiture0 vu en :(0.77, 0.39),(0.82, 0.36)
+Objet voiture1 vu en :(0.74, 0.39),(0.80, 0.37)
+Objet voiture2 vu en :(0.36, 0.35),(0.64, 0.20)
+Objet voiture3 vu en :(0.55, 0.37),(0.77, 0.27)
+Temps :15,2s
+Objet voiture0 vu en :(0.75, 0.39),(0.80, 0.36)
+Objet voiture1 vu en :(0.72, 0.39),(0.78, 0.37)
+Objet voiture2 vu en :(0.36, 0.35),(0.64, 0.21)
+Objet voiture3 vu en :(0.54, 0.37),(0.76, 0.27)
+Temps :15,23333s
+Objet voiture0 vu en :(0.73, 0.39),(0.78, 0.36)
+Objet voiture1 vu en :(0.70, 0.39),(0.76, 0.37)
+Objet voiture2 vu en :(0.35, 0.35),(0.62, 0.20)
+Objet voiture3 vu en :(0.53, 0.37),(0.75, 0.27)
+Temps :15,26667s
+Objet voiture0 vu en :(0.71, 0.39),(0.76, 0.37)
+Objet voiture1 vu en :(0.69, 0.39),(0.74, 0.37)
+Objet voiture2 vu en :(0.34, 0.35),(0.62, 0.20)
+Objet voiture3 vu en :(0.52, 0.37),(0.73, 0.27)
+Temps :15,3s
+Objet voiture0 vu en :(0.69, 0.39),(0.74, 0.37)
+Objet voiture1 vu en :(0.67, 0.39),(0.72, 0.37)
+Objet voiture2 vu en :(0.33, 0.35),(0.60, 0.20)
+Objet voiture3 vu en :(0.51, 0.37),(0.72, 0.27)
+Temps :15,33333s
+Objet voiture0 vu en :(0.68, 0.39),(0.72, 0.37)
+Objet voiture1 vu en :(0.65, 0.39),(0.70, 0.37)
+Objet voiture2 vu en :(0.31, 0.35),(0.59, 0.20)
+Objet voiture3 vu en :(0.49, 0.37),(0.70, 0.27)
+Temps :15,36667s
+Objet voiture0 vu en :(0.66, 0.42),(0.70, 0.40)
+Objet voiture1 vu en :(0.63, 0.42),(0.68, 0.40)
+Objet voiture2 vu en :(0.30, 0.38),(0.57, 0.23)
+Objet voiture3 vu en :(0.47, 0.40),(0.68, 0.30)
+Temps :15,4s
+Objet voiture0 vu en :(0.64, 0.42),(0.68, 0.40)
+Objet voiture1 vu en :(0.62, 0.42),(0.67, 0.40)
+Objet voiture2 vu en :(0.28, 0.38),(0.56, 0.23)
+Objet voiture3 vu en :(0.46, 0.40),(0.66, 0.30)
+Temps :15,43333s
+Objet voiture0 vu en :(0.62, 0.42),(0.66, 0.40)
+Objet voiture1 vu en :(0.60, 0.42),(0.65, 0.40)
+Objet voiture2 vu en :(0.26, 0.38),(0.54, 0.23)
+Objet voiture3 vu en :(0.44, 0.40),(0.65, 0.30)
+Temps :15,46667s
+Objet voiture0 vu en :(0.62, 0.42),(0.66, 0.40)
+Objet voiture1 vu en :(0.60, 0.42),(0.65, 0.40)
+Objet voiture2 vu en :(0.26, 0.38),(0.54, 0.23)
+Objet voiture3 vu en :(0.44, 0.40),(0.65, 0.30)
+Temps :15,5s
+Objet voiture0 vu en :(0.62, 0.42),(0.67, 0.40)
+Objet voiture1 vu en :(0.60, 0.42),(0.65, 0.40)
+Objet voiture2 vu en :(0.27, 0.38),(0.54, 0.23)
+Objet voiture3 vu en :(0.44, 0.40),(0.65, 0.30)
+Temps :15,53333s
+Objet voiture0 vu en :(0.62, 0.45),(0.66, 0.43)
+Objet voiture1 vu en :(0.60, 0.45),(0.65, 0.43)
+Objet voiture2 vu en :(0.27, 0.41),(0.54, 0.26)
+Objet voiture3 vu en :(0.44, 0.43),(0.65, 0.33)
+Temps :15,56667s
+Objet voiture0 vu en :(0.62, 0.48),(0.66, 0.46)
+Objet voiture1 vu en :(0.60, 0.48),(0.65, 0.46)
+Objet voiture2 vu en :(0.27, 0.44),(0.54, 0.29)
+Objet voiture3 vu en :(0.44, 0.46),(0.65, 0.36)
+Temps :15,6s
+Objet voiture0 vu en :(0.62, 0.51),(0.66, 0.49)
+Objet voiture1 vu en :(0.60, 0.51),(0.65, 0.49)
+Objet voiture2 vu en :(0.27, 0.47),(0.54, 0.32)
+Objet voiture3 vu en :(0.44, 0.49),(0.65, 0.39)
+Temps :15,63333s
+Objet voiture0 vu en :(0.62, 0.51),(0.66, 0.49)
+Objet voiture1 vu en :(0.60, 0.51),(0.65, 0.49)
+Objet voiture2 vu en :(0.27, 0.47),(0.54, 0.32)
+Objet voiture3 vu en :(0.44, 0.49),(0.65, 0.39)
+Temps :15,66667s
+Objet voiture0 vu en :(0.62, 0.51),(0.66, 0.49)
+Objet voiture1 vu en :(0.60, 0.51),(0.65, 0.49)
+Objet voiture2 vu en :(0.27, 0.47),(0.54, 0.32)
+Objet voiture3 vu en :(0.44, 0.49),(0.65, 0.39)
+Temps :15,7s
+Objet voiture0 vu en :(0.62, 0.50),(0.66, 0.48)
+Objet voiture1 vu en :(0.60, 0.51),(0.65, 0.48)
+Objet voiture2 vu en :(0.27, 0.44),(0.54, 0.28)
+Objet voiture3 vu en :(0.44, 0.47),(0.65, 0.37)
+Temps :15,73333s
+Objet voiture0 vu en :(0.62, 0.50),(0.66, 0.47)
+Objet voiture1 vu en :(0.60, 0.50),(0.65, 0.48)
+Objet voiture2 vu en :(0.27, 0.41),(0.54, 0.24)
+Objet voiture3 vu en :(0.44, 0.45),(0.65, 0.34)
+Temps :15,76667s
+Objet voiture0 vu en :(0.62, 0.49),(0.66, 0.47)
+Objet voiture1 vu en :(0.60, 0.50),(0.65, 0.47)
+Objet voiture2 vu en :(0.27, 0.38),(0.54, 0.20)
+Objet voiture3 vu en :(0.44, 0.43),(0.65, 0.32)
+Temps :15,8s
+Objet voiture0 vu en :(0.62, 0.49),(0.66, 0.46)
+Objet voiture1 vu en :(0.60, 0.49),(0.65, 0.47)
+Objet voiture2 vu en :(0.27, 0.35),(0.54, 0.17)
+Objet voiture3 vu en :(0.44, 0.41),(0.65, 0.29)
+Temps :15,83333s
+Objet voiture0 vu en :(0.62, 0.48),(0.66, 0.46)
+Objet voiture1 vu en :(0.60, 0.48),(0.65, 0.46)
+Objet voiture2 vu en :(0.27, 0.32),(0.54, 0.13)
+Objet voiture3 vu en :(0.44, 0.39),(0.65, 0.27)
+Temps :15,86667s
+Objet voiture0 vu en :(0.62, 0.51),(0.66, 0.49)
+Objet voiture1 vu en :(0.60, 0.51),(0.65, 0.49)
+Objet voiture2 vu en :(0.28, 0.35),(0.54, 0.16)
+Objet voiture3 vu en :(0.44, 0.42),(0.64, 0.30)
+Temps :15,9s
+Objet voiture0 vu en :(0.62, 0.54),(0.66, 0.52)
+Objet voiture1 vu en :(0.60, 0.54),(0.65, 0.52)
+Objet voiture2 vu en :(0.28, 0.38),(0.54, 0.19)
+Objet voiture3 vu en :(0.45, 0.45),(0.64, 0.33)
+Temps :15,93333s
+Objet voiture0 vu en :(0.62, 0.54),(0.66, 0.52)
+Objet voiture1 vu en :(0.60, 0.54),(0.65, 0.52)
+Objet voiture2 vu en :(0.28, 0.38),(0.54, 0.19)
+Objet voiture3 vu en :(0.45, 0.45),(0.64, 0.33)
+Temps :15,96667s
+Objet voiture0 vu en :(0.62, 0.54),(0.66, 0.52)
+Objet voiture1 vu en :(0.60, 0.54),(0.65, 0.52)
+Objet voiture2 vu en :(0.28, 0.38),(0.54, 0.19)
+Objet voiture3 vu en :(0.45, 0.45),(0.64, 0.33)
+Temps :16s
+Objet voiture0 vu en :(0.62, 0.54),(0.66, 0.52)
+Objet voiture1 vu en :(0.60, 0.54),(0.65, 0.52)
+Objet voiture2 vu en :(0.28, 0.38),(0.54, 0.19)
+Objet voiture3 vu en :(0.45, 0.45),(0.64, 0.33)
+Temps :16,03333s
+Objet voiture0 vu en :(0.60, 0.54),(0.65, 0.52)
+Objet voiture1 vu en :(0.58, 0.54),(0.63, 0.52)
+Objet voiture2 vu en :(0.26, 0.38),(0.53, 0.19)
+Objet voiture3 vu en :(0.43, 0.45),(0.63, 0.33)
+Temps :16,06667s
+Objet voiture0 vu en :(0.59, 0.54),(0.63, 0.52)
+Objet voiture1 vu en :(0.56, 0.54),(0.61, 0.52)
+Objet voiture2 vu en :(0.24, 0.38),(0.51, 0.18)
+Objet voiture3 vu en :(0.41, 0.45),(0.61, 0.33)
+Temps :16,1s
+Objet voiture0 vu en :(0.57, 0.54),(0.61, 0.52)
+Objet voiture1 vu en :(0.55, 0.54),(0.60, 0.52)
+Objet voiture2 vu en :(0.23, 0.38),(0.50, 0.18)
+Objet voiture3 vu en :(0.40, 0.45),(0.60, 0.33)
+Temps :16,13334s
+Objet voiture0 vu en :(0.56, 0.54),(0.60, 0.52)
+Objet voiture1 vu en :(0.53, 0.55),(0.58, 0.52)
+Objet voiture2 vu en :(0.22, 0.38),(0.50, 0.17)
+Objet voiture3 vu en :(0.39, 0.45),(0.59, 0.33)
+Temps :16,16667s
+Objet voiture0 vu en :(0.54, 0.54),(0.58, 0.52)
+Objet voiture1 vu en :(0.52, 0.55),(0.57, 0.52)
+Objet voiture2 vu en :(0.24, 0.38),(0.51, 0.17)
+Objet voiture3 vu en :(0.39, 0.45),(0.59, 0.33)
+Temps :16,2s
+Objet voiture0 vu en :(0.53, 0.54),(0.57, 0.52)
+Objet voiture1 vu en :(0.51, 0.55),(0.55, 0.52)
+Objet voiture2 vu en :(0.24, 0.38),(0.51, 0.16)
+Objet voiture3 vu en :(0.38, 0.45),(0.58, 0.32)
+Temps :16,23334s
+Objet voiture0 vu en :(0.53, 0.54),(0.57, 0.52)
+Objet voiture1 vu en :(0.51, 0.55),(0.55, 0.52)
+Objet voiture2 vu en :(0.24, 0.38),(0.51, 0.17)
+Objet voiture3 vu en :(0.39, 0.45),(0.58, 0.32)
+Temps :16,26667s
+Objet voiture0 vu en :(0.53, 0.54),(0.57, 0.52)
+Objet voiture1 vu en :(0.51, 0.55),(0.56, 0.52)
+Objet voiture2 vu en :(0.25, 0.38),(0.52, 0.17)
+Objet voiture3 vu en :(0.39, 0.45),(0.59, 0.32)
+Temps :16,3s
+Objet voiture0 vu en :(0.52, 0.54),(0.56, 0.52)
+Objet voiture1 vu en :(0.49, 0.55),(0.54, 0.52)
+Objet voiture2 vu en :(0.24, 0.38),(0.51, 0.16)
+Objet voiture3 vu en :(0.38, 0.45),(0.58, 0.32)
+Temps :16,33333s
+Objet voiture0 vu en :(0.50, 0.54),(0.54, 0.52)
+Objet voiture1 vu en :(0.48, 0.55),(0.52, 0.52)
+Objet voiture2 vu en :(0.23, 0.38),(0.50, 0.16)
+Objet voiture3 vu en :(0.37, 0.45),(0.56, 0.32)
+Temps :16,36667s
+Objet voiture0 vu en :(0.49, 0.54),(0.53, 0.52)
+Objet voiture1 vu en :(0.46, 0.55),(0.51, 0.52)
+Objet voiture2 vu en :(0.24, 0.38),(0.51, 0.15)
+Objet voiture3 vu en :(0.37, 0.45),(0.56, 0.32)
+Temps :16,4s
+Objet voiture0 vu en :(0.49, 0.54),(0.53, 0.52)
+Objet voiture1 vu en :(0.47, 0.55),(0.51, 0.52)
+Objet voiture2 vu en :(0.26, 0.38),(0.53, 0.15)
+Objet voiture3 vu en :(0.38, 0.45),(0.58, 0.32)
+Temps :16,43333s
+Objet voiture0 vu en :(0.50, 0.54),(0.53, 0.52)
+Objet voiture1 vu en :(0.47, 0.55),(0.52, 0.52)
+Objet voiture2 vu en :(0.28, 0.38),(0.55, 0.15)
+Objet voiture3 vu en :(0.39, 0.45),(0.59, 0.32)
+Temps :16,46667s
+Objet voiture0 vu en :(0.50, 0.54),(0.54, 0.52)
+Objet voiture1 vu en :(0.48, 0.55),(0.52, 0.52)
+Objet voiture2 vu en :(0.31, 0.38),(0.58, 0.15)
+Objet voiture3 vu en :(0.42, 0.45),(0.61, 0.32)
+Temps :16,5s
+Objet voiture0 vu en :(0.50, 0.54),(0.54, 0.52)
+Objet voiture1 vu en :(0.48, 0.55),(0.53, 0.52)
+Objet voiture2 vu en :(0.33, 0.38),(0.60, 0.16)
+Objet voiture3 vu en :(0.43, 0.45),(0.62, 0.32)
+Temps :16,53333s
+Objet voiture0 vu en :(0.51, 0.54),(0.55, 0.52)
+Objet voiture1 vu en :(0.48, 0.55),(0.53, 0.52)
+Objet voiture2 vu en :(0.34, 0.38),(0.61, 0.16)
+Objet voiture3 vu en :(0.43, 0.45),(0.62, 0.32)
+Temps :16,56667s
+Objet voiture0 vu en :(0.49, 0.54),(0.53, 0.52)
+Objet voiture1 vu en :(0.46, 0.55),(0.51, 0.52)
+Objet voiture2 vu en :(0.33, 0.38),(0.60, 0.15)
+Objet voiture3 vu en :(0.42, 0.45),(0.61, 0.32)
+Temps :16,6s
+Objet voiture0 vu en :(0.48, 0.54),(0.51, 0.52)
+Objet voiture1 vu en :(0.45, 0.55),(0.50, 0.52)
+Objet voiture2 vu en :(0.32, 0.38),(0.59, 0.15)
+Objet voiture3 vu en :(0.41, 0.45),(0.60, 0.32)
+Temps :16,63334s
+Objet voiture0 vu en :(0.46, 0.54),(0.50, 0.52)
+Objet voiture1 vu en :(0.43, 0.55),(0.48, 0.52)
+Objet voiture2 vu en :(0.32, 0.38),(0.59, 0.15)
+Objet voiture3 vu en :(0.40, 0.45),(0.59, 0.32)
+Temps :16,66667s
+Objet voiture0 vu en :(0.46, 0.54),(0.50, 0.52)
+Objet voiture1 vu en :(0.44, 0.55),(0.48, 0.52)
+Objet voiture2 vu en :(0.34, 0.38),(0.61, 0.15)
+Objet voiture3 vu en :(0.42, 0.45),(0.60, 0.32)
+Temps :16,7s
+Objet voiture0 vu en :(0.47, 0.54),(0.51, 0.52)
+Objet voiture1 vu en :(0.44, 0.55),(0.49, 0.52)
+Objet voiture2 vu en :(0.37, 0.38),(0.63, 0.15)
+Objet voiture3 vu en :(0.43, 0.45),(0.62, 0.32)
+Temps :16,73334s
+Objet voiture0 vu en :(0.47, 0.54),(0.51, 0.52)
+Objet voiture1 vu en :(0.44, 0.55),(0.49, 0.52)
+Objet voiture2 vu en :(0.38, 0.38),(0.64, 0.15)
+Objet voiture3 vu en :(0.44, 0.45),(0.62, 0.32)
+Temps :16,76667s
+Objet voiture0 vu en :(0.46, 0.54),(0.49, 0.52)
+Objet voiture1 vu en :(0.43, 0.55),(0.47, 0.52)
+Objet voiture2 vu en :(0.37, 0.38),(0.64, 0.15)
+Objet voiture3 vu en :(0.43, 0.45),(0.62, 0.32)
+Temps :16,8s
+Objet voiture0 vu en :(0.44, 0.54),(0.48, 0.52)
+Objet voiture1 vu en :(0.41, 0.55),(0.46, 0.52)
+Objet voiture2 vu en :(0.37, 0.38),(0.63, 0.15)
+Objet voiture3 vu en :(0.42, 0.45),(0.60, 0.32)
+Temps :16,83333s
+Objet voiture0 vu en :(0.42, 0.54),(0.46, 0.52)
+Objet voiture1 vu en :(0.39, 0.55),(0.44, 0.52)
+Objet voiture2 vu en :(0.35, 0.38),(0.61, 0.15)
+Objet voiture3 vu en :(0.41, 0.45),(0.59, 0.32)
+Temps :16,86667s
+Objet voiture0 vu en :(0.43, 0.54),(0.46, 0.52)
+Objet voiture1 vu en :(0.40, 0.55),(0.44, 0.52)
+Objet voiture2 vu en :(0.36, 0.38),(0.62, 0.15)
+Objet voiture3 vu en :(0.41, 0.45),(0.59, 0.32)
+Temps :16,9s
+Objet voiture0 vu en :(0.43, 0.54),(0.46, 0.52)
+Objet voiture1 vu en :(0.40, 0.55),(0.44, 0.52)
+Objet voiture2 vu en :(0.36, 0.38),(0.62, 0.15)
+Objet voiture3 vu en :(0.41, 0.45),(0.59, 0.32)
+Temps :16,93333s
+Objet voiture0 vu en :(0.43, 0.54),(0.46, 0.52)
+Objet voiture1 vu en :(0.40, 0.55),(0.44, 0.52)
+Objet voiture2 vu en :(0.36, 0.38),(0.62, 0.15)
+Objet voiture3 vu en :(0.41, 0.45),(0.59, 0.32)
+Temps :16,96667s
+Objet voiture0 vu en :(0.43, 0.54),(0.46, 0.52)
+Objet voiture1 vu en :(0.40, 0.55),(0.44, 0.52)
+Objet voiture2 vu en :(0.36, 0.38),(0.62, 0.15)
+Objet voiture3 vu en :(0.41, 0.45),(0.59, 0.32)
+Temps :17s
+Objet voiture0 vu en :(0.43, 0.54),(0.46, 0.52)
+Objet voiture1 vu en :(0.40, 0.55),(0.44, 0.52)
+Objet voiture2 vu en :(0.36, 0.38),(0.62, 0.15)
+Objet voiture3 vu en :(0.41, 0.45),(0.59, 0.32)
+Temps :17,03333s
+Objet voiture0 vu en :(0.41, 0.54),(0.45, 0.52)
+Objet voiture1 vu en :(0.38, 0.54),(0.43, 0.52)
+Objet voiture2 vu en :(0.35, 0.38),(0.61, 0.14)
+Objet voiture3 vu en :(0.40, 0.45),(0.58, 0.32)
+Temps :17,06667s
+Objet voiture0 vu en :(0.39, 0.54),(0.43, 0.52)
+Objet voiture1 vu en :(0.36, 0.54),(0.41, 0.52)
+Objet voiture2 vu en :(0.33, 0.38),(0.59, 0.14)
+Objet voiture3 vu en :(0.38, 0.45),(0.56, 0.32)
+Temps :17,1s
+Objet voiture0 vu en :(0.39, 0.54),(0.43, 0.52)
+Objet voiture1 vu en :(0.36, 0.54),(0.41, 0.52)
+Objet voiture2 vu en :(0.33, 0.38),(0.59, 0.14)
+Objet voiture3 vu en :(0.38, 0.45),(0.56, 0.32)
+Temps :17,13334s
+Objet voiture0 vu en :(0.39, 0.54),(0.43, 0.52)
+Objet voiture1 vu en :(0.36, 0.54),(0.41, 0.52)
+Objet voiture2 vu en :(0.33, 0.38),(0.59, 0.14)
+Objet voiture3 vu en :(0.38, 0.45),(0.56, 0.32)
+Temps :17,16667s
+Objet voiture0 vu en :(0.39, 0.54),(0.43, 0.52)
+Objet voiture1 vu en :(0.36, 0.54),(0.41, 0.52)
+Objet voiture2 vu en :(0.33, 0.38),(0.59, 0.14)
+Objet voiture3 vu en :(0.38, 0.45),(0.56, 0.32)
+Temps :17,2s
+Objet voiture0 vu en :(0.37, 0.54),(0.41, 0.52)
+Objet voiture1 vu en :(0.34, 0.54),(0.39, 0.52)
+Objet voiture2 vu en :(0.31, 0.38),(0.58, 0.14)
+Objet voiture3 vu en :(0.36, 0.45),(0.54, 0.32)
+Temps :17,23334s
+Objet voiture0 vu en :(0.36, 0.54),(0.40, 0.52)
+Objet voiture1 vu en :(0.33, 0.54),(0.38, 0.52)
+Objet voiture2 vu en :(0.29, 0.38),(0.56, 0.14)
+Objet voiture3 vu en :(0.35, 0.45),(0.53, 0.32)
+Temps :17,26667s
+Objet voiture0 vu en :(0.36, 0.54),(0.40, 0.52)
+Objet voiture1 vu en :(0.33, 0.54),(0.38, 0.52)
+Objet voiture2 vu en :(0.29, 0.38),(0.56, 0.14)
+Objet voiture3 vu en :(0.35, 0.45),(0.53, 0.32)
+Temps :17,3s
+Objet voiture0 vu en :(0.36, 0.54),(0.40, 0.52)
+Objet voiture1 vu en :(0.33, 0.54),(0.38, 0.52)
+Objet voiture2 vu en :(0.29, 0.38),(0.56, 0.14)
+Objet voiture3 vu en :(0.35, 0.45),(0.53, 0.32)
+Temps :17,33333s
+Objet voiture0 vu en :(0.36, 0.54),(0.40, 0.52)
+Objet voiture1 vu en :(0.33, 0.54),(0.38, 0.52)
+Objet voiture2 vu en :(0.29, 0.38),(0.56, 0.13)
+Objet voiture3 vu en :(0.35, 0.45),(0.53, 0.32)
+Temps :17,36667s
+Objet voiture0 vu en :(0.36, 0.54),(0.40, 0.52)
+Objet voiture1 vu en :(0.32, 0.54),(0.37, 0.52)
+Objet voiture2 vu en :(0.28, 0.37),(0.56, 0.11)
+Objet voiture3 vu en :(0.34, 0.45),(0.53, 0.31)
+Temps :17,4s
+Objet voiture0 vu en :(0.35, 0.54),(0.40, 0.52)
+Objet voiture1 vu en :(0.32, 0.54),(0.37, 0.52)
+Objet voiture2 vu en :(0.27, 0.36),(0.56, 0.08)
+Objet voiture3 vu en :(0.34, 0.44),(0.53, 0.30)
+Temps :17,43333s
+Objet voiture0 vu en :(0.37, 0.54),(0.41, 0.52)
+Objet voiture1 vu en :(0.34, 0.54),(0.39, 0.52)
+Objet voiture2 vu en :(0.29, 0.36),(0.58, 0.07)
+Objet voiture3 vu en :(0.35, 0.44),(0.55, 0.30)
+Temps :17,46667s
+Objet voiture0 vu en :(0.39, 0.54),(0.43, 0.52)
+Objet voiture1 vu en :(0.36, 0.54),(0.41, 0.52)
+Objet voiture2 vu en :(0.30, 0.35),(0.60, 0.06)
+Objet voiture3 vu en :(0.37, 0.44),(0.56, 0.29)
+Temps :17,5s
+Objet voiture0 vu en :(0.41, 0.54),(0.45, 0.52)
+Objet voiture1 vu en :(0.38, 0.54),(0.42, 0.52)
+Objet voiture2 vu en :(0.31, 0.35),(0.62, 0.05)
+Objet voiture3 vu en :(0.38, 0.44),(0.58, 0.29)
+Temps :17,53333s
+Objet voiture0 vu en :(0.41, 0.54),(0.45, 0.52)
+Objet voiture1 vu en :(0.38, 0.54),(0.42, 0.52)
+Objet voiture2 vu en :(0.31, 0.35),(0.62, 0.05)
+Objet voiture3 vu en :(0.38, 0.44),(0.58, 0.29)
+Temps :17,56667s
+Objet voiture0 vu en :(0.41, 0.54),(0.45, 0.52)
+Objet voiture1 vu en :(0.38, 0.54),(0.42, 0.52)
+Objet voiture2 vu en :(0.31, 0.35),(0.62, 0.04)
+Objet voiture3 vu en :(0.38, 0.44),(0.58, 0.29)
+Temps :17,6s
+Objet voiture0 vu en :(0.41, 0.54),(0.45, 0.52)
+Objet voiture1 vu en :(0.37, 0.54),(0.42, 0.52)
+Objet voiture2 vu en :(0.31, 0.35),(0.62, 0.04)
+Objet voiture3 vu en :(0.38, 0.44),(0.58, 0.29)
+Temps :17,63334s
+Objet voiture0 vu en :(0.42, 0.54),(0.46, 0.52)
+Objet voiture1 vu en :(0.39, 0.54),(0.44, 0.52)
+Objet voiture2 vu en :(0.33, 0.35),(0.64, 0.04)
+Objet voiture3 vu en :(0.40, 0.44),(0.60, 0.29)
+Temps :17,66667s
+Objet voiture0 vu en :(0.44, 0.54),(0.48, 0.52)
+Objet voiture1 vu en :(0.41, 0.54),(0.46, 0.52)
+Objet voiture2 vu en :(0.34, 0.35),(0.65, 0.04)
+Objet voiture3 vu en :(0.41, 0.44),(0.62, 0.29)
+Temps :17,7s
+Objet voiture0 vu en :(0.46, 0.54),(0.50, 0.52)
+Objet voiture1 vu en :(0.43, 0.54),(0.47, 0.52)
+Objet voiture2 vu en :(0.36, 0.34),(0.67, 0.05)
+Objet voiture3 vu en :(0.43, 0.44),(0.63, 0.29)
+Temps :17,73334s
+Objet voiture0 vu en :(0.47, 0.54),(0.51, 0.52)
+Objet voiture1 vu en :(0.44, 0.54),(0.49, 0.52)
+Objet voiture2 vu en :(0.38, 0.34),(0.69, 0.05)
+Objet voiture3 vu en :(0.45, 0.43),(0.65, 0.29)
+Temps :17,76667s
+Objet voiture0 vu en :(0.49, 0.54),(0.53, 0.52)
+Objet voiture1 vu en :(0.46, 0.54),(0.51, 0.52)
+Objet voiture2 vu en :(0.39, 0.34),(0.71, 0.05)
+Objet voiture3 vu en :(0.46, 0.43),(0.67, 0.29)
+Temps :17,8s
+Objet voiture0 vu en :(0.51, 0.54),(0.55, 0.52)
+Objet voiture1 vu en :(0.48, 0.54),(0.53, 0.52)
+Objet voiture2 vu en :(0.41, 0.34),(0.73, 0.05)
+Objet voiture3 vu en :(0.48, 0.43),(0.69, 0.29)
+Temps :17,83333s
+Objet voiture0 vu en :(0.51, 0.54),(0.55, 0.52)
+Objet voiture1 vu en :(0.48, 0.54),(0.53, 0.52)
+Objet voiture2 vu en :(0.41, 0.34),(0.73, 0.05)
+Objet voiture3 vu en :(0.48, 0.43),(0.69, 0.29)
+Temps :17,86667s
+Objet voiture0 vu en :(0.51, 0.54),(0.55, 0.52)
+Objet voiture1 vu en :(0.48, 0.54),(0.53, 0.52)
+Objet voiture2 vu en :(0.41, 0.34),(0.73, 0.05)
+Objet voiture3 vu en :(0.48, 0.43),(0.69, 0.29)
+Temps :17,9s
+Objet voiture0 vu en :(0.51, 0.54),(0.55, 0.52)
+Objet voiture1 vu en :(0.48, 0.54),(0.53, 0.52)
+Objet voiture2 vu en :(0.41, 0.34),(0.73, 0.03)
+Objet voiture3 vu en :(0.48, 0.43),(0.69, 0.28)
+Temps :17,93333s
+Objet voiture0 vu en :(0.51, 0.54),(0.55, 0.52)
+Objet voiture1 vu en :(0.48, 0.54),(0.53, 0.52)
+Objet voiture2 vu en :(0.41, 0.33),(0.74, 0.02)
+Objet voiture3 vu en :(0.48, 0.43),(0.69, 0.28)
+Temps :17,96667s
+Objet voiture0 vu en :(0.51, 0.54),(0.55, 0.52)
+Objet voiture1 vu en :(0.48, 0.54),(0.53, 0.52)
+Objet voiture2 vu en :(0.40, 0.32),(0.75, -0.03)
+Objet voiture3 vu en :(0.48, 0.42),(0.70, 0.27)
+Temps :18s
+Objet voiture0 vu en :(0.51, 0.54),(0.55, 0.51)
+Objet voiture1 vu en :(0.48, 0.54),(0.53, 0.52)
+Objet voiture2 vu en :(0.39, 0.30),(0.77, -0.08)
+Objet voiture3 vu en :(0.48, 0.42),(0.70, 0.25)
+Temps :18,03333s
+Objet voiture0 vu en :(0.51, 0.54),(0.55, 0.51)
+Objet voiture1 vu en :(0.48, 0.54),(0.53, 0.52)
+Objet voiture2 vu en :(0.39, 0.29),(0.78, -0.12)
+Objet voiture3 vu en :(0.48, 0.42),(0.71, 0.24)
+Temps :18,06667s
+Objet voiture0 vu en :(0.51, 0.54),(0.55, 0.51)
+Objet voiture1 vu en :(0.48, 0.54),(0.53, 0.52)
+Objet voiture2 vu en :(0.38, 0.27),(0.80, -0.21)
+Objet voiture3 vu en :(0.48, 0.41),(0.72, 0.22)
+Temps :18,1s
+Objet voiture0 vu en :(0.51, 0.54),(0.55, 0.51)
+Objet voiture1 vu en :(0.48, 0.54),(0.53, 0.52)
+Objet voiture2 vu en :(0.37, 0.24),(0.83, -0.33)
+Objet voiture3 vu en :(0.48, 0.40),(0.73, 0.20)
+Temps :18,13334s
+Objet voiture0 vu en :(0.51, 0.54),(0.55, 0.51)
+Objet voiture1 vu en :(0.48, 0.54),(0.53, 0.52)
+Objet voiture2 vu en :(0.36, 0.22),(0.85, -0.41)
+Objet voiture3 vu en :(0.48, 0.39),(0.73, 0.19)
+Temps :18,16667s
+Objet voiture0 vu en :(0.51, 0.54),(0.55, 0.51)
+Objet voiture1 vu en :(0.48, 0.54),(0.53, 0.52)
+Objet voiture3 vu en :(0.47, 0.38),(0.75, 0.16)
+Temps :18,2s
+Objet voiture0 vu en :(0.51, 0.54),(0.55, 0.51)
+Objet voiture1 vu en :(0.48, 0.54),(0.53, 0.52)
+Objet voiture3 vu en :(0.47, 0.37),(0.76, 0.12)
+Temps :18,23334s
+Objet voiture0 vu en :(0.51, 0.54),(0.55, 0.51)
+Objet voiture1 vu en :(0.48, 0.54),(0.53, 0.52)
+Objet voiture3 vu en :(0.47, 0.36),(0.77, 0.10)
+Temps :18,26667s
+Objet voiture0 vu en :(0.51, 0.54),(0.55, 0.51)
+Objet voiture1 vu en :(0.48, 0.54),(0.53, 0.52)
+Objet voiture3 vu en :(0.47, 0.35),(0.79, 0.06)
+Temps :18,3s
+Objet voiture0 vu en :(0.51, 0.54),(0.55, 0.51)
+Objet voiture1 vu en :(0.47, 0.54),(0.53, 0.52)
+Objet voiture3 vu en :(0.47, 0.33),(0.81, 0.01)
+Temps :18,33333s
+Objet voiture0 vu en :(0.51, 0.54),(0.55, 0.51)
+Objet voiture1 vu en :(0.47, 0.54),(0.53, 0.52)
+Objet voiture3 vu en :(0.46, 0.32),(0.82, -0.03)
+Temps :18,36667s
+Objet voiture0 vu en :(0.51, 0.53),(0.55, 0.51)
+Objet voiture1 vu en :(0.47, 0.54),(0.53, 0.51)
+Objet voiture3 vu en :(0.46, 0.30),(0.84, -0.10)
+Temps :18,4s
+Objet voiture0 vu en :(0.51, 0.53),(0.55, 0.50)
+Objet voiture1 vu en :(0.47, 0.54),(0.53, 0.51)
+Objet voiture3 vu en :(0.46, 0.28),(0.87, -0.19)
+Temps :18,43333s
+Objet voiture0 vu en :(0.51, 0.53),(0.55, 0.50)
+Objet voiture1 vu en :(0.47, 0.54),(0.53, 0.51)
+Objet voiture3 vu en :(0.46, 0.26),(0.89, -0.25)
+Temps :18,46667s
+Objet voiture0 vu en :(0.52, 0.53),(0.57, 0.50)
+Objet voiture1 vu en :(0.49, 0.54),(0.55, 0.51)
+Objet voiture3 vu en :(0.47, 0.23),(0.96, -0.41)
+Temps :18,5s
+Objet voiture0 vu en :(0.54, 0.53),(0.59, 0.50)
+Objet voiture1 vu en :(0.51, 0.54),(0.56, 0.51)
+Temps :18,53333s
+Objet voiture0 vu en :(0.54, 0.53),(0.59, 0.50)
+Objet voiture1 vu en :(0.51, 0.54),(0.56, 0.51)
+Temps :18,56667s
+Objet voiture0 vu en :(0.54, 0.53),(0.59, 0.50)
+Objet voiture1 vu en :(0.51, 0.54),(0.56, 0.51)
+Temps :18,6s
+Objet voiture0 vu en :(0.54, 0.53),(0.59, 0.50)
+Objet voiture1 vu en :(0.51, 0.54),(0.56, 0.51)
+Temps :18,63334s
+Objet voiture0 vu en :(0.54, 0.53),(0.59, 0.50)
+Objet voiture1 vu en :(0.51, 0.54),(0.56, 0.51)
+Temps :18,66667s
+Objet voiture0 vu en :(0.54, 0.53),(0.59, 0.50)
+Objet voiture1 vu en :(0.51, 0.53),(0.57, 0.51)
+Temps :18,7s
+Objet voiture0 vu en :(0.54, 0.53),(0.59, 0.49)
+Objet voiture1 vu en :(0.51, 0.53),(0.57, 0.51)
+Temps :18,73334s
+Objet voiture0 vu en :(0.54, 0.53),(0.60, 0.49)
+Objet voiture1 vu en :(0.51, 0.53),(0.57, 0.51)
+Temps :18,76667s
+Objet voiture0 vu en :(0.55, 0.53),(0.60, 0.49)
+Objet voiture1 vu en :(0.51, 0.53),(0.57, 0.50)
+Temps :18,8s
+Objet voiture0 vu en :(0.55, 0.53),(0.60, 0.49)
+Objet voiture1 vu en :(0.51, 0.53),(0.57, 0.50)
+Temps :18,83333s
+Objet voiture0 vu en :(0.55, 0.53),(0.60, 0.49)
+Objet voiture1 vu en :(0.51, 0.53),(0.57, 0.50)
+Temps :18,86667s
+Objet voiture0 vu en :(0.55, 0.52),(0.60, 0.49)
+Objet voiture1 vu en :(0.51, 0.53),(0.57, 0.50)
+Temps :18,9s
+Objet voiture0 vu en :(0.55, 0.52),(0.60, 0.49)
+Objet voiture1 vu en :(0.51, 0.53),(0.57, 0.50)
+Temps :18,93333s
+Objet voiture0 vu en :(0.55, 0.52),(0.60, 0.49)
+Objet voiture1 vu en :(0.51, 0.53),(0.57, 0.50)
+Temps :18,96667s
+Objet voiture0 vu en :(0.55, 0.52),(0.60, 0.48)
+Objet voiture1 vu en :(0.51, 0.53),(0.57, 0.50)
+Temps :19s
+Objet voiture0 vu en :(0.55, 0.52),(0.61, 0.48)
+Objet voiture1 vu en :(0.51, 0.53),(0.57, 0.50)
+Temps :19,03333s
+Objet voiture0 vu en :(0.55, 0.52),(0.61, 0.48)
+Objet voiture1 vu en :(0.51, 0.53),(0.57, 0.50)
+Temps :19,06667s
+Objet voiture0 vu en :(0.55, 0.52),(0.61, 0.48)
+Objet voiture1 vu en :(0.51, 0.53),(0.57, 0.50)
+Temps :19,1s
+Objet voiture0 vu en :(0.55, 0.52),(0.61, 0.48)
+Objet voiture1 vu en :(0.51, 0.53),(0.58, 0.49)
+Temps :19,13334s
+Objet voiture0 vu en :(0.55, 0.52),(0.61, 0.48)
+Objet voiture1 vu en :(0.51, 0.53),(0.58, 0.49)
+Temps :19,16667s
+Objet voiture0 vu en :(0.55, 0.52),(0.61, 0.47)
+Objet voiture1 vu en :(0.51, 0.52),(0.58, 0.49)
+Temps :19,2s
+Objet voiture0 vu en :(0.55, 0.52),(0.61, 0.47)
+Objet voiture1 vu en :(0.51, 0.52),(0.58, 0.49)
+Temps :19,23334s
+Objet voiture0 vu en :(0.55, 0.51),(0.62, 0.47)
+Objet voiture1 vu en :(0.51, 0.52),(0.58, 0.49)
+Temps :19,26667s
+Objet voiture0 vu en :(0.56, 0.51),(0.62, 0.47)
+Objet voiture1 vu en :(0.51, 0.52),(0.58, 0.49)
+Temps :19,3s
+Objet voiture0 vu en :(0.54, 0.51),(0.60, 0.47)
+Objet voiture1 vu en :(0.49, 0.52),(0.56, 0.49)
+Temps :19,33333s
+Objet voiture0 vu en :(0.54, 0.51),(0.60, 0.47)
+Objet voiture1 vu en :(0.49, 0.52),(0.56, 0.49)
+Temps :19,36667s
+Objet voiture0 vu en :(0.54, 0.51),(0.61, 0.46)
+Objet voiture1 vu en :(0.49, 0.52),(0.57, 0.48)
+Temps :19,4s
+Objet voiture0 vu en :(0.54, 0.51),(0.61, 0.46)
+Objet voiture1 vu en :(0.49, 0.52),(0.57, 0.48)
+Temps :19,43333s
+Objet voiture0 vu en :(0.54, 0.51),(0.61, 0.46)
+Objet voiture1 vu en :(0.49, 0.52),(0.57, 0.48)
+Temps :19,46667s
+Objet voiture0 vu en :(0.54, 0.51),(0.61, 0.46)
+Objet voiture1 vu en :(0.49, 0.52),(0.57, 0.48)
+Temps :19,5s
+Objet voiture0 vu en :(0.54, 0.50),(0.61, 0.45)
+Objet voiture1 vu en :(0.49, 0.52),(0.57, 0.48)
+Temps :19,53333s
+Objet voiture0 vu en :(0.54, 0.50),(0.61, 0.45)
+Objet voiture1 vu en :(0.49, 0.52),(0.57, 0.48)
+Temps :19,56667s
+Objet voiture0 vu en :(0.55, 0.50),(0.62, 0.45)
+Objet voiture1 vu en :(0.49, 0.51),(0.57, 0.47)
+Temps :19,6s
+Objet voiture0 vu en :(0.55, 0.50),(0.62, 0.45)
+Objet voiture1 vu en :(0.49, 0.51),(0.57, 0.47)
+Temps :19,63334s
+Objet voiture0 vu en :(0.55, 0.50),(0.62, 0.45)
+Objet voiture1 vu en :(0.49, 0.51),(0.57, 0.47)
+Temps :19,66667s
+Objet voiture0 vu en :(0.55, 0.50),(0.62, 0.44)
+Objet voiture1 vu en :(0.49, 0.51),(0.58, 0.47)
+Temps :19,7s
+Objet voiture0 vu en :(0.55, 0.50),(0.63, 0.44)
+Objet voiture1 vu en :(0.49, 0.51),(0.58, 0.47)
+Temps :19,73334s
+Objet voiture0 vu en :(0.55, 0.49),(0.63, 0.44)
+Objet voiture1 vu en :(0.49, 0.51),(0.58, 0.47)
+Temps :19,76667s
+Objet voiture0 vu en :(0.55, 0.49),(0.63, 0.43)
+Objet voiture1 vu en :(0.49, 0.51),(0.58, 0.46)
+Temps :19,8s
+Objet voiture0 vu en :(0.55, 0.49),(0.63, 0.43)
+Objet voiture1 vu en :(0.49, 0.51),(0.58, 0.46)
+Temps :19,83333s
+Objet voiture0 vu en :(0.55, 0.49),(0.63, 0.43)
+Objet voiture1 vu en :(0.49, 0.51),(0.58, 0.46)
+Temps :19,86667s
+Objet voiture0 vu en :(0.55, 0.49),(0.64, 0.42)
+Objet voiture1 vu en :(0.49, 0.50),(0.58, 0.46)
+Temps :19,9s
+Objet voiture0 vu en :(0.56, 0.48),(0.64, 0.42)
+Objet voiture1 vu en :(0.49, 0.50),(0.58, 0.45)
+Temps :19,93333s
+Objet voiture0 vu en :(0.56, 0.48),(0.64, 0.42)
+Objet voiture1 vu en :(0.49, 0.50),(0.58, 0.45)
+Temps :19,96667s
+Objet voiture0 vu en :(0.56, 0.48),(0.65, 0.41)
+Objet voiture1 vu en :(0.49, 0.50),(0.59, 0.45)
+Temps :20s
+Objet voiture0 vu en :(0.56, 0.48),(0.65, 0.41)
+Objet voiture1 vu en :(0.49, 0.50),(0.59, 0.45)
+Temps :20,03333s
+Objet voiture0 vu en :(0.56, 0.48),(0.65, 0.40)
+Objet voiture1 vu en :(0.49, 0.50),(0.59, 0.45)
+Temps :20,06667s
+Objet voiture0 vu en :(0.56, 0.47),(0.66, 0.40)
+Objet voiture1 vu en :(0.49, 0.50),(0.59, 0.44)
+Temps :20,1s
+Objet voiture0 vu en :(0.56, 0.47),(0.66, 0.39)
+Objet voiture1 vu en :(0.49, 0.49),(0.59, 0.44)
+Temps :20,13334s
+Objet voiture0 vu en :(0.56, 0.47),(0.66, 0.39)
+Objet voiture1 vu en :(0.49, 0.49),(0.59, 0.44)
+Temps :20,16667s
+Objet voiture0 vu en :(0.57, 0.47),(0.67, 0.38)
+Objet voiture1 vu en :(0.49, 0.49),(0.60, 0.43)
+Temps :20,2s
+Objet voiture0 vu en :(0.57, 0.46),(0.67, 0.37)
+Objet voiture1 vu en :(0.49, 0.49),(0.60, 0.43)
+Temps :20,23334s
+Objet voiture0 vu en :(0.57, 0.46),(0.67, 0.37)
+Objet voiture1 vu en :(0.49, 0.49),(0.60, 0.43)
+Temps :20,26667s
+Objet voiture0 vu en :(0.57, 0.46),(0.68, 0.36)
+Objet voiture1 vu en :(0.49, 0.48),(0.60, 0.42)
+Temps :20,3s
+Objet voiture0 vu en :(0.58, 0.45),(0.68, 0.35)
+Objet voiture1 vu en :(0.49, 0.48),(0.60, 0.42)
+Temps :20,33333s
+Objet voiture0 vu en :(0.58, 0.45),(0.69, 0.35)
+Objet voiture1 vu en :(0.49, 0.48),(0.61, 0.42)
+Temps :20,36667s
+Objet voiture0 vu en :(0.58, 0.45),(0.69, 0.34)
+Objet voiture1 vu en :(0.49, 0.48),(0.61, 0.41)
+Temps :20,4s
+Objet voiture0 vu en :(0.58, 0.44),(0.70, 0.33)
+Objet voiture1 vu en :(0.49, 0.48),(0.61, 0.41)
+Temps :20,43333s
+Objet voiture0 vu en :(0.58, 0.47),(0.70, 0.35)
+Objet voiture1 vu en :(0.49, 0.50),(0.61, 0.43)
+Temps :20,46667s
+Objet voiture0 vu en :(0.59, 0.49),(0.71, 0.37)
+Objet voiture1 vu en :(0.49, 0.53),(0.61, 0.46)
+Temps :20,5s
+Objet voiture0 vu en :(0.57, 0.52),(0.70, 0.39)
+Objet voiture1 vu en :(0.47, 0.56),(0.60, 0.48)
+Temps :20,53333s
+Objet voiture0 vu en :(0.56, 0.52),(0.69, 0.39)
+Objet voiture1 vu en :(0.45, 0.56),(0.59, 0.48)
+Temps :20,56667s
+Objet voiture0 vu en :(0.55, 0.51),(0.68, 0.38)
+Objet voiture1 vu en :(0.43, 0.55),(0.57, 0.47)
+Temps :20,6s
+Objet voiture0 vu en :(0.55, 0.50),(0.68, 0.36)
+Objet voiture1 vu en :(0.43, 0.55),(0.57, 0.47)
+Temps :20,63334s
+Objet voiture0 vu en :(0.55, 0.50),(0.69, 0.35)
+Objet voiture1 vu en :(0.43, 0.55),(0.58, 0.46)
+Temps :20,66667s
+Objet voiture0 vu en :(0.55, 0.49),(0.70, 0.34)
+Objet voiture1 vu en :(0.43, 0.54),(0.58, 0.46)
+Temps :20,7s
+Objet voiture0 vu en :(0.56, 0.52),(0.70, 0.35)
+Objet voiture1 vu en :(0.43, 0.57),(0.58, 0.48)
+Temps :20,73334s
+Objet voiture0 vu en :(0.56, 0.54),(0.71, 0.37)
+Objet voiture1 vu en :(0.43, 0.60),(0.58, 0.50)
+Temps :20,76667s
+Objet voiture0 vu en :(0.54, 0.56),(0.70, 0.38)
+Objet voiture1 vu en :(0.41, 0.62),(0.57, 0.52)
+Temps :20,8s
+Objet voiture0 vu en :(0.53, 0.59),(0.69, 0.39)
+Objet voiture1 vu en :(0.39, 0.65),(0.55, 0.54)
+Temps :20,83334s
+Objet voiture0 vu en :(0.52, 0.61),(0.68, 0.41)
+Objet voiture1 vu en :(0.37, 0.68),(0.54, 0.57)
+Temps :20,86667s
+Objet voiture0 vu en :(0.52, 0.60),(0.69, 0.38)
+Objet voiture1 vu en :(0.37, 0.67),(0.54, 0.56)
+Temps :20,9s
+Objet voiture0 vu en :(0.52, 0.59),(0.70, 0.35)
+Objet voiture1 vu en :(0.36, 0.67),(0.54, 0.55)
+Temps :20,93333s
+Objet voiture0 vu en :(0.52, 0.58),(0.70, 0.33)
+Objet voiture1 vu en :(0.36, 0.66),(0.54, 0.54)
+Temps :20,96667s
+Objet voiture0 vu en :(0.53, 0.57),(0.72, 0.29)
+Objet voiture1 vu en :(0.36, 0.66),(0.55, 0.53)
+Temps :21s
+Objet voiture0 vu en :(0.53, 0.56),(0.73, 0.25)
+Objet voiture1 vu en :(0.35, 0.65),(0.55, 0.52)
+Temps :21,03333s
+Objet voiture0 vu en :(0.53, 0.55),(0.73, 0.22)
+Objet voiture1 vu en :(0.35, 0.65),(0.55, 0.51)
+Temps :21,06667s
+Objet voiture0 vu en :(0.52, 0.56),(0.73, 0.20)
+Objet voiture1 vu en :(0.32, 0.67),(0.53, 0.52)
+Temps :21,1s
+Objet voiture0 vu en :(0.51, 0.57),(0.73, 0.18)
+Objet voiture1 vu en :(0.30, 0.69),(0.52, 0.53)
+Temps :21,13334s
+Objet voiture0 vu en :(0.51, 0.59),(0.74, 0.17)
+Objet voiture1 vu en :(0.30, 0.72),(0.52, 0.55)
+Temps :21,16667s
+Objet voiture0 vu en :(0.51, 0.57),(0.75, 0.09)
+Objet voiture1 vu en :(0.29, 0.71),(0.52, 0.53)
+Temps :21,2s
+Objet voiture0 vu en :(0.51, 0.54),(0.77, -0.01)
+Objet voiture1 vu en :(0.28, 0.70),(0.52, 0.51)
+Temps :21,23334s
+Objet voiture0 vu en :(0.53, 0.53),(0.80, -0.08)
+Objet voiture1 vu en :(0.29, 0.70),(0.54, 0.50)
+Temps :21,26667s
+Objet voiture0 vu en :(0.54, 0.49),(0.85, -0.25)
+Objet voiture1 vu en :(0.30, 0.69),(0.56, 0.48)
+Temps :21,3s
+Objet voiture0 vu en :(0.55, 0.44),(0.90, -0.47)
+Objet voiture1 vu en :(0.30, 0.68),(0.58, 0.46)
+Temps :21,33334s
+Objet voiture0 vu en :(0.57, 0.41),(0.94, -0.63)
+Objet voiture1 vu en :(0.32, 0.67),(0.59, 0.45)
+Temps :21,36667s
+Objet voiture1 vu en :(0.32, 0.63),(0.61, 0.39)
+Temps :21,4s
+Objet voiture1 vu en :(0.33, 0.58),(0.63, 0.33)
+Temps :21,43333s
+Objet voiture1 vu en :(0.34, 0.54),(0.65, 0.28)
+Temps :21,46667s
+Objet voiture1 vu en :(0.34, 0.50),(0.68, 0.21)
+Temps :21,5s
+Objet voiture1 vu en :(0.34, 0.48),(0.70, 0.16)
+Temps :21,53333s
+Objet voiture1 vu en :(0.33, 0.47),(0.71, 0.14)
+Temps :21,56667s
+Objet voiture1 vu en :(0.32, 0.44),(0.72, 0.07)
+Temps :21,6s
+Objet voiture1 vu en :(0.30, 0.41),(0.74, -0.01)
+Temps :21,63334s
+Objet voiture1 vu en :(0.31, 0.40),(0.76, -0.05)
+Temps :21,66667s
+Objet voiture1 vu en :(0.31, 0.36),(0.81, -0.16)
+Temps :21,7s
+Objet voiture1 vu en :(0.29, 0.28),(0.86, -0.34)
+Temps :21,73334s
+Temps :21,76667s
+Temps :21,8s
+Temps :21,83334s
+Temps :21,86667s
+Temps :21,9s
+Temps :21,93333s
+Temps :21,96667s
+Temps :22s
+Temps :22,03333s
+Temps :22,06667s
+Temps :22,1s
+Temps :22,13334s
+Temps :22,16667s
+Temps :22,2s
+Temps :22,23334s
+Temps :22,26667s
+Temps :22,3s
+Temps :22,33334s
+Temps :22,36667s
+Temps :22,4s
+Temps :22,43333s
+Temps :22,46667s
+Temps :22,5s
+Temps :22,53333s
+Temps :22,56667s
+Temps :22,6s
+Temps :22,63334s
+Temps :22,66667s
+Temps :22,7s
+Temps :22,73334s
+Temps :22,76667s
+Temps :22,8s
+Temps :22,83334s
+Temps :22,86667s
+Temps :22,9s
+Temps :22,93333s
+Temps :22,96667s
+Temps :23s
+Temps :23,03333s
+Temps :23,06667s
+Temps :23,1s
+Temps :23,13334s
+Temps :23,16667s
+Temps :23,2s
+Temps :23,23334s
+Temps :23,26667s
+Temps :23,3s
+Temps :23,33334s
+Temps :23,36667s
+Temps :23,4s
+Temps :23,43333s
+Temps :23,46667s
+Temps :23,5s
+Temps :23,53333s
+Temps :23,56667s
+Temps :23,6s
+Temps :23,63334s
+Temps :23,66667s
+Temps :23,7s
+Temps :23,73334s
+Temps :23,76667s
+Temps :23,8s
+Temps :23,83334s
+Temps :23,86667s
+Temps :23,9s
+Temps :23,93333s
+Temps :23,96667s
+Temps :24s
+Temps :24,03333s
+Temps :24,06667s
+Temps :24,1s
+Temps :24,13334s
+Temps :24,16667s
+Temps :24,2s
+Temps :24,23334s
+Temps :24,26667s
+Temps :24,3s
+Temps :24,33334s
+Temps :24,36667s
+Temps :24,4s
+Temps :24,43333s
+Temps :24,46667s
+Temps :24,5s
+Temps :24,53333s
+Temps :24,56667s
+Temps :24,6s
+Temps :24,63334s
+Temps :24,66667s
+Temps :24,7s
+Temps :24,73334s
+Temps :24,76667s
+Temps :24,8s
+Temps :24,83334s
+Temps :24,86667s
+Temps :24,9s
+Temps :24,93333s
+Temps :24,96667s
+Temps :25s
+Temps :25,03333s
+Temps :25,06667s
+Temps :25,1s
+Temps :25,13334s
+Temps :25,16667s
+Temps :25,2s
+Temps :25,23334s
+Temps :25,26667s
+Temps :25,3s
+Temps :25,33334s
+Temps :25,36667s
+Temps :25,4s
+Temps :25,43333s
+Temps :25,46667s
+Temps :25,5s
+Temps :25,53333s
+Temps :25,56667s
+Temps :25,6s
+Temps :25,63334s
+Temps :25,66667s
+Temps :25,7s
+Temps :25,73334s
+Temps :25,76667s
+Temps :25,8s
+Temps :25,83334s
+Temps :25,86667s
+Temps :25,9s
+Temps :25,93333s
+Temps :25,96667s
+Temps :26s
+Temps :26,03333s
+Temps :26,06667s
+Temps :26,1s
+Temps :26,13334s
+Temps :26,16667s
+Temps :26,2s
+Temps :26,23334s
+Temps :26,26667s
+Temps :26,3s
+Temps :26,33334s
+Temps :26,36667s
+Temps :26,4s
+Temps :26,43333s
+Temps :26,46667s
+Temps :26,5s
+Temps :26,53333s
+Temps :26,56667s
+Temps :26,6s
+Temps :26,63334s
+Temps :26,66667s
+Temps :26,7s
+Temps :26,73334s
+Temps :26,76667s
+Temps :26,8s
+Temps :26,83334s
+Temps :26,86667s
+Temps :26,9s
+Temps :26,93333s
+Temps :26,96667s
+Temps :27s
+Temps :27,03333s
+Temps :27,06667s
+Temps :27,1s
+Temps :27,13334s
+Temps :27,16667s
+Temps :27,2s
+Temps :27,23334s
+Objet voiture6 vu en :(0.42, 0.31),(0.56, 0.19)
+Objet voiture7 vu en :(0.45, 0.41),(0.53, 0.35)
+Temps :27,26667s
+Objet voiture6 vu en :(0.41, 0.30),(0.56, 0.17)
+Objet voiture7 vu en :(0.45, 0.41),(0.53, 0.34)
+Temps :27,3s
+Objet voiture6 vu en :(0.41, 0.29),(0.56, 0.15)
+Objet voiture7 vu en :(0.45, 0.40),(0.53, 0.34)
+Temps :27,33334s
+Objet voiture6 vu en :(0.40, 0.28),(0.57, 0.14)
+Objet voiture7 vu en :(0.45, 0.40),(0.53, 0.34)
+Temps :27,36667s
+Objet voiture6 vu en :(0.40, 0.26),(0.57, 0.12)
+Objet voiture7 vu en :(0.45, 0.40),(0.53, 0.33)
+Temps :27,4s
+Objet voiture6 vu en :(0.39, 0.25),(0.57, 0.09)
+Objet voiture7 vu en :(0.45, 0.39),(0.53, 0.32)
+Temps :27,43333s
+Objet voiture6 vu en :(0.39, 0.24),(0.58, 0.08)
+Objet voiture7 vu en :(0.45, 0.39),(0.53, 0.32)
+Temps :27,46667s
+Objet voiture6 vu en :(0.38, 0.22),(0.58, 0.05)
+Objet voiture7 vu en :(0.45, 0.39),(0.53, 0.31)
+Temps :27,5s
+Objet voiture6 vu en :(0.38, 0.21),(0.59, 0.01)
+Objet voiture7 vu en :(0.45, 0.38),(0.53, 0.31)
+Temps :27,53333s
+Objet voiture6 vu en :(0.37, 0.19),(0.59, -0.01)
+Objet voiture7 vu en :(0.44, 0.38),(0.53, 0.30)
+Temps :27,56667s
+Objet voiture6 vu en :(0.36, 0.17),(0.60, -0.05)
+Objet voiture7 vu en :(0.44, 0.37),(0.53, 0.29)
+Temps :27,6s
+Objet voiture6 vu en :(0.35, 0.15),(0.60, -0.08)
+Objet voiture7 vu en :(0.44, 0.37),(0.53, 0.29)
+Temps :27,63334s
+Objet voiture6 vu en :(0.35, 0.18),(0.60, -0.05)
+Objet voiture7 vu en :(0.44, 0.40),(0.53, 0.32)
+Temps :27,66667s
+Objet voiture6 vu en :(0.35, 0.20),(0.60, -0.03)
+Objet voiture7 vu en :(0.44, 0.43),(0.53, 0.35)
+Temps :27,7s
+Objet voiture6 vu en :(0.35, 0.23),(0.60, 0.00)
+Objet voiture7 vu en :(0.44, 0.46),(0.53, 0.37)
+Temps :27,73334s
+Objet voiture6 vu en :(0.35, 0.26),(0.60, 0.03)
+Objet voiture7 vu en :(0.44, 0.49),(0.53, 0.40)
+Temps :27,76667s
+Objet voiture6 vu en :(0.35, 0.29),(0.60, 0.06)
+Objet voiture7 vu en :(0.44, 0.52),(0.53, 0.43)
+Temps :27,8s
+Objet voiture6 vu en :(0.36, 0.32),(0.60, 0.09)
+Objet voiture7 vu en :(0.44, 0.55),(0.53, 0.46)
+Temps :27,83334s
+Objet voiture6 vu en :(0.36, 0.35),(0.60, 0.12)
+Objet voiture7 vu en :(0.44, 0.58),(0.53, 0.49)
+Temps :27,86667s
+Objet voiture6 vu en :(0.36, 0.38),(0.60, 0.15)
+Objet voiture7 vu en :(0.44, 0.60),(0.53, 0.52)
+Temps :27,9s
+Objet voiture6 vu en :(0.36, 0.41),(0.60, 0.19)
+Objet voiture7 vu en :(0.44, 0.64),(0.53, 0.55)
+Temps :27,93333s
+Objet voiture6 vu en :(0.36, 0.43),(0.60, 0.22)
+Objet voiture7 vu en :(0.44, 0.67),(0.53, 0.58)
+Temps :27,96667s
+Objet voiture6 vu en :(0.36, 0.46),(0.60, 0.25)
+Objet voiture7 vu en :(0.44, 0.70),(0.53, 0.61)
+Temps :28s
+Objet voiture6 vu en :(0.38, 0.46),(0.61, 0.25)
+Objet voiture7 vu en :(0.46, 0.70),(0.55, 0.61)
+Temps :28,03333s
+Objet voiture6 vu en :(0.39, 0.46),(0.63, 0.25)
+Objet voiture7 vu en :(0.47, 0.70),(0.57, 0.61)
+Temps :28,06667s
+Objet voiture6 vu en :(0.41, 0.47),(0.64, 0.25)
+Objet voiture7 vu en :(0.49, 0.70),(0.59, 0.61)
+Temps :28,1s
+Objet voiture6 vu en :(0.41, 0.47),(0.64, 0.25)
+Objet voiture7 vu en :(0.50, 0.70),(0.60, 0.61)
+Temps :28,13334s
+Objet voiture6 vu en :(0.41, 0.47),(0.65, 0.24)
+Objet voiture7 vu en :(0.51, 0.70),(0.61, 0.61)
+Temps :28,16667s
+Objet voiture6 vu en :(0.40, 0.47),(0.63, 0.24)
+Objet voiture7 vu en :(0.52, 0.70),(0.62, 0.61)
+Temps :28,2s
+Objet voiture6 vu en :(0.38, 0.47),(0.61, 0.24)
+Objet voiture7 vu en :(0.52, 0.69),(0.62, 0.61)
+Temps :28,23334s
+Objet voiture6 vu en :(0.38, 0.48),(0.61, 0.23)
+Objet voiture7 vu en :(0.53, 0.69),(0.63, 0.61)
+Temps :28,26667s
+Objet voiture6 vu en :(0.35, 0.48),(0.59, 0.23)
+Objet voiture7 vu en :(0.53, 0.69),(0.63, 0.61)
+Temps :28,3s
+Objet voiture6 vu en :(0.33, 0.48),(0.57, 0.23)
+Objet voiture7 vu en :(0.53, 0.69),(0.64, 0.61)
+Temps :28,33334s
+Objet voiture6 vu en :(0.33, 0.49),(0.57, 0.23)
+Objet voiture7 vu en :(0.54, 0.69),(0.64, 0.61)
+Temps :28,36667s
+Objet voiture6 vu en :(0.31, 0.49),(0.55, 0.24)
+Objet voiture7 vu en :(0.53, 0.69),(0.65, 0.60)
+Temps :28,4s
+Objet voiture6 vu en :(0.29, 0.49),(0.53, 0.24)
+Objet voiture7 vu en :(0.53, 0.69),(0.65, 0.60)
+Temps :28,43334s
+Objet voiture6 vu en :(0.29, 0.50),(0.52, 0.24)
+Objet voiture7 vu en :(0.54, 0.69),(0.66, 0.60)
+Temps :28,46667s
+Objet voiture6 vu en :(0.27, 0.50),(0.50, 0.25)
+Objet voiture7 vu en :(0.54, 0.69),(0.66, 0.60)
+Temps :28,5s
+Objet voiture6 vu en :(0.25, 0.51),(0.48, 0.25)
+Objet voiture7 vu en :(0.54, 0.69),(0.66, 0.60)
+Temps :28,53333s
+Objet voiture6 vu en :(0.25, 0.51),(0.47, 0.25)
+Objet voiture7 vu en :(0.55, 0.69),(0.67, 0.60)
+Temps :28,56667s
+Objet voiture6 vu en :(0.23, 0.52),(0.45, 0.26)
+Objet voiture7 vu en :(0.54, 0.69),(0.67, 0.60)
+Temps :28,6s
+Objet voiture6 vu en :(0.22, 0.52),(0.43, 0.27)
+Objet voiture7 vu en :(0.54, 0.69),(0.67, 0.60)
+Temps :28,63334s
+Objet voiture6 vu en :(0.22, 0.53),(0.44, 0.27)
+Objet voiture7 vu en :(0.55, 0.69),(0.68, 0.60)
+Temps :28,66667s
+Objet voiture6 vu en :(0.23, 0.53),(0.43, 0.28)
+Objet voiture7 vu en :(0.56, 0.69),(0.69, 0.60)
+Temps :28,7s
+Objet voiture6 vu en :(0.23, 0.54),(0.44, 0.29)
+Objet voiture7 vu en :(0.57, 0.69),(0.70, 0.60)
+Temps :28,73334s
+Objet voiture6 vu en :(0.25, 0.54),(0.45, 0.29)
+Objet voiture7 vu en :(0.59, 0.69),(0.72, 0.60)
+Temps :28,76667s
+Objet voiture6 vu en :(0.26, 0.55),(0.46, 0.30)
+Objet voiture7 vu en :(0.60, 0.68),(0.73, 0.60)
+Temps :28,8s
+Objet voiture6 vu en :(0.28, 0.55),(0.47, 0.30)
+Objet voiture7 vu en :(0.61, 0.68),(0.75, 0.59)
+Temps :28,83334s
+Objet voiture6 vu en :(0.29, 0.55),(0.48, 0.30)
+Objet voiture7 vu en :(0.63, 0.68),(0.77, 0.59)
+Temps :28,86667s
+Objet voiture6 vu en :(0.31, 0.56),(0.50, 0.31)
+Objet voiture7 vu en :(0.65, 0.68),(0.79, 0.59)
+Temps :28,9s
+Objet voiture6 vu en :(0.32, 0.55),(0.51, 0.30)
+Objet voiture7 vu en :(0.67, 0.68),(0.81, 0.58)
+Temps :28,93334s
+Objet voiture6 vu en :(0.35, 0.55),(0.54, 0.29)
+Objet voiture7 vu en :(0.70, 0.67),(0.85, 0.57)
+Temps :28,96667s
+Objet voiture6 vu en :(0.36, 0.54),(0.55, 0.26)
+Objet voiture7 vu en :(0.72, 0.66),(0.88, 0.56)
+Temps :29s
+Objet voiture6 vu en :(0.35, 0.53),(0.55, 0.23)
+Objet voiture7 vu en :(0.73, 0.65),(0.89, 0.55)
+Temps :29,03333s
+Objet voiture6 vu en :(0.35, 0.52),(0.55, 0.22)
+Objet voiture7 vu en :(0.73, 0.65),(0.90, 0.55)
+Temps :29,06667s
+Objet voiture6 vu en :(0.33, 0.51),(0.54, 0.20)
+Objet voiture7 vu en :(0.71, 0.65),(0.88, 0.55)
+Temps :29,1s
+Objet voiture6 vu en :(0.31, 0.51),(0.53, 0.19)
+Objet voiture7 vu en :(0.70, 0.65),(0.86, 0.55)
+Temps :29,13334s
+Objet voiture6 vu en :(0.29, 0.50),(0.51, 0.18)
+Objet voiture7 vu en :(0.68, 0.66),(0.84, 0.56)
+Temps :29,16667s
+Objet voiture6 vu en :(0.29, 0.50),(0.51, 0.17)
+Objet voiture7 vu en :(0.67, 0.66),(0.82, 0.56)
+Temps :29,2s
+Objet voiture6 vu en :(0.29, 0.49),(0.52, 0.17)
+Objet voiture7 vu en :(0.66, 0.66),(0.81, 0.56)
+Temps :29,23334s
+Objet voiture6 vu en :(0.29, 0.49),(0.52, 0.17)
+Objet voiture7 vu en :(0.65, 0.66),(0.80, 0.56)
+Temps :29,26667s
+Objet voiture6 vu en :(0.29, 0.49),(0.52, 0.16)
+Objet voiture7 vu en :(0.64, 0.67),(0.79, 0.57)
+Temps :29,3s
+Objet voiture6 vu en :(0.28, 0.48),(0.52, 0.16)
+Objet voiture7 vu en :(0.63, 0.67),(0.77, 0.57)
+Temps :29,33334s
+Objet voiture6 vu en :(0.27, 0.48),(0.51, 0.16)
+Objet voiture7 vu en :(0.62, 0.67),(0.76, 0.57)
+Temps :29,36667s
+Objet voiture6 vu en :(0.26, 0.48),(0.50, 0.16)
+Objet voiture7 vu en :(0.60, 0.67),(0.74, 0.57)
+Temps :29,4s
+Objet voiture6 vu en :(0.26, 0.48),(0.51, 0.16)
+Objet voiture7 vu en :(0.59, 0.67),(0.73, 0.58)
+Temps :29,43334s
+Objet voiture6 vu en :(0.26, 0.47),(0.51, 0.16)
+Objet voiture7 vu en :(0.58, 0.68),(0.71, 0.58)
+Temps :29,46667s
+Objet voiture6 vu en :(0.27, 0.47),(0.52, 0.16)
+Objet voiture7 vu en :(0.58, 0.68),(0.71, 0.58)
+Temps :29,5s
+Objet voiture6 vu en :(0.29, 0.47),(0.54, 0.16)
+Objet voiture7 vu en :(0.58, 0.68),(0.70, 0.58)
+Temps :29,53333s
+Objet voiture6 vu en :(0.29, 0.47),(0.54, 0.17)
+Objet voiture7 vu en :(0.57, 0.68),(0.69, 0.59)
+Temps :29,56667s
+Objet voiture6 vu en :(0.31, 0.47),(0.57, 0.17)
+Objet voiture7 vu en :(0.57, 0.68),(0.69, 0.59)
+Temps :29,6s
+Objet voiture6 vu en :(0.34, 0.47),(0.59, 0.18)
+Objet voiture7 vu en :(0.57, 0.68),(0.69, 0.59)
+Temps :29,63334s
+Objet voiture6 vu en :(0.34, 0.47),(0.59, 0.18)
+Objet voiture7 vu en :(0.56, 0.69),(0.68, 0.59)
+Temps :29,66667s
+Objet voiture6 vu en :(0.37, 0.47),(0.62, 0.19)
+Objet voiture7 vu en :(0.57, 0.69),(0.68, 0.60)
+Temps :29,7s
+Objet voiture6 vu en :(0.39, 0.47),(0.64, 0.20)
+Objet voiture7 vu en :(0.57, 0.69),(0.68, 0.60)
+Temps :29,73334s
+Objet voiture6 vu en :(0.41, 0.47),(0.65, 0.20)
+Objet voiture7 vu en :(0.58, 0.69),(0.68, 0.60)
+Temps :29,76667s
+Objet voiture6 vu en :(0.44, 0.50),(0.69, 0.24)
+Objet voiture7 vu en :(0.59, 0.71),(0.70, 0.62)
+Temps :29,8s
+Objet voiture6 vu en :(0.46, 0.54),(0.71, 0.28)
+Objet voiture7 vu en :(0.60, 0.72),(0.71, 0.64)
+Temps :29,83334s
+Objet voiture6 vu en :(0.47, 0.57),(0.72, 0.32)
+Objet voiture7 vu en :(0.60, 0.74),(0.71, 0.65)
+Temps :29,86667s
+Objet voiture6 vu en :(0.48, 0.61),(0.74, 0.36)
+Objet voiture7 vu en :(0.61, 0.76),(0.72, 0.67)
+Temps :29,9s
+Objet voiture6 vu en :(0.49, 0.65),(0.75, 0.40)
+Objet voiture7 vu en :(0.61, 0.77),(0.72, 0.69)
+Temps :29,93334s
+Objet voiture6 vu en :(0.49, 0.62),(0.75, 0.37)
+Objet voiture7 vu en :(0.61, 0.74),(0.72, 0.66)
+Temps :29,96667s
+Objet voiture6 vu en :(0.49, 0.59),(0.76, 0.34)
+Objet voiture7 vu en :(0.61, 0.71),(0.72, 0.63)
+Temps :30s
+Objet voiture6 vu en :(0.49, 0.59),(0.76, 0.34)
+Objet voiture7 vu en :(0.61, 0.71),(0.72, 0.63)
+Temps :30,03333s
+Objet voiture6 vu en :(0.49, 0.59),(0.76, 0.34)
+Objet voiture7 vu en :(0.61, 0.71),(0.72, 0.63)
+Temps :30,06667s
+Objet voiture6 vu en :(0.50, 0.59),(0.76, 0.34)
+Objet voiture7 vu en :(0.61, 0.71),(0.72, 0.63)
+Temps :30,1s
+Objet voiture6 vu en :(0.50, 0.62),(0.76, 0.38)
+Objet voiture7 vu en :(0.61, 0.73),(0.72, 0.65)
+Temps :30,13334s
+Objet voiture6 vu en :(0.50, 0.66),(0.77, 0.43)
+Objet voiture7 vu en :(0.61, 0.75),(0.72, 0.67)
+Temps :30,16667s
+Objet voiture6 vu en :(0.48, 0.66),(0.75, 0.43)
+Objet voiture7 vu en :(0.60, 0.75),(0.70, 0.67)
+Temps :30,2s
+Objet voiture6 vu en :(0.47, 0.66),(0.73, 0.43)
+Objet voiture7 vu en :(0.58, 0.75),(0.69, 0.67)
+Temps :30,23334s
+Objet voiture6 vu en :(0.45, 0.66),(0.71, 0.44)
+Objet voiture7 vu en :(0.56, 0.75),(0.67, 0.67)
+Temps :30,26667s
+Objet voiture6 vu en :(0.43, 0.66),(0.70, 0.44)
+Objet voiture7 vu en :(0.55, 0.75),(0.65, 0.67)
+Temps :30,3s
+Objet voiture6 vu en :(0.43, 0.63),(0.70, 0.41)
+Objet voiture7 vu en :(0.55, 0.72),(0.65, 0.64)
+Temps :30,33334s
+Objet voiture6 vu en :(0.43, 0.60),(0.70, 0.38)
+Objet voiture7 vu en :(0.55, 0.69),(0.65, 0.61)
+Temps :30,36667s
+Objet voiture6 vu en :(0.43, 0.60),(0.70, 0.38)
+Objet voiture7 vu en :(0.55, 0.69),(0.65, 0.61)
+Temps :30,4s
+Objet voiture6 vu en :(0.43, 0.60),(0.70, 0.38)
+Objet voiture7 vu en :(0.55, 0.69),(0.65, 0.61)
+Temps :30,43334s
+Objet voiture6 vu en :(0.43, 0.60),(0.70, 0.38)
+Objet voiture7 vu en :(0.55, 0.69),(0.65, 0.61)
+Temps :30,46667s
+Objet voiture6 vu en :(0.43, 0.60),(0.70, 0.38)
+Objet voiture7 vu en :(0.55, 0.69),(0.65, 0.61)
+Temps :30,5s
+Objet voiture6 vu en :(0.43, 0.60),(0.70, 0.38)
+Objet voiture7 vu en :(0.55, 0.69),(0.65, 0.61)
+Temps :30,53333s
+Objet voiture6 vu en :(0.43, 0.57),(0.70, 0.35)
+Objet voiture7 vu en :(0.55, 0.66),(0.65, 0.58)
+Temps :30,56667s
+Objet voiture6 vu en :(0.43, 0.57),(0.70, 0.35)
+Objet voiture7 vu en :(0.55, 0.66),(0.65, 0.58)
+Temps :30,6s
+Objet voiture6 vu en :(0.43, 0.57),(0.70, 0.35)
+Objet voiture7 vu en :(0.55, 0.66),(0.65, 0.58)
+Temps :30,63334s
+Objet voiture6 vu en :(0.42, 0.57),(0.68, 0.36)
+Objet voiture7 vu en :(0.53, 0.66),(0.63, 0.58)
+Temps :30,66667s
+Objet voiture6 vu en :(0.40, 0.57),(0.66, 0.36)
+Objet voiture7 vu en :(0.51, 0.66),(0.61, 0.58)
+Temps :30,7s
+Objet voiture6 vu en :(0.39, 0.57),(0.65, 0.36)
+Objet voiture7 vu en :(0.50, 0.66),(0.59, 0.58)
+Temps :30,73334s
+Objet voiture6 vu en :(0.39, 0.57),(0.65, 0.36)
+Objet voiture7 vu en :(0.50, 0.66),(0.59, 0.58)
+Temps :30,76667s
+Objet voiture6 vu en :(0.37, 0.57),(0.63, 0.37)
+Objet voiture7 vu en :(0.48, 0.66),(0.58, 0.58)
+Temps :30,8s
+Objet voiture6 vu en :(0.37, 0.57),(0.63, 0.37)
+Objet voiture7 vu en :(0.48, 0.66),(0.58, 0.58)
+Temps :30,83334s
+Objet voiture6 vu en :(0.37, 0.57),(0.63, 0.37)
+Objet voiture7 vu en :(0.48, 0.66),(0.58, 0.58)
+Temps :30,86667s
+Objet voiture6 vu en :(0.37, 0.57),(0.63, 0.37)
+Objet voiture7 vu en :(0.48, 0.66),(0.58, 0.58)
+Temps :30,9s
+Objet voiture6 vu en :(0.37, 0.57),(0.63, 0.37)
+Objet voiture7 vu en :(0.48, 0.66),(0.58, 0.58)
+Temps :30,93334s
+Objet voiture6 vu en :(0.35, 0.57),(0.61, 0.37)
+Objet voiture7 vu en :(0.46, 0.66),(0.56, 0.58)
+Temps :30,96667s
+Objet voiture6 vu en :(0.33, 0.57),(0.60, 0.37)
+Objet voiture7 vu en :(0.45, 0.66),(0.54, 0.58)
+Temps :31s
+Objet voiture6 vu en :(0.32, 0.57),(0.58, 0.36)
+Objet voiture7 vu en :(0.43, 0.66),(0.53, 0.58)
+Temps :31,03333s
+Objet voiture6 vu en :(0.32, 0.61),(0.58, 0.41)
+Objet voiture7 vu en :(0.43, 0.67),(0.53, 0.60)
+Temps :31,06667s
+Objet voiture6 vu en :(0.31, 0.65),(0.58, 0.45)
+Objet voiture7 vu en :(0.43, 0.69),(0.53, 0.62)
+Temps :31,1s
+Objet voiture6 vu en :(0.31, 0.69),(0.58, 0.49)
+Objet voiture7 vu en :(0.43, 0.70),(0.53, 0.63)
+Temps :31,13334s
+Objet voiture6 vu en :(0.31, 0.70),(0.58, 0.51)
+Objet voiture7 vu en :(0.43, 0.69),(0.53, 0.62)
+Temps :31,16667s
+Objet voiture6 vu en :(0.31, 0.71),(0.58, 0.52)
+Objet voiture7 vu en :(0.43, 0.68),(0.53, 0.61)
+Temps :31,2s
+Objet voiture6 vu en :(0.31, 0.71),(0.58, 0.52)
+Objet voiture7 vu en :(0.43, 0.68),(0.53, 0.61)
+Temps :31,23334s
+Objet voiture6 vu en :(0.31, 0.71),(0.58, 0.52)
+Objet voiture7 vu en :(0.43, 0.68),(0.53, 0.61)
+Temps :31,26667s
+Objet voiture6 vu en :(0.31, 0.71),(0.58, 0.52)
+Objet voiture7 vu en :(0.43, 0.68),(0.53, 0.61)
+Temps :31,3s
+Objet voiture6 vu en :(0.31, 0.71),(0.58, 0.52)
+Objet voiture7 vu en :(0.43, 0.68),(0.53, 0.61)
+Temps :31,33334s
+Objet voiture6 vu en :(0.31, 0.71),(0.58, 0.52)
+Objet voiture7 vu en :(0.43, 0.68),(0.53, 0.61)
+Temps :31,36667s
+Objet voiture6 vu en :(0.31, 0.71),(0.58, 0.52)
+Objet voiture7 vu en :(0.43, 0.68),(0.53, 0.61)
+Temps :31,4s
+Objet voiture6 vu en :(0.33, 0.71),(0.60, 0.53)
+Objet voiture7 vu en :(0.45, 0.68),(0.54, 0.61)
+Temps :31,43334s
+Objet voiture6 vu en :(0.34, 0.76),(0.62, 0.57)
+Objet voiture7 vu en :(0.46, 0.69),(0.56, 0.63)
+Temps :31,46667s
+Objet voiture6 vu en :(0.34, 0.76),(0.62, 0.57)
+Objet voiture7 vu en :(0.46, 0.69),(0.56, 0.63)
+Temps :31,5s
+Objet voiture6 vu en :(0.34, 0.76),(0.62, 0.57)
+Objet voiture7 vu en :(0.46, 0.69),(0.56, 0.63)
+Temps :31,53333s
+Objet voiture6 vu en :(0.34, 0.76),(0.62, 0.57)
+Objet voiture7 vu en :(0.46, 0.69),(0.56, 0.63)
+Temps :31,56667s
+Objet voiture6 vu en :(0.34, 0.76),(0.62, 0.57)
+Objet voiture7 vu en :(0.46, 0.69),(0.56, 0.63)
+Temps :31,6s
+Objet voiture6 vu en :(0.34, 0.76),(0.62, 0.57)
+Objet voiture7 vu en :(0.46, 0.69),(0.56, 0.63)
+Temps :31,63334s
+Objet voiture6 vu en :(0.34, 0.76),(0.62, 0.57)
+Objet voiture7 vu en :(0.46, 0.69),(0.56, 0.63)
+Temps :31,66667s
+Objet voiture6 vu en :(0.33, 0.76),(0.60, 0.57)
+Objet voiture7 vu en :(0.44, 0.69),(0.54, 0.63)
+Temps :31,7s
+Objet voiture6 vu en :(0.32, 0.76),(0.60, 0.57)
+Objet voiture7 vu en :(0.43, 0.69),(0.53, 0.63)
+Temps :31,73334s
+Objet voiture6 vu en :(0.31, 0.76),(0.59, 0.57)
+Objet voiture7 vu en :(0.42, 0.69),(0.52, 0.63)
+Temps :31,76667s
+Objet voiture6 vu en :(0.30, 0.76),(0.58, 0.57)
+Objet voiture7 vu en :(0.40, 0.69),(0.50, 0.63)
+Temps :31,8s
+Objet voiture6 vu en :(0.29, 0.76),(0.57, 0.57)
+Objet voiture7 vu en :(0.39, 0.69),(0.49, 0.63)
+Temps :31,83334s
+Objet voiture6 vu en :(0.27, 0.76),(0.55, 0.57)
+Objet voiture7 vu en :(0.37, 0.69),(0.47, 0.63)
+Temps :31,86667s
+Objet voiture6 vu en :(0.27, 0.76),(0.55, 0.57)
+Objet voiture7 vu en :(0.36, 0.69),(0.46, 0.63)
+Temps :31,9s
+Objet voiture6 vu en :(0.28, 0.76),(0.56, 0.57)
+Objet voiture7 vu en :(0.35, 0.69),(0.45, 0.63)
+Temps :31,93334s
+Objet voiture6 vu en :(0.28, 0.76),(0.56, 0.56)
+Objet voiture7 vu en :(0.34, 0.69),(0.44, 0.63)
+Temps :31,96667s
+Objet voiture6 vu en :(0.30, 0.76),(0.58, 0.56)
+Objet voiture7 vu en :(0.34, 0.69),(0.43, 0.63)
+Temps :32s
+Objet voiture6 vu en :(0.33, 0.76),(0.60, 0.56)
+Objet voiture7 vu en :(0.34, 0.69),(0.43, 0.63)
+Temps :32,03334s
+Objet voiture6 vu en :(0.33, 0.76),(0.61, 0.56)
+Objet voiture7 vu en :(0.33, 0.69),(0.42, 0.63)
+Temps :32,06667s
+Objet voiture6 vu en :(0.36, 0.76),(0.63, 0.56)
+Objet voiture7 vu en :(0.33, 0.69),(0.42, 0.63)
+Temps :32,1s
+Objet voiture6 vu en :(0.38, 0.76),(0.65, 0.56)
+Objet voiture7 vu en :(0.33, 0.69),(0.42, 0.63)
+Temps :32,13334s
+Objet voiture6 vu en :(0.38, 0.76),(0.65, 0.56)
+Objet voiture7 vu en :(0.32, 0.69),(0.41, 0.63)
+Temps :32,16667s
+Objet voiture6 vu en :(0.38, 0.76),(0.65, 0.56)
+Objet voiture7 vu en :(0.31, 0.69),(0.40, 0.63)
+Temps :32,2s
+Objet voiture6 vu en :(0.38, 0.76),(0.65, 0.56)
+Objet voiture7 vu en :(0.30, 0.69),(0.38, 0.63)
+Temps :32,23334s
+Objet voiture6 vu en :(0.37, 0.76),(0.64, 0.56)
+Objet voiture7 vu en :(0.28, 0.69),(0.37, 0.63)
+Temps :32,26667s
+Objet voiture6 vu en :(0.38, 0.76),(0.65, 0.56)
+Objet voiture7 vu en :(0.28, 0.69),(0.36, 0.62)
+Temps :32,3s
+Objet voiture6 vu en :(0.40, 0.76),(0.67, 0.56)
+Objet voiture7 vu en :(0.27, 0.69),(0.36, 0.62)
+Temps :32,33334s
+Objet voiture6 vu en :(0.40, 0.76),(0.66, 0.56)
+Objet voiture7 vu en :(0.26, 0.69),(0.35, 0.62)
+Temps :32,36667s
+Objet voiture6 vu en :(0.40, 0.76),(0.65, 0.57)
+Objet voiture7 vu en :(0.25, 0.69),(0.33, 0.62)
+Temps :32,4s
+Objet voiture6 vu en :(0.41, 0.76),(0.66, 0.57)
+Objet voiture7 vu en :(0.25, 0.69),(0.34, 0.62)
+Temps :32,43333s
+Objet voiture6 vu en :(0.41, 0.76),(0.67, 0.57)
+Objet voiture7 vu en :(0.26, 0.69),(0.34, 0.62)
+Temps :32,46667s
+Objet voiture6 vu en :(0.42, 0.76),(0.67, 0.57)
+Objet voiture7 vu en :(0.26, 0.69),(0.34, 0.62)
+Temps :32,5s
+Objet voiture6 vu en :(0.42, 0.76),(0.68, 0.57)
+Objet voiture7 vu en :(0.26, 0.69),(0.34, 0.62)
+Temps :32,53334s
+Objet voiture6 vu en :(0.42, 0.76),(0.68, 0.57)
+Objet voiture7 vu en :(0.26, 0.69),(0.34, 0.62)
+Temps :32,56667s
+Objet voiture6 vu en :(0.42, 0.76),(0.68, 0.57)
+Objet voiture7 vu en :(0.26, 0.69),(0.34, 0.62)
+Temps :32,6s
+Objet voiture6 vu en :(0.42, 0.76),(0.68, 0.57)
+Objet voiture7 vu en :(0.26, 0.69),(0.35, 0.62)
+Temps :32,63334s
+Objet voiture6 vu en :(0.42, 0.76),(0.68, 0.57)
+Objet voiture7 vu en :(0.26, 0.69),(0.35, 0.62)
+Temps :32,66667s
+Objet voiture6 vu en :(0.42, 0.76),(0.68, 0.57)
+Objet voiture7 vu en :(0.26, 0.69),(0.35, 0.62)
+Temps :32,7s
+Objet voiture6 vu en :(0.43, 0.76),(0.68, 0.57)
+Objet voiture7 vu en :(0.26, 0.69),(0.35, 0.62)
+Temps :32,73334s
+Objet voiture6 vu en :(0.43, 0.76),(0.68, 0.57)
+Objet voiture7 vu en :(0.26, 0.69),(0.35, 0.62)
+Temps :32,76667s
+Objet voiture6 vu en :(0.43, 0.76),(0.68, 0.57)
+Objet voiture7 vu en :(0.26, 0.69),(0.35, 0.62)
+Temps :32,8s
+Objet voiture6 vu en :(0.43, 0.76),(0.68, 0.57)
+Objet voiture7 vu en :(0.26, 0.69),(0.35, 0.62)
+Temps :32,83334s
+Objet voiture6 vu en :(0.43, 0.76),(0.68, 0.57)
+Objet voiture7 vu en :(0.26, 0.69),(0.35, 0.62)
+Temps :32,86667s
+Objet voiture6 vu en :(0.43, 0.76),(0.68, 0.57)
+Objet voiture7 vu en :(0.26, 0.69),(0.35, 0.62)
+Temps :32,9s
+Objet voiture6 vu en :(0.43, 0.76),(0.68, 0.57)
+Objet voiture7 vu en :(0.26, 0.69),(0.35, 0.62)
+Temps :32,93333s
+Objet voiture6 vu en :(0.43, 0.76),(0.68, 0.57)
+Objet voiture7 vu en :(0.26, 0.69),(0.35, 0.62)
+Temps :32,96667s
+Objet voiture6 vu en :(0.43, 0.76),(0.68, 0.57)
+Objet voiture7 vu en :(0.26, 0.69),(0.35, 0.62)
+Temps :33s
+Objet voiture6 vu en :(0.43, 0.76),(0.68, 0.57)
+Objet voiture7 vu en :(0.26, 0.69),(0.35, 0.62)
