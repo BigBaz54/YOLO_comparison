@@ -22,7 +22,7 @@ To get performance on a video file, you must provide the name of a video that is
 
 The ground truth file must be a text file with the same format as the ones provided in the `vid` folder. Be aware that the coordinates of the bounding boxes must be in the format `(left, top),(right, bottom)` and the the y axis is not inverted (the origin is at the bottom left corner).
 
-This project has been designed to work with this [Unity project]() that generates the ground truth files automatically.
+This project has been designed to work with this [Unity project](https://github.com/Juldetoff/Biofly_Advanced) that generates the ground truth files automatically.
 
 
 ## Screenshots
