@@ -25,3 +25,5 @@ This project has been designed to work with this [Unity project]() that generate
 
 ## Screenshots
 ![image](https://github.com/BigBaz54/YOLO_comparison/assets/96493391/240946a4-3daa-40e1-9f61-44a3cd20cbb2)
+
+![image](https://github.com/BigBaz54/YOLO_comparison/assets/96493391/17b83b4d-bce1-49fa-919d-d6d70425670e)
