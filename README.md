@@ -4,6 +4,8 @@ This repository allows to compare the inference time and the detection performan
 
 The detection performance metrics are recall, precision and F1 score.
 
+It was developped during an internship at the LORIA laboratory, in the SIMBIOT team.
+
 ## Requirements
 
 You can install all the requirements with the following command:
