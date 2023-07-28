@@ -28,6 +28,8 @@ This project has been designed to work with this [Unity project](https://github.
 
 
 ## Screenshots
-![image](https://github.com/BigBaz54/YOLO_comparison/assets/96493391/240946a4-3daa-40e1-9f61-44a3cd20cbb2)
+![image](https://github.com/BigBaz54/YOLO_comparison/assets/96493391/bd470e47-9112-4838-bba4-164d165c8cd3)
+![image](https://github.com/BigBaz54/YOLO_comparison/assets/96493391/b08eb901-54c4-401f-86f2-843c926b67cc)
+![image](https://github.com/BigBaz54/YOLO_comparison/assets/96493391/609ba924-4ec2-485a-846a-3e6e435ee3c3)
 
-![image](https://github.com/BigBaz54/YOLO_comparison/assets/96493391/17b83b4d-bce1-49fa-919d-d6d70425670e)
+
